@@ -1,0 +1,23 @@
+---
+title:   Annexes
+---
+
+{% capture backtotop %}[Back to Top](#top){:.top}{% endcapture %}
+
+<div id="annexes">
+	<h2>Annexes</h2>
+
+	<ul class="sub-index">
+	{% for annex in site.annexes %}
+		<li><a href="{{ annex.title | slugify | prepend: '/annexes/#' | prepend: site.clearphp.url }}">{{ annex.title }}</a></li>
+	{% endfor %}
+	</ul>
+
+	{% for annex in site.annexes %}
+	<div id="{{ annex.title | slugify }}">
+		<h3>{{ annex.title }}</h3>
+		{{ annex.content }}
+	</div>
+	{% endfor %}
+	{{ backtotop | markdownify }}
+</div>

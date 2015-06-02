@@ -1,0 +1,77 @@
+---
+title:     Use Reference To Alter In Foreach
+---
+
+`foreach` loops start by making a copy of the source. This way, the source may be modified without disturbing the loop. 
+
+When `foreach` has to modify values in the source, it is recommended to use a reference, instead of using index to change the value. 
+
+{% highlight php %}
+<?php
+$numbers = range(0, 100);
+
+// double each elements
+foreach($numbers as &$number) {
+	$number *= 2;
+}
+
+
+// double each elements (Bad example)
+foreach($numbers as $id => $number) {
+	// changing in the source this way is slow
+	$numbers[$id] *= 2;
+}
+
+{% endhighlight %}
+
+
+### Rule Details
+
+The following are considered a warning: 
+
+{% highlight php %}
+<?php
+foreach($source as $id => $element) {
+	// changing in the source this way is slow
+	$source[$id] = processElement($element);
+}
+
+{% endhighlight %}{: .warning }
+
+
+The following pattern is considered OK:
+
+{% highlight php %}
+<?php
+// double each elements
+foreach($source as &$element) {
+	$element = processElement($element);
+}
+
+// use $source[$id] for reading is OK
+foreach($source as $id => &$element) {
+	$element = processElement($element, $source[$i]);
+}
+
+{% endhighlight %}{: .ok }
+
+
+
+### Further Reading
+
+
+#### Related rules
+
+* [No Dangling References]
+* [No Incompatible References]
+* [No Reassigned References]
+* [No References On Objects]
+* [No Useless Reference Arguments]
+
+
+
+[No Dangling References]: {{ "/potential-errors/no-dangling-reference/" | prepend: site.clearphp.url }}
+[No Incompatible References]: {{ "/php-manual/no-incompatible-reference/" | prepend: site.clearphp.url }}
+[No Reassigned References]: {{ "/php-manual/no-reassign-references/" | prepend: site.clearphp.url }}
+[No References On Objects]: {{ "/good-practices/no-references-on-objects/" | prepend: site.clearphp.url }}
+[No Useless Reference Arguments]: {{ "/good-practices/no-useless-argument-reference/" | prepend: site.clearphp.url }}

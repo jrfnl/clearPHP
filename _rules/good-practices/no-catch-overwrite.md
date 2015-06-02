@@ -1,0 +1,61 @@
+---
+title:     No Catch Overwrite
+---
+
+`try ... catch` is the structure designed to handle errors, emitted as `Exception`. Code will be run in the `try` block, and if some `Exception` is emitted, the class of the `Exception` will route it to the right `catch` block for processing. 
+
+`catch` blocks define an Exception type, and a variable that will hold the Exception object. 
+
+{% highlight php %}
+<?php
+$e = 1;
+try {
+	/* some code */
+} catch (Exception $e) {
+	process($e->getMessage());
+}
+
+{% endhighlight %}
+
+
+The `catch` variable, here `$e`, will overwrite any already existing variable, if an Exception is emitted. 
+
+It is recommended to avoid overwriting variables with a catch block.
+
+
+### Rule Details
+
+The following illustrates both right and wrong situations: 
+
+{% highlight php %}
+<?php
+// $e is already defined
+$e = 1;
+
+try {
+	/* some code, may be using $e too */
+} catch (Exception $e) {
+	// $e is wrong
+	process($e->getMessage());
+} catch (otherException $f) {
+	// $f is OK
+	process($f->getMessage());
+}
+
+{% endhighlight %}
+
+
+### Further Reading
+
+
+#### Related rules
+
+* [No Empty Catch]
+* [No Raw Exceptions]
+* [No Unresolved Catch]
+
+
+
+[No Empty Catch]: {{ "/good-practices/no-empty-catch/" | prepend: site.clearphp.url }}
+[No Raw Exceptions]: {{ "/good-practices/no-raw-exceptions/" | prepend: site.clearphp.url }}
+[No Unresolved Catch]: {{ "/good-practices/no-unresolved-catch/" | prepend: site.clearphp.url }}

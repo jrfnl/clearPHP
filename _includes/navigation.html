@@ -1,0 +1,40 @@
+			<nav id="navigation" class="site-navigation" role="navigation">
+				<ul>
+					<li{% if page.url == "/" %} class="active"{% endif %}>
+						<span class="indicator"></span>
+						<a href="{{ '/#intro' | prepend: site.clearphp.url }}">Introduction</a>
+						<ul>
+							{% for p in site.intros %}
+							<li>
+								<a href="{{ p.title | slugify | prepend: '/#' | prepend: site.clearphp.url }}">{% if p.menutitle %}{{ p.menutitle }}{% elsif p.title %}{{ p.title }}{% endif %}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</li>
+		
+					{% for type in site.data.ruletypes %}
+						{% assign directory = type.directory | prepend: "/" | append: "/" %}
+						{% capture submenu %}{% for rule in site.rules %}{% if rule.url contains directory and rule.url != directory %}<li{% if rule.url == page.url %} class="active"{% endif %}><a href="{{ rule.url | prepend: site.clearphp.url }}">{% if rule.menutitle %}{{ rule.menutitle }}{% elsif rule.title %}{{ rule.title }}{% endif %}</a></li>{% endif %}{%endfor%}{% endcapture %}
+						{% unless submenu.size == 0 or submenu.empty? %}
+						<li{% if page.url contains directory %} class="active"{% endif %}>
+							<span class="indicator"></span>
+							<a href="{{ directory | prepend: site.clearphp.url }}">{{ type.title }}</a>
+							<ul>{{ submenu }}</ul>
+						</li>
+						{% endunless %}
+					{%endfor%}
+		
+					<li{% if page.url == "/annexes/" %} class="active"{% endif %}>
+						<span class="indicator"></span>
+						<a href="{{ '/annexes/' | prepend: site.clearphp.url }}">Annexes</a>
+						<ul>
+							{% for p in site.annexes %}
+							<li>
+								<a href="{{ p.title | slugify | prepend: '/annexes/#' | prepend: site.clearphp.url }}">{% if p.menutitle %}{{ p.menutitle }}{% elsif p.title %}{{ p.title }}{% endif %}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</li>
+				</ul>
+			</nav>
+

@@ -1,0 +1,80 @@
+---
+title:     Use Smart Autoload
+---
+
+When it was introduced, class autoloading was build around the function `__autoload()`. When this function is defined, PHP will use it to search for class definitions if such a definition is missing.
+
+{% highlight php %}
+<?php
+// example of __autoload
+function __autoload($classname) {
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	include $filename;
+}
+
+{% endhighlight %}
+
+
+This way, various libraries may cohabit peacefully. However, the function `__autoload()` also introduces competition for libraries, that needed to provide their own support for the autoloading.
+
+Thus, `spl_autoload_register()` was introduced: it allows the registration of autoloader methods, may it be functions, methods or static methods. They will be run one after each other, giving a chance to every library to have its own fitted autoloading.
+
+It is highly recommended to rely on `spl_autoload_register()` and to avoid defining any `__autoload()` function. 
+
+
+### Rule Details
+
+Any usage of `__autoload()` is forbidden.
+
+The following is a considered warning:
+{% highlight php %}
+<?php
+// function definition
+function __autoload($classname) {
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	if (file_exists($filename)) {
+		include $filename;
+	}
+}
+
+{% endhighlight %}{: .warning }
+
+
+The following are considered legit:
+
+{% highlight php %}
+<?php
+// example adapted from the PHP documentation:
+
+// registering one's function
+function my_autoloader($class) {
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	if (file_exists($filename)) {
+		include $filename;
+	}
+}
+
+spl_autoload_register('my_autoloader');
+
+
+// Or, using an anonymous function as of PHP 5.3.0
+spl_autoload_register(function ($class) {
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	if (file_exists($filename)) {
+		include $filename;
+	}
+});
+
+{% endhighlight %}{: .good }
+
+
+### When Not To Use This Rule
+
+* If you need to include functions or constants, you can't use autoloading.
+
+
+### Further Reading
+
+* [Autoloading Classes](http://php.net/language.oop5.autoload)
+* [`spl_autoload_register()`](http://php.net/function.spl-autoload-register)
+* [`__autoload()`](http://php.net/function.autoload)

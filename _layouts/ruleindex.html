@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+{% include header.html %}
+
+{% include tweet-button.html %}
+
+{% for type in site.data.ruletypes %}
+	{% assign directory = type.directory | prepend: "/" | append: "/" %}
+	{% if page.url == directory %}
+		{% assign typedata = type %}
+	{% endif %}
+{% endfor %}
+
+
+<h2>{{ typedata.title }}</h2>
+
+<p>{{ typedata.description }}</p>
+
+{{ content }}
+
+<ul>
+{% assign directory = typedata.directory | prepend: "/" | append: "/" %}
+{% assign rules = site.rules | sort_by: "title" %}
+{% for rule in rules %}{% if rule.url contains directory and rule.url != page.url %}
+	<li><a href="{{ rule.url | prepend: site.clearphp.url }}">{{ rule.title }}</a></li>
+{% endif %}{%endfor%}
+</ul>
+
+
+{% include footer.html %}
+
+</html>

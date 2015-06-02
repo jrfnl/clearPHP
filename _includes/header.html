@@ -1,0 +1,54 @@
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!-- (1) force latest IE rendering engine: http://bit.ly/1c8EiC9 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<title>{% if page.title %}{{ page.title | strip_html }} - {{ site.clearphp.title }}{% else %}{{ site.clearphp.title }} - {{ site.clearphp.subtitle }}{% endif %}</title>
+		<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.clearphp.description }}{% endif %}" />
+
+		<meta name="robots" content="index,follow,archive" />
+		<meta property="og:image" content="{{ site.clearphp.logo }}" />
+		<meta property="og:title" content="{% if page.title %}{{ page.title | strip_html }} - {{ site.clearphp.title }}{% else %}{{ site.clearphp.title }} - {{ site.clearphp.subtitle }}{% endif %}" />
+		<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.clearphp.description}}{% endif %}" />
+		<meta property="og:url" content="{{ page.url | remove: 'index.html' | prepend: site.clearphp.url }}" />
+		<meta property="og:site_name" content="{{ site.clearphp.title }}" />
+		<meta property="og:type" content="website"/>
+
+		<link rel="icon" href="{{ '/images/favicon.png' | prepend: site.clearphp.url }}" type="image/png" />
+
+		<link rel="stylesheet" href="{{ '/css/syntax.css' | prepend: site.clearphp.url }}" />
+		{% if site.clearphp.url contains "clearphp.io" %}
+		<link rel="stylesheet" href="{{ '/css/style.min.css' | prepend: site.clearphp.url }}" />
+		{% else %}
+		<link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.clearphp.url }}" />
+		{% endif %}
+
+		<link rel="canonical" href="{{ page.url | remove: 'index.html' | prepend: site.clearphp.url }}" />
+
+		<!-- Functionality -->
+		<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	</head>
+	<body class="page-{{ page.anchor }}" title="@todo - do something better with the class">
+
+		<div id="header-wrap" class="outer">
+
+			<span id="forkongithub"><a href="{{ site.clearphp.github }}">Fork me on GitHub</a></span>
+
+			<div id="top" class="inner">
+				<header class="text">
+					{% include follow-button.html %}
+					<h1 id="project_title">{{ site.clearphp.title }}</h1>
+					<h2 id="project_tagline">{{ site.clearphp.subtitle }}</h2>
+				</header>
+			</div>
+		</div>
+		<div id="main-content-wrap">
+
+{% include navigation.html %}
+
+			<section id="main-content" class="inner">
+

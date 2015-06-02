@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+{% include header.html %}
+
+{% include tweet-button.html %}
+
+<h2>{{ page.title }}</h2>
+
+<div class="rule-meta">
+{% for type in site.data.ruletypes %}
+	{% assign directory = type.directory | prepend: "/" | append: "/" %}
+	{% if page.url contains directory %}<p><span class="label">Category:</span> <a href="{{ directory | prepend: site.clearphp.url }}">{{ type.title }}</a></p>{% assign ruletype = directory %}{% endif %}
+{% endfor %}
+
+{% if page.minphp or page.maxphp %}
+	{% capture phpstring %}
+	{% if page.minphp and page.maxphp %}
+	{{ page.minphp }} - {{ page.maxphp }}
+	{% elsif page.minphp %}
+	&gt; {{ page.minphp }}
+	{% elsif page.maxphp %}
+	&lt; {{ page.maxphp }}
+	{% endif %}
+	{% endcapture %}
+	<p><span class="label">Applies to:</span> PHP {{ phpstring }}</p>
+{% endif %}
+</div>
+
+{{ content }}
+
+
+
+{% for rule in site.rules %}
+{% if rule.url == page.url %}
+{% assign currentindex = forloop.index %}
+{% endif %}
+{% endfor %}
+
+
+{% for rule in site.rules offset: currentindex %}
+	{% if rule.url contains ruletype and rule.url != ruletype %}
+		{% assign nextrule = rule %}
+		{% break %}
+	{% endif %}
+{% endfor %}
+
+{% for rule in site.rules limit: currentindex %}
+	{% if rule.url contains ruletype and rule.url != ruletype and rule.url != page.url %}
+		{% assign prevrule = rule %}
+	{% endif %}
+{% endfor %}
+
+{% if prevrule or nextrule %}
+<section class="rule-nav">
+	{% if prevrule.url and prevrule.title %}
+	<p class="previous">
+		<a href="{{ prevrule.url | remove: 'index.html' | prepend: site.clearphp.url }}" rel="previous">&lArr; {{ prevrule.title }}</a>
+	</p>
+	{% endif %}
+	{% if nextrule.url and nextrule.title %}
+	<p class="next">
+		<a href="{{ nextrule.url | remove: 'index.html' | prepend: site.clearphp.url }}" rel="next">{{ nextrule.title }} &rArr;</a>
+	</p>
+	{% endif %}
+</section>
+{% endif %}
+
+
+{% include footer.html %}
+
+</html>

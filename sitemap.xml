@@ -1,0 +1,52 @@
+---
+layout:  null
+sitemap:
+    exclude:    true
+---
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="{{ "/css/xml-sitemap.xsl" | prepend: site.clearphp.url }}"?>
+<urlset
+		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+	<url>
+		<loc>{{ site.clearphp.url }}/</loc>
+		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+{% for post in site.posts %}{% unless post.published == false or post.sitemap.exclude == true %}
+	<url>
+		<loc>{{ post.url | remove: 'index.html' | prepend: site.clearphp.url }}</loc>
+		<lastmod>{% if post.sitemap.lastmod %}{{ post.sitemap.lastmod | date: "%Y-%m-%d" | date_to_xmlschema }}{% elsif post.date %}{{ post.date | date_to_xmlschema }}{% elsif site.sitemap.lastmod %}{{ site.sitemap.lastmod | date: "%Y-%m-%d" | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
+		<changefreq>{% if post.sitemap.changefreq %}{{ post.sitemap.changefreq }}{% elsif site.sitemap.changefreq %}<changefreq>{{ site.sitemap.changefreq }}{% else %}monthly{% endif %}</changefreq>
+		<priority>{% if post.sitemap.priority %}{{ post.sitemap.priority }}{% elsif site.sitemap.priority %}{{ site.sitemap.priority }}{% else %}0.7{% endif %}</priority>
+	</url>
+{% endunless %}{% endfor %}
+{% for p in site.pages %}{% unless p.sitemap.exclude == true %}
+	<url>
+		<loc>{{ p.url | remove: 'index.html' | prepend: site.clearphp.url }}</loc>
+		<lastmod>{% if p.sitemap.lastmod %}{{ p.sitemap.lastmod | date: "%Y-%m-%d" | date_to_xmlschema }}{% elsif p.date %}{{ p.date | date_to_xmlschema }}{% elsif site.sitemap.lastmod %}{{ site.sitemap.lastmod | date: "%Y-%m-%d" | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
+		<changefreq>{% if p.sitemap.changefreq %}{{ p.sitemap.changefreq }}{% elsif site.sitemap.changefreq %}{{ site.sitemap.changefreq }}{% else %}monthly{% endif %}</changefreq>
+		<priority>{% if p.sitemap.priority %}{{ p.sitemap.priority }}{% elsif site.sitemap.priority %}{{ site.sitemap.priority }}{% else %}0.5{% endif %}</priority>
+	</url>
+{% endunless %}{% endfor %}
+
+{% for type in site.data.ruletypes %}{% assign directory = type.directory | prepend: "/" | append: "/" %}
+	<url>
+		<loc>{{ directory | prepend: site.clearphp.url }}</loc>
+		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	{% for rule in site.rules %}{% unless rule.sitemap.exclude == true %}{% if rule.url contains directory and rule.url != directory %}
+	<url>
+		<loc>{{ rule.url | remove: 'index.html' | prepend: site.clearphp.url }}</loc>
+		<lastmod>{% if rule.sitemap.lastmod %}{{ rule.sitemap.lastmod | date: "%Y-%m-%d" | date_to_xmlschema }}{% elsif rule.date %}{{ rule.date | date_to_xmlschema }}{% elsif site.sitemap.lastmod %}{{ site.sitemap.lastmod | date: "%Y-%m-%d" | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
+		<changefreq>{% if rule.sitemap.changefreq %}{{ rule.sitemap.changefreq }}{% elsif site.sitemap.changefreq %}{{ site.sitemap.changefreq }}{% else %}monthly{% endif %}</changefreq>
+		<priority>{% if rule.sitemap.priority %}{{ rule.sitemap.priority }}{% elsif site.sitemap.priority %}{{ site.sitemap.priority }}{% else %}0.3{% endif %}</priority>
+	</url>
+		{% endif %}	{% endunless %}{% endfor %}
+{% endfor %}
+</urlset>

@@ -1,0 +1,63 @@
+baseurl: /
+highlighter: pygments
+markdown: kramdown
+permalink: pretty
+encoding: UTF-8
+
+kramdown:
+    input: GFM
+    auto_id_prefix: "h-"
+    parse_block_html: true
+
+clearphp:
+    url:         http://localhost:4000
+    title:       Clear PHP
+    subtitle:    Reference for writing clear PHP code
+    logo:        ...
+    description: Collection of recommendations for writing good PHP code from the PHP Manual, Computer Scrience theories, peer reviews and gut feeling. This is a reference document, in which anyone may look for ways to improve their code.
+    github:      https://github.com/dseguy/clearPHP/
+    owner:       "Damien Seguy"
+    ownerurl:    http://www.exakat.io/
+    twnick:      exakat
+    twhash:      ClearPHP
+
+sitemap:
+    priority:   0.7
+    changefreq: 'monthly'
+    exclude:    false
+
+collections:
+    intros:
+        output: false
+
+    annexes:
+        output: false
+
+    rules:
+        output: true
+        permalink: /:path/
+
+defaults:
+    -
+      scope:
+          path: ""
+      values:
+          layout: "default"
+          sitemap:
+              priority:   0.5
+              changefreq: 'weekly'
+              exclude:    false
+
+    -
+      scope:
+          path: ""
+          type: rules
+      values:
+          layout: "rule"
+          sitemap:
+              priority:   0.7
+              changefreq: 'monthly'
+              exclude:    false
+
+
+exclude: ['CNAME', 'vendor', '.gitignore', '.travis.yml', 'Gemfile', 'Gemfile.lock', 'CONTRIBUTING.md', 'LICENSE-CC', 'README.md', '*.bak']

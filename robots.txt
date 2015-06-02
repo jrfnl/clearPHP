@@ -1,0 +1,5 @@
+# /robots.txt file for http://clearphp.com/
+
+User-agent: *
+Allow: /
+Sitemap: http://clearphp.com/sitemap.xml

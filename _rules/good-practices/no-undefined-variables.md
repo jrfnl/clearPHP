@@ -1,0 +1,49 @@
+---
+title:     No Undefined Variables
+---
+
+There is no need to define a variable before using it in PHP. It will be created when used. However, using an undefined variable will lead to the emission of an error "_Undefined variable $x_", and its creation with a default value, depending on the context (0, false, null or empty string). This may lead to other errors. 
+
+Some PHP functions will fill variables passed as argument without initializing them first (`proc_open()`). Pass-by-reference arguments in custom functions may have the same effect. However, it may still be good to initialize such variables first, so as to avoid unexpected situations, or simply to compare the result with the initial situation. 
+
+It is recommended to always have a default value for variables. Checking for their existence before using them is also recommended. 
+
+
+### Rule Details
+
+This rules targets variables that are read or combined before being created with a default value. 
+
+The following code is considered a warning:
+
+{% highlight php %}
+<?php
+$aString .= 'a';
+
+$anInteger++;
+
+$anArray[] = 'b';
+
+functionCall($undefinedVariable);
+
+{% endhighlight %}{: .warning }
+
+
+
+The following pattern is considered legit:
+
+{% highlight php %}
+<?php
+$aString = '';
+$aString .= 'a';
+
+$anInteger = 0;
+$anInteger++;
+
+$anArray = array();
+$anArray[] = 'b';
+
+$undefinedVariable = null;
+functionCall($undefinedVariable);
+
+{% endhighlight %}{: .good }
+

@@ -1,0 +1,20 @@
+- directory:   potential-errors
+  title:       Potential Errors
+  description: The following rules signal possible mistakes in the code.
+
+- directory:   good-practices
+  title:       Good Practices
+  description: The following rules are common sense practices that help avoid bugs or conflicts.
+
+- directory:   security
+  title:       Security
+  description: The following rules help strengthen the security of your application.
+
+- directory:   php-manual
+  title:       PHP Manual Recommendations
+  menutitle:   PHP Manual
+  description: The following rules are extracted from the manual.
+
+- directory:   performance
+  title:       Performance
+  description: The following rules will speed up code execution.
