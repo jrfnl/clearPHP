@@ -1,45 +1,44 @@
+[![Build Status](https://travis-ci.org/dseguy/clearPHP.svg?branch=gh-pages)](https://travis-ci.org/dseguy/clearPHP)
+
 clearPHP
 ========
 
-Reference for writing clear PHP code 
+## Reference for writing clear PHP code
 
 It is difficult to know when one's code is well written. There are recommendations for writing PHP code in the manual, from CS theories, peers review, and gut feeling. That makes a lot of rules. 
 
-The main goal of this document is to collect such rules, so as to have them all easy to read and select them for reviewing one's code. This is a reference document, in which anyone may look for ways to improve their code. 
+The main goal of this repository is to collect such rules, so as to have them all easy to read and select them for reviewing one's code. This is a reference document, in which anyone may look for ways to improve their code.
 
-<a href="rules/README.md">Read the clearPHP rules</a>.
+The rules are available in an easily readable format via the website <http://clearphp.io>
 
-So Many Rules
+
+## How to Contribute
 ------------------------------------
-There are obviously a lot of rules. And probably some will be added soon. 
+
+1. Fork and edit.
+2. Optionally install [Ruby](https://rvm.io/rvm/install/) with [Jekyll](https://github.com/mojombo/jekyll/)
+   and [GitHub Pages](https://github.com/github/pages-gem) gems to preview locally.
+3. Submit pull request for consideration.
+
+For more detailed information, read the [Contributing guidelines](https://github.com/dseguy/clearPHP/blob/gh-pages/CONTRIBUTING.md).
 
 
-* This is no ultimate coding standard: claiming that any code is 100% compatible with the current reference is futile. No medals are eventually distributed.
-* Don't use them all: it would be difficult to apply them all at the same time in one code. This is because some rules generates too many observations (try to educate quotes), some may be contradictory.
-* It is fine to hate some rules: this is a reference. Its first goal is to collect their rules, their description, their advantages and drawbacks. After this, you'll be able to adopt some of them. This also means that you will dislike some rules: this is OK. 
+### Translations
+
+If you are interested in translating the _ClearPHP_ website, fork this repo on GitHub and publish
+your localized fork to your own GitHub Pages account. We'll link to your translation from the primary website.
+
+To avoid fragmentation and reader confusion, please set up the translation so we can link to your GitHub Pages
+fork with a subdomain (e.g. "ru.clearphp.io"), enter the subdomain into the `CNAME` file, and ask us
+to setup DNS for you.
+
+When your translation is ready, open an issue on the Issue Tracker to let us know.
 
 
-License
+## License
 ------------------------------------
 
 Unless stated otherwise, all content is licensed under the Creative Commons Attribution License.
 
 A copy of the license is included in the repository.
 
-Acknowledgements
-------------------------------------
-
-ClearPHP was originally written by Damien Seguy. The following people have contributed to this project:
-
-<!-- contributors -->
-* Derick Rethans (https://github.com/kitsched)
-* fneuneu (https://github.com/Fneufneu)
-* Gary Jones (https://github.com/GaryJones)
-* Guillaume Deviart (https://github.com/GuillaumeDievart)
-* Dennis Meckel (https://github.com/Rayne)
-* MozMorris (https://github.com/MozMorris)
-* Phil Sturgeon (https://github.com/philsturgeon)
-* Victor Stanciu (https://github.com/victorstanciu)
-* Juliette Reinders Folmer (https://github.com/jrfnl)
-* Aleksandr Yuriev (https://github.com/aleksandrzen)
-<!-- contributors -->
