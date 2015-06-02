@@ -10,7 +10,7 @@ kramdown:
     parse_block_html: true
 
 clearphp:
-    url:         http://localhost:4000
+    url:         http://jrfnl.github.io/clearPHP
     title:       Clear PHP
     subtitle:    Reference for writing clear PHP code
     logo:        ...
