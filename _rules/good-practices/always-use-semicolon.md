@@ -12,7 +12,7 @@ echo $a;
 {% endhighlight %}
 
 
-There are a few situations where semicolon are not required, as another token will be used as instruction ending. For example :
+There are a few situations where semicolon are not required, as another token will be used as instruction ending. For example:
 
 {% highlight php %}
 <?php echo 'a' ?>
@@ -37,7 +37,7 @@ print 'b';
 {% endhighlight %}
 
 
-`continue` and `break` used to accept no value (which will default to 1) or the result of the next expression (up to PHP 5.4) :
+`continue` and `break` used to accept no value (which will default to 1) or the result of the next expression (up to PHP 5.4):
 
 {% highlight php %}
 <?php
@@ -61,7 +61,7 @@ There are quite some instructions that may overflow to the next line, like all o
 * `require` and `require_once`
 * `exit`
 
-This rules doesn't require the adding of an extra semicolon when they are not needed.
+This rule doesn't require the adding of an extra semicolon when it isn't needed.
 
 {% highlight php %}
 <?php

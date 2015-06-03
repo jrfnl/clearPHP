@@ -33,7 +33,7 @@ for($i = 0 ; $i < $count; $i++) {
 
 While the two alternatives are still available, and may even be faster in edge cases, it is recommended to always use `foreach`.
 
-`foreach` takes charge of looping over the array, whatever its size. It eliminates the need of the use of `count()` in the `for` loop, and assigns the values into handy variables.
+`foreach` takes charge of looping over the array, whatever its size. It eliminates the need for `count()` in the `for` loop, and assigns the values into handy variables.
 
 Besides, `foreach` may be used with more complex structures, including iterators or generators. 
 

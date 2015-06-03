@@ -15,7 +15,7 @@ for ($i = 0; $i < 10; $i++) {
 {% endhighlight %}
 
 
-It is recommended to always keep loops's counter separated. In case they *need to* have an impact on each other, make the change obvious in the body of the loops.
+It is recommended to always keep loops counters separated. In case they *need to* have an impact on each other, make the change obvious in the body of the loops.
 
 
 ### Rule Details

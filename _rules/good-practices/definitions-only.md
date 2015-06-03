@@ -2,7 +2,7 @@
 title:     Definitions Only Files
 ---
 
-PHP allows the definitions of structures that will be later called by other parts of the program: constants, functions, classes, interfaces and traits.
+PHP allows the definitions of structures that will later be called by other parts of the program: constants, functions, classes, interfaces and traits.
 
 {% highlight php %}
 <?php

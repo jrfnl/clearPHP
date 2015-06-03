@@ -2,7 +2,7 @@
 title:     No Aliases
 ---
 
-PHP has a good number of aliases functions: the same function may have several names, such as `is_int()` which may also be called `is_integer()` or `is_long()`. Both `is_int()` and `is_integer()` are good. On the other hand, `is_long()` is kept for backward compatibility, and may be removed in a future API cleanup.
+PHP has a good number of alias functions: the same function may have several names, such as `is_int()` which may also be called `is_integer()` or `is_long()`. Both `is_int()` and `is_integer()` are good. On the other hand, `is_long()` is kept for backward compatibility, and may be removed in a future API cleanup.
 
 It is recommended to always use the master function instead of any alias.
 

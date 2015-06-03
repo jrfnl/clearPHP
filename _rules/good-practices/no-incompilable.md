@@ -2,7 +2,7 @@
 title:     No Incompilable
 ---
 
-Within an application, any PHP code should be compilable with the recommended version for the application: the recommended version is chosen by the application author. Compatible PHP versions usually are a range of a few middle version of PHP: a few versions backward, and a few versions forward. 
+Within an application, any PHP code should be compilable with the recommended version for the application: the recommended version is chosen by the application author. Compatible PHP versions usually range a few middle version of PHP: a few versions backward, and a few versions forward.
 
 Newer version of PHP may introduce backward incompatibilities. Preparing the code for them means the code will have to be adapted or dropped. 
 
@@ -17,8 +17,8 @@ $y = [1, 2, 3]; // Array short syntax is introduced in PHP 5.4
 {% endhighlight %}
 
 
-In the example above, the code is only compatible with PHP 5.4: _short syntax_ is introduced in PHP 5.4, and such code won't be backward compatible with PHP 5.3.
-`mysql_connect()` is part of ext/mysql, which is deprecated in PHP 5.5. This code will emit warnings and fatal errors in those versions, but will be fully compilable with PHP 5.4, the (possibly) recommended version. 
+In the example above, the code is only compatible with PHP 5.4: _short array syntax_ is introduced in PHP 5.4, and such code won't be backward compatible with PHP 5.3.
+`mysql_connect()` is part of `ext/mysql`, which has been deprecated in PHP 5.5. This code will emit warnings and fatal errors in those versions, but will be fully compilable in PHP 5.4, the (possibly) recommended version.
 
 
 ### Rule Details
@@ -33,6 +33,7 @@ $y = [1, 2, 3]; // Array short syntax is introduced in PHP 5.4
 
 // broken code
 $y = ;
+
 {% endhighlight %}{: .warning }
 
 

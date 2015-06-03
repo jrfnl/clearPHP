@@ -14,15 +14,15 @@ ClearPHP was originally written by Damien Seguy. The following people have contr
 Please refer to the [contributors list] on GitHub.
 {% endfor %}
 
-As well as:
+</div>
+
+
+##### As well as:
 
 * [@Fneufneu](https://github.com/Fneufneu)
 * [@philsturgeon](https://github.com/philsturgeon)
 * [@victorstanciu](https://github.com/victorstanciu)
 * [@jrfnl](https://github.com/jrfnl)
-
-
-</div>
 
 
 [contributors list]: https://github.com/dseguy/clearPHP/graphs/contributors

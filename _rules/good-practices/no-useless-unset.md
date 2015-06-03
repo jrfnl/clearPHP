@@ -4,7 +4,7 @@ title:     No Useless Unset
 
 `unset()` is the function to use to destroy a variable. _unset_ is also an operator `(unset)`, which actually does the same as the function.
 
-Unsetting variables have different effects depending on the type of variable. In the following five cases it is useless to unset a variable:
+Unsetting variables has different effects depending on the type of variable. In the following five cases it is useless to unset a variable:
 
 * **_Unsetting a passed-by-value argument_**: arguments that are passed by value are copied from the calling context to the current one. Destroying the local variable is pointless: it will be destroyed (whatever that means), at the end of the method. 
 * **_Unsetting a passed-by-reference argument_**: this time again, the actual value is left untouched. The reference itself is destroyed, but the value is still available in the original context.
@@ -96,4 +96,4 @@ function foo() {
 
 
 ### Further Reading
-* [unset](http://php.net/function.unset)
+* [`unset()`](http://php.net/function.unset)

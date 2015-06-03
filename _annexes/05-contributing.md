@@ -9,7 +9,7 @@ To get you started contributing to ClearPHP, please read the [contributing guide
 
 To propose a new rule or a fix:
 
-- fork this repository, create a branch, checkout that branch, add the rule in a `proposition` branch,
+- Fork this repository, create a branch, checkout that branch, add the rule in a `proposition` branch,
   push the branch to Github, and send a pull request.
 - Join us on the [mailing-list].
 

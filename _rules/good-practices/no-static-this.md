@@ -13,7 +13,7 @@ It is recommended to check that static methods have no usage of `$this`.
 
 ### Rule Details
 
-This rule require that no `static` method uses the `$this` variable.
+This rule requires that no `static` method uses the `$this` variable.
 
 The following patterns are considered warnings:
 
@@ -33,7 +33,7 @@ The following code is considered legit:
 
 {% highlight php %}
 <?php
-sclass x {
+class x {
 	static function y() {
 		self::callStaticMethod();
 		return self::$staticProperty;

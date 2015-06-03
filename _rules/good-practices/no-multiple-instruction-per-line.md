@@ -2,7 +2,7 @@
 title:     No Multiple Instruction Per Line
 ---
 
-PHP uses the semicolon `;` for instruction separation. New expressions should start on a new line, making it easier to spot.
+PHP uses the semicolon `;` for instruction separation. New expressions should start on a new line, making it easier to spot them.
 
 {% highlight php %}
 <?php
@@ -26,7 +26,7 @@ class x {
 {% endhighlight %}
 
 
-However, lining several instructions up on the same line will break the readability of the code, and make it harder to spot special situations. 
+However, lining up several instructions on the same line will break the readability of the code, and make it harder to spot special situations. 
 
 {% highlight php %}
 <?php

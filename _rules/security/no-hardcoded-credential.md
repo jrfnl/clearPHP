@@ -21,7 +21,7 @@ In this example, `$ftp_server`, `$ftp_user` and `$ftp_pass` are all pieces of in
 
 More often than not, host, login and password are hardcoded during testing phase, and a few of them stay put until production. Not only does such information have to be handled by sysadmins, but they may simply change without notice. 
 
-There are several solutions available to put credential outside the PHP code:
+There are several solutions available to put credentials outside the PHP code:
 
 * php.ini file, which may host some default access, such as mysqli default credentials.
 * Application configuration file, in XML, INI, YAML, JSON, ... Such files shouldn't be committed with those values to a public repository.
@@ -38,7 +38,6 @@ Here is a list of such functions:
 * `ftp_login()`
 * `mysql_connect()`
 * `mysqli_connect()`
-* `ftp_login()`
 * `mssql_connect()`
 * `oci_connect()`
 * `imap_open()`

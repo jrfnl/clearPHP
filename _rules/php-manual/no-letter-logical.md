@@ -4,7 +4,7 @@ title:     No Letters For Logical Operators
 
 Logical operators comes in two flavors: lettered, also known as boolean, `and`, `or` and `xor`. And with symbols, also known as logical operators, `&&`, `||`, `^`, respectively. However, there is a catch: they are not exchangeable. 
 
-In the documentation, the below example shows the difference of precedence: 
+In the documentation, the below example shows the difference in precedence:
 
 {% highlight php %}
 <?php
@@ -29,7 +29,9 @@ In the result `$e` is `true`, `$f` is `false`. Most of the time, expected preced
 
 ### Rule Details
 
-This rule require that logical operators use `&&`, `||`, `^`, instead of `and`, `or` and `xor`. The followings is wrong. 
+This rule requires that logical operators use `&&`, `||`, `^`, instead of `and`, `or` and `xor`.
+
+The following is wrong:
 
 {% highlight php %}
 <?php

@@ -2,7 +2,7 @@
 title:     Not a method
 ---
 
-Methods are a functions which are associated with a specific class. They have access to the class in which they are defined, either with the pseudo-variable `$this` to access properties or other methods, or via the local static properties and methods. 
+Methods are functions which are associated with a specific class. They have access to the class in which they are defined, either with the pseudo-variable `$this` to access properties or other methods, or via the local static properties and methods.
 
 A static method may only use static properties, and won't have access to properties or methods accessible with `$this`. A normal method will have access to both.
 
@@ -29,7 +29,7 @@ In the above example, the `getNameSize()` method is used to get information abou
 
 On the other hand, `nameLen()` applies some calculations on its arguments, and returns a result without affecting or making use of the local object. It has nothing to do with the local object.
 
-It is recommended to check that methods have use local resources (properties or methods) by using `$this` or `self::` (or equivalent). 
+It is recommended to check that methods use local resources (properties or methods) by using `$this` or `self::` (or equivalent). 
 
 
 ### Rule Details

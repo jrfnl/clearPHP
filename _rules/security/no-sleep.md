@@ -26,7 +26,7 @@ if (!user_login($user, $pass)) {
 
 ### When Not To Use This Rule
 
-CLI applications may have valid use of `sleep` and `usleep`.
+CLI applications may have valid use of `sleep()` and `usleep()`.
 
 
 ### Further Reading

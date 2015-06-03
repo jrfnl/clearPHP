@@ -1,10 +1,10 @@
 ---
-title:     No Magic Number
+title:     No Magic Numbers
 ---
 
 A Magic Number is a number that is written as a literal in the code, while it may have a special or related meaning that is not obvious to understand. 
 
-At a later stage of the evolution, such magic numbers may need to be updated and a blind search/replace will not be possible as such literal may be used in another context.
+At a later stage of the code evolution, such magic numbers may need to be updated and a blind search/replace will not be possible as such literal may be used in another context.
 
 {% highlight php %}
 <?php

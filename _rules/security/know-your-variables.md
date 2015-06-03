@@ -24,6 +24,7 @@ var_dump($a);
 
 {% endhighlight %}
 
+
 It is recommended to always use `parse_str()` and `mb_parse_str()` with a second argument.
 
 
@@ -37,7 +38,7 @@ The default behavior is set by the second parameter: `EXTR_OVERWRITE` means that
 
 If the variable doesn't exist, extract may pollute the current scope with a lot of variables, some of which may interfere with the current one. 
 
-It is recommended to use `extract()` as rarely as possible. Arrays which indexes are fully under control is the right situation for its usage. Using it with the option `EXTR_OVERWRITE` is highly discouraged.
+It is recommended to use `extract()` as rarely as possible. Arrays whose indexes are fully under control is the right situation for its usage. Using it with the option `EXTR_OVERWRITE` is highly discouraged.
 
 
 #### Alternatives 
@@ -52,6 +53,7 @@ foreach($variableArray as $name => $value) {
 }
 
 {% endhighlight %}
+
 
 This is an alternative to the usage of `extract` and should receive the same recommendations. It should be used rarely, and only with arrays whose keys are under control.
 

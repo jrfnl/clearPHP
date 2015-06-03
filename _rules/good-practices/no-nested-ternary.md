@@ -2,7 +2,7 @@
 title:     No Nested Ternary
 ---
 
-The ternary operator is a compact version of an _if then else_ structure. It is very convenient when the branching is needed but should be inline with the rest of the code.
+The ternary operator is a compact version of an _`if` then `else`_ structure. It is very convenient when the branching is needed but should be inline with the rest of the code.
 
 {% highlight php %}
 <?php
@@ -20,7 +20,7 @@ print 'Result : '.( $success ? $christmas ? 'transaction success and you get a g
 {% endhighlight %}
 
 
-It should also be mentioned that ternaries may not produce the expected result when nesting them if no parentheses are used. For example: 
+It should also be mentioned that ternaries may not produce the expected result when nesting them without adding parentheses. For example:
 
 {% highlight php %}
 <?php
@@ -29,7 +29,7 @@ echo $foo ? 'a' : $bar ? 'b' : 'c';
 {% endhighlight %}
 
 
-These are the result for all values of `$foo` and `$bar`: 
+These are the results for all values of `$foo` and `$bar`:
 
 `$foo`  | `$bar`  | result
 ------- | ------- | ------

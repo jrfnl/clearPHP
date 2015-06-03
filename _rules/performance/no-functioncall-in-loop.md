@@ -29,7 +29,7 @@ for($i = 0; $i < $count; $i++) {
 
 This second code sample will do exactly the same as the first, but speed will be dramatically increased.
 
-As a general rule, anything inside the loop (here: `doSomething with $i`), in the terminal clause or in the incrementation clause (second and third argument to `for`, is worth checking for any operation that will not be affected by `$i`. If it is always the same, then it should be preprocessed. 
+As a general rule, anything inside the loop (here: `doSomething with $i`), in the terminal clause or in the incrementation clause (second and third argument to `for`), is worth checking for any operation that will not be affected by `$i`. If it is always the same, then it should be preprocessed.
 
 
 ### Rule Details
@@ -58,7 +58,7 @@ The following pattern is considered legit:
 
 {% highlight php %}
 <?php
-// Here, the condition changes as the loop is processed. This is check in the terminal clause is needed.
+// Here, the condition changes as the loop is processed. The check in the terminal clause is needed.
 $x = range(1,10);
 $j = array();
 for($i = 0; $i < count($j); $i++) { 

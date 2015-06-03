@@ -2,14 +2,14 @@
 title:     No Switch With Multiple Default
 ---
 
-Switch statement may have several cases and one `default` statement, which will act as a catch-all for all unspecified cases. PHP compiles `switch` structures with several `default` cases, though only the first one will actually be executed. 
+Switch statements may have several cases and one `default` statement, which will act as a catch-all for all unspecified cases. PHP compiles `switch` structures with several `default` cases, though only the first one will actually be executed. 
 
 All extra `default` cases are considered dead code. 
 
 
 ### Rule Details
 
-This rule require that every `switch` statement has only one `default` case. 
+This rule requires that every `switch` statement has only one `default` case.
 
 The following patterns are considered warnings:
 

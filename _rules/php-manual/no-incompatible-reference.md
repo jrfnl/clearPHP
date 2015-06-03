@@ -11,10 +11,11 @@ When calling a method or a function, the arguments passed by reference and signa
 {% highlight php %}
 <?php
 parse_str($incomingString, 'string');
+
 {% endhighlight %}
 
 
-PHP only check that functioncalls are using valid parameter types at execution time, if the definition of the method is not available at compile time (aka, the method is not native or not defined in the same file as the call). 
+PHP only checks that function calls are using valid parameter types at execution time, if the definition of the method is not available at compile time (aka, the method is not native or not defined in the same file as the call). 
 
 {% highlight php %}
 <?php

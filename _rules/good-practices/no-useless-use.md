@@ -21,7 +21,7 @@ namespace name {
 {% endhighlight %}
 
 
-It is recommended to keep the number of `use` statement to a minimum. 
+It is recommended to keep the number of `use` statements to a minimum. 
 
 
 ### Rule Details

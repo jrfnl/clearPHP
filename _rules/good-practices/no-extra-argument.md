@@ -56,6 +56,7 @@ z(1, 2, 3, 4);
 
 
 ### Further Reading
+
 * [`func_get_arg()`](http://php.net/function.func-get-arg)
 * [`func_get_args()`](http://php.net/aliases)
 * [`func_num_args()`](http://php.net/function.func-num-args)

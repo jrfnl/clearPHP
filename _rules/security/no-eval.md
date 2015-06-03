@@ -13,14 +13,14 @@ eval($php);
 {% endhighlight %}
 
 
-`eval()` has two main drawbacks: 
+`eval()` has two main drawbacks:
 
-* it is very slow, as PHP as to stop the current processing, compile the code and include it in the current tree, then resume execution. It is also known that opcode caches don't cache any `eval()`-ed strings, and force the recompilation of that code every time.
+* it is very slow, as PHP has to stop the current processing, compile the code and include it in the current tree, then resume execution. It is also known that opcode caches don't cache any `eval()`-ed strings, and force the recompilation of that code every time.
 * Security wise, `eval()` will most probably be fed with data that is not known at coding time, maybe even with input from the internet user. If the `eval()`-ed code has to include user data, it would need a systematic sanitization that is not possible to do.
 
 `create_function()` is the old style for creating anonymous functions in PHP. It actually relies on the same mechanism as `eval()` and should be treated as such. Both should be replaced by closures.
 
-It is highly recommended to avoid using the `eval()` function and rely on other dynamical features of PHP such as variables variables. 
+It is highly recommended to avoid using the `eval()` function and to rely on other dynamical features of PHP such as variables variables. 
 
 
 ### Rule Details

@@ -2,7 +2,7 @@
 title:     No Unnecessary Concatenation
 ---
 
-Concatenations doubles the amount of memory needed: it takes the original strings, merges them into one, and then assigns the result to a variable or the output buffer. 
+Concatenation doubles the amount of memory needed: it takes the original strings, merges them into one, and then assigns the result to a variable or the output buffer.
 
 {% highlight php %}
 <?php
@@ -79,7 +79,7 @@ It is recommended to avoid useless concatenations anytime the volume of the mani
 
 ### Rule Details
 
-This rule is aimed at avoiding the use of concatenation when data gets large.
+This rule is aimed at minimizing the use of concatenation when data gets large.
 
 Check for methods that normally manipulate large amounts of data. 
 

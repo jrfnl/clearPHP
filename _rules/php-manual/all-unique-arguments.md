@@ -28,7 +28,7 @@ f('e', 'f', 'g'); // prints 'fg'
 {% endhighlight %}
 
 
-It is recommended to always use distinct names for arguments variables.
+It is recommended to always use distinct names for argument variables.
 
 
 ### Rule Details

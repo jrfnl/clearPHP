@@ -2,14 +2,16 @@
 title:     No Duplicate Case In Switch
 ---
 
-Disallow the creation of duplicate cases in `switch` statement.
+Disallow the creation of duplicate cases in `switch` statements.
 
 Duplicate cases are useless as the second defined case will be silently ignored.
 
 
 ### Rule Details
 
-This rule require that every `switch` statement has unique literal cases, or complex calls. The followings is wrong.
+This rule requires that every `switch` statement has unique literal cases, or complex calls.
+
+The following is wrong:
 
 {% highlight php %}
 <?php

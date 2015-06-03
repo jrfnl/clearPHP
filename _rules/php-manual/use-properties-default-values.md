@@ -30,7 +30,7 @@ It is recommended to set default values for properties.
 
 ### Rule Details
 
-The following are considered awarning:
+The following are considered a warning:
 
 {% highlight php %}
 <?php

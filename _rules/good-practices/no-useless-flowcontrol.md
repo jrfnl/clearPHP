@@ -16,7 +16,7 @@ if ($b == true) {
 
 {% endhighlight %}
 
-Useless flow controls are often the result of a typo, like the first case above: the extra semi-colon should be removed. Or, they may be the result of forgotten situations that need more rewriting. 
+Useless flow controls are often the result of a typo, like the first case above: the extra semi-colon should be removed. Or, they may be the result of forgotten situations that need more (re)writing. 
 
 They should be removed or completed so as to have an actual impact in the code.
 

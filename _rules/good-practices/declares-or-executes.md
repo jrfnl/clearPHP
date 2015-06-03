@@ -9,7 +9,7 @@ Declaration files will be included at some point in the code, so as to provide t
 
 ### Rule Details
 
-This rule require that files contains only definitions for functions, constants, classes, traits or interfaces. A few exceptions may apply to conditional definitions and direct access prevention.
+This rule requires that files contains only definitions for functions, constants, classes, traits or interfaces. A few exceptions may apply to conditional definitions and direct access prevention.
   
 The following patterns are considered warnings:
 

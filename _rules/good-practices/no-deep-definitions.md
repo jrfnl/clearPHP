@@ -30,7 +30,7 @@ Structures like `class`, `interface` or `trait` should be created in the upper l
 
 Constants may optionally be included in this rule. 
 
-Deep definition should not be confused with conditional definition: conditional definition will happen in the global space, inside a _if...then_ structure, and not within a function or method, like deep definition. 
+Deep definition should not be confused with conditional definition: conditional definition will happen in the global space, inside a _`if`...`then`_ structure, and not within a function or method, like deep definition.
 
 It is recommended to avoid deep definitions.
 
@@ -53,7 +53,7 @@ This rule doesn't apply to
 
 #### Options
 
-* Constants: they may be included in this rule, when constants are used to represent literal values. When they are used for state, like use-once-only functions, this option must be used.
+* Constants: they may be included in this rule, when constants are used to represent literal values. When they are used for state, like use-only-once functions, this option must be used.
 
 
 

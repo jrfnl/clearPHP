@@ -9,7 +9,7 @@ Duplicate keys are useless as the second defined key will overwrite the first si
 
 ### Rule Details
 
-This rule require that every `array()` call has unique keys. The following is wrong. 
+This rule requires that every `array()` call has unique keys. The following is wrong. 
 
 {% highlight php %}
 <?php

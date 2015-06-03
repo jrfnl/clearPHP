@@ -19,14 +19,15 @@ This way, various libraries may cohabit peacefully. However, the function `__aut
 
 Thus, `spl_autoload_register()` was introduced: it allows the registration of autoloader methods, may it be functions, methods or static methods. They will be run one after each other, giving a chance to every library to have its own fitted autoloading.
 
-It is highly recommended to rely on `spl_autoload_register()` and to avoid defining any `__autoload()` function. 
+It is highly recommended to rely on `spl_autoload_register()` and to avoid defining any `__autoload()` function.
 
 
 ### Rule Details
 
 Any usage of `__autoload()` is forbidden.
 
-The following is a considered warning:
+The following is a considered a warning:
+
 {% highlight php %}
 <?php
 // function definition

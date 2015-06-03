@@ -4,7 +4,7 @@ title:     No Dead Code
 
 Dead code is code that is not used. There may be two kind of situations: unreachable code and unused code. 
 
-Unreachable code happens when valid instruction is located where PHP will never reach it. This happens if some branching is executed before reaching the code itself. Here are some examples: 
+Unreachable code happens when valid instructions are located where PHP will never reach them. This happens if some branching is executed before reaching the code itself. Here are some examples: 
 
 {% highlight php %}
 <?php

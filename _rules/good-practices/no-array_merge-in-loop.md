@@ -1,5 +1,6 @@
 ---
-title:     No Array_merge In Loops
+title:     No `array_merge()` In Loops
+menutitle: No array_merge In Loops
 ---
 
 `array_merge()` is particularly slow and memory intensive when it is used in a loop. 

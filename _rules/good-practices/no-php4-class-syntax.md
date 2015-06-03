@@ -69,7 +69,7 @@ class bar {
 {% endhighlight %}
 
 
-It is recommended to avoid PHP 4 class syntax altogether, as it has been replaced by new and more powerful syntaxes. It is considered obsolete and backward compatible support may be dropped at some point in the future
+It is recommended to avoid PHP 4 class syntax altogether, as it has been replaced by new and more powerful syntaxes. It is considered obsolete and backward compatible support may be dropped at some point in the future.
 
 
 ### Rule Details

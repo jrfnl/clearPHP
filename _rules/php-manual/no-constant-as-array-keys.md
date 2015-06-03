@@ -61,7 +61,6 @@ $a = array(1 =>  'c',
 {% endhighlight %}
 
 
-
 ### Further Reading
 
 * [Arrays](http://php.net/language.types.array)

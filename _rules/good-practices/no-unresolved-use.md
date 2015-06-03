@@ -5,7 +5,7 @@ minphp:    5.3
 
 `use` statements provide the ability to refer to an external fully qualified name. Since it will be used to locate definitions in other namespaces and/or files, it is important to check the validity of the fully qualified name.
 
-{% highlight php linenos %}
+{% highlight php %}
 <?php
 namespace X;
 

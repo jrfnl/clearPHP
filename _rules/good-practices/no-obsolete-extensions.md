@@ -4,8 +4,8 @@ title:     No Obsolete Extensions
 
 There are a few PHP native extensions that should be avoided. 
 
-Extension | Dropped in version | Alternative
---------- | ------------------ | -----------
+Extension   | Dropped in version | Alternative
+----------- | ------------------ | -----------
 `dbase`     | 5.3 | Abandoned
 `ereg`      | 5.3 | `pcre`
 `fbsql`     | 5.3 | Abandoned
@@ -22,7 +22,7 @@ Extension | Dropped in version | Alternative
 
 ### Rule Details
 
-Using any of the extensions mentioned above will trigger a warning. Usage include constants, functions, classes, interfaces or directives, if any.
+Using any of the extensions mentioned above will trigger a warning. Usage includes constants, functions, classes, interfaces or directives, if any.
 
 
 ### Further Reading

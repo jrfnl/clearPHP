@@ -15,6 +15,7 @@ $x{1}{3}; // 5
 
 {% endhighlight %}
 
+
 Curly brackets `{  }` are possible, but are almost never used. It is good practice to avoid them.
 
 

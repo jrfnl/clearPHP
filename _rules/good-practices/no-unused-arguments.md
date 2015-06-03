@@ -36,7 +36,7 @@ class logMysql extends log {
 {% endhighlight %}
 
 
-Argument should always be used in a function, even if conditionally.
+Arguments should always be used in a function, even if conditionally.
 
 {% highlight php %}
 <?php

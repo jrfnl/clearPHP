@@ -2,7 +2,7 @@
 title:     No Empty Blocks
 ---
 
-Some structures must have a following block, like a function definition or an _if then else_ statement. When those are left empty, it leaves a confusing impression that something should be there but wasn't provided. 
+Some structures must have a following block, like a function definition or an _`if` then `else`_ statement. When those are left empty, it leaves a confusing impression that something should be there but wasn't provided. 
 
 {% highlight php %}
 <?php

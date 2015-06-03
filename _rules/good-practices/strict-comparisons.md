@@ -49,14 +49,14 @@ if (hash('ripemd128','315655854',false) == "0e123") {
 
 ###### Recommendations
 
-The recommendation is to use `===` or `!==` by default, anywhere there is no good reason to use `==` or `!=`. Always compare the returned value to `false` or `true` explicitly.
+The recommendation is to use the strict comparison operators `===` or `!==` by default, anywhere there is no good reason to use `==` or `!=`. Always compare the returned value to `false` or `true` explicitly.
 
 As for password related operations, it is also recommended to use the `password_hash()` and `password_verify()` functions.
 
 
 ### Rule Details
 
-This rule targets methods that don't compare results with `===` or `!==` to `false` or `true`.
+This rule targets conditionals that don't compare results with `===` or `!==` to `false` or `true`.
 
 Here is a list of PHP native functions that require strict comparison: 
 

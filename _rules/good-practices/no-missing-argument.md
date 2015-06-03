@@ -2,7 +2,7 @@
 title:     No Missing Argument
 ---
 
-PHP does not check at compile time if a function or method calls has enough arguments. One may call any function with any number of argument, and this will be checked at execution time. Extra arguments will be dropped, but missing arguments will generate an error. 
+PHP does not check at compile time if a function or method call has enough arguments. One may call any function with any number of argument, and this will be checked at execution time. Extra arguments will be dropped, but missing arguments will generate an error. 
 
 This is true for PHP native functions as well.
 

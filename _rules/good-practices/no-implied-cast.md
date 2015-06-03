@@ -58,11 +58,11 @@ The following are considered legit:
 
 {% highlight php %}
 <?php
-(int) $a
+if((int) $a) {}
 
-(float) $a
+if((float) $a) {}
 
-(string) $a
+if((string) $a) {}
 
 {% endhighlight %}{: .good }
 

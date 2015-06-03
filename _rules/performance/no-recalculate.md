@@ -11,7 +11,7 @@ $htmlLink = '<a href="'.strtr(strtolower($url), ' ', '-').'.php"><img src="'.str
 {% endhighlight %}
 
 
-In this example, both the URI link and the image URI are built from the `$url` variable, with some characters replacements. Calling both `strtr()` and `strtolower()` twice, or even one of them only, will be slower than calling them once and caching the result in a variable. 
+In this example, both the URI link and the image URI are built from the `$url` variable, with some characters replacements. Calling both `strtr()` and `strtolower()` twice, or even one of them only, will be slower than calling them once and caching the result in a variable.
 
 {% highlight php %}
 <?php
@@ -23,7 +23,7 @@ $htmlLink = '<a href="'.$baseUri.'.php"><img src="'.$baseUri.'.png" alt="$title"
 
 This has the added advantage of making the second line easier to read and to update (as long as both URIs are build the same way). 
 
-When the function call is used only once, there is no performance gain to caching it in a variable. However, as soon at the function call is used twice, there is some gain. Of course, the simpler the function call and the fewer the reuse, the lower the gain.
+When the function call is used only once, there is no performance gain to caching it in a variable. However, as soon as the function call is used twice, there is some gain. Of course, the simpler the function call and the fewer the reuse, the lower the gain.
 
 It is recommended to avoid recalculation in any function scope. In the global scope, this is also recommended, although it may be harder to spot. 
 

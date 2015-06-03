@@ -2,7 +2,7 @@
 title:     No Implied If
 ---
 
-PHP has _if...then_ structures to handle conditional situations.
+PHP has _`if`...`then`_ structures to handle conditional situations.
 
 It also has inherited behavior from C: in a `or` expression, the right expression will not be executed if the left expression is right. Indeed, since only one of the expression needs to be true for the couple to succeed, the second expression does not need to be evaluated, saving some processing. 
 
@@ -24,13 +24,13 @@ if (!($link = mysql_connect('host', 'user', 'pass')) {
 {% endhighlight %}
 
 
-The same kind of _if...then_ structure may be build with `and` though they are less popular. They also work with `and`, `||` and `&&`.
+The same kind of _`if`...`then`_ structure may be build with `and` though they are less popular. They also work with `and`, `||` and `&&`.
 
-This is an 'implied if': the logical operator is made to combine logically two expressions, while it is used here to recreate a _if...then_ structure.
+This is an _implied if_: the logical operator is made to combine logically two expressions, while it is used here to recreate a _`if`...then_ structure.
 
-Another alternative is to use the ternary operator, which may be more suitable to specific situations (like concatenations) than _if...then_.
+Another alternative is to use the ternary operator, which may be more suitable to specific situations (like concatenations) than _`if`...`then`_.
 
-It is recommended to use an explicit _if...then_ expression when the code is intended to embody a condition, and let logical operators only work within logical expressions.
+It is recommended to use an explicit _`if`...`then`_ expression when the code is intended to embody a condition, and let logical operators only work within logical expressions.
 
 
 ### Rule Details
