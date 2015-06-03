@@ -18,7 +18,6 @@ function y() { /* do Something Without Return */; return null; }
 $a = x();
 $b[] = y();
 
-?>
 ```
 
 The following are OK : 
@@ -36,6 +35,5 @@ function x($a) {
 
 $a = x(1);
 
-?>
 ```
 

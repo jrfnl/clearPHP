@@ -21,7 +21,6 @@ class theClass {
 $z = new z();
 $z->y();
 
-?>
 ```
 
 Of course, full namespaced name is both longer to write and harder to read. The class name is usually longer than `self` (though not all the time, of course). 
@@ -49,7 +48,7 @@ class C extends B {}
 
 C::bar(); //C
 C::baz(); //B
-?>
+
 ```
 // example quoted from Artefacto
 
@@ -69,9 +68,8 @@ class theClass {
 	}
 }
 
-
-?>
 ```
+
 
 The following pattern is considered OK :
 
@@ -86,9 +84,9 @@ class theClass {
 	}
 }
 
-?>
 ```
 
 
 ## Further Reading
+
 * [self:: vs className:: inside static className metods in PHP](http://stackoverflow.com/questions/3481085/self-vs-classname-inside-static-classname-metods-in-php)

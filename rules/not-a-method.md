@@ -21,7 +21,7 @@ class user {
 		return strlen($string);
 	}
 }
-?>
+
 ```
 
 In the above example, the `getNameSize` method is used to get information about the object (public method), and makes use of `$this`.
@@ -51,7 +51,6 @@ class x {
 	}
 }
 
-?>
 ```
 
 The following code are considered legit : 
@@ -92,5 +91,4 @@ class x {
 	}
 }
 
-?>
 ```

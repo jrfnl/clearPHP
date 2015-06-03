@@ -12,7 +12,6 @@ $tmp_file = '/tmp/tmp.txt';
 $fp = fopen('/tmp/tmp.txt', 'w');
 // now this file may be access by all concurrent hit on the application
 
-?>
 ```
 
 It is recommended to check that functions that access files are not using hardcoded path. 
@@ -83,7 +82,6 @@ Here is a list of such functions :
 
 file_get_contents('./config/config.yaml');
 
-?>
 ```
 
 The following pattern is considered OK :
@@ -92,7 +90,5 @@ The following pattern is considered OK :
 <?php
 
 file_get_contents($config['webroot'].'/config/config.yaml');
-
-?>
 
 ```

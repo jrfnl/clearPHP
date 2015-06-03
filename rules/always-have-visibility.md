@@ -29,7 +29,6 @@ abstract class x {
 	
 }
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -48,7 +47,6 @@ abstract class x {
 	
 }
 
-?>
 ```
 
 

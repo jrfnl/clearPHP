@@ -9,7 +9,7 @@ PHP allows the definitions of structures that will be later called by other part
 function x($a, $b) { 
 	return $a + $b;
 }
-?>
+
 ```
 
 Those definitions are inert : they won't run by themselves, without being called. 
@@ -35,7 +35,6 @@ define ('DB_ACCESS',true);
 
 $db = new DatabaseConnexion();
 
-?>
 ```
 
 Inclusions (such as the `require_once` below) are not acceptable 
@@ -49,7 +48,6 @@ trait T {
 	/**/
 }
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -62,7 +60,7 @@ define('b', $dbResult->count());
 class DatabaseConnexion {
 	/**/
 }
-?>
+
 ```
 
 ```php
@@ -77,7 +75,6 @@ trait DatabaseConnexion {
 	/**/
 }
 
-?>
 ```
 
 

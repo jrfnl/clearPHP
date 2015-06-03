@@ -12,7 +12,6 @@ for ($i = 0; $i < 10; $i++) {
    }
 }
 
-?>
 ```
 
 It is recommended to always keep loops's counter separated. In case they have an impact on each other, make the change obvious in the body of the loops.
@@ -31,7 +30,6 @@ for ($i = 0; $i < 10; $i++) {
    }
 }
 
-?>
 ```
 
 
@@ -49,6 +47,5 @@ for ($i = 0; $i < 10; ) {
    }
 }
 
-?>
 ```
 

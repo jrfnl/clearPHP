@@ -22,7 +22,6 @@ parse_str($queryString);
 var_dump($a);
 // produce 2
 
-?>
 ```
 
 It is recommended to always use `parse_str` and `mb_parse_str` with a second argument.
@@ -51,7 +50,6 @@ foreach($variableArray as $name => $value) {
 	$$name = $value;
 }
 
-?>
 ```
 
 This is an alternative to the usage of `extract` and should receive the same recommendations. It should be used rarely, and with arrays whose keys are under control.
@@ -80,7 +78,6 @@ foreach($_GET as $name => $value) {
 	$$name = $value;
 }
 
-?>
 ```
 
 The following pattern is considered OK :
@@ -104,8 +101,6 @@ function juggle() {
 	extract($args);
 }
 
-
-?>
 ```
 
 

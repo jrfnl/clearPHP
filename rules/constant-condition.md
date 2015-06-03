@@ -18,7 +18,6 @@ while($x = fetchData()) {
 }
 // should be a do ... while() without a break
 
-?>
 ```
 
 Loops that are build with constant conditions, generally include an exit instruction, allowing them to be finalized without stopping the whole application. Such loops may be rewritten to make the exit function more visible, in the loop condition. 
@@ -35,7 +34,6 @@ while(true) {
 	}
 }
 
-?>
 ```
 
 Using constants in conditions is not regarded as constant conditions : such constants may be conditional constants (they value is dynamically defined at startup, from an external file), or even have dynamical value (such as the magic constants). Constant conditions will be build with literals.
@@ -77,7 +75,6 @@ for ( ; $x == 2 || true ; ) {
 	// doSomething()
 }
 
-?>
 ```
 
 The following pattern is considered legit:
@@ -110,6 +107,5 @@ switch (true) {
 	default : 
 }
 
-?>
 ```
 

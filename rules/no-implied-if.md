@@ -10,7 +10,6 @@ It also has inherited from C behavior : in a `or` expression, the right expressi
 
 $link = mysql_connect('host', 'user', 'pass') || die();
 
-?>
 ```
 
 The above code is the same as the one below : 
@@ -22,7 +21,6 @@ if (!($link = mysql_connect('host', 'user', 'pass')) {
 	die();
 }
 
-?>
 ```
 The same kind of `if..then` structure may be build with `and` though they are less popular. They also work with `and`, `||` and `&&`. 
 
@@ -45,7 +43,6 @@ This is considered a warning :
 // checks for resource
 mysql_connect('host', 'user', 'pass') || die('Error with the database');
 
-?>
 ```
 
 The following are considered legit : 
@@ -63,7 +60,6 @@ if (!mysql_connect('host', 'user', 'pass')) {
 	// process the situation without die or exit
 }
 
-?>
 ```
 
 

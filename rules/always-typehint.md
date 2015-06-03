@@ -24,7 +24,7 @@ function foo($a) {
 	// $a should be typehinted with some class that support `callMethod` method.
 	$a->callMethod();
 }
-?>
+
 ```
 
 The following patterns are not considered ambiguous:
@@ -39,7 +39,7 @@ function foo($a) {
 function bar($a, $b) {
 	$c = $a + 1; // $a could be a number or an array
 }
-?>
+
 ```
 
 The following patterns are not considered warnings:
@@ -52,7 +52,7 @@ function foo($a) {
 	$c = $a * 1.2; // $a should be an real
 }
 
-?>
+
 ```
 
 

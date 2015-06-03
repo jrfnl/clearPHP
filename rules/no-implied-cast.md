@@ -12,7 +12,6 @@ print 'a '.(array()); // arrays are cast to 'Array'
 print 'b '.(1); // integers are cast to their string representation 
 print 'c '.($object); // objects are cast to the result of '__toString' or emit an error.
 
-?>
 ```
 
 Using the above, it is possible to cast a value to a specific type by using the right operation and a carefully chosen literal.
@@ -27,7 +26,6 @@ print $a / 1.0; // cast to float (rare)
 print $a . ''; // cast to string
 print "$a"; // also cast to string
 
-?>
 ```
 It is recommended to use an explicit cast rather than an implied one, making it explicit that the operation is a typecasting, and not a mistaken operation. 
 
@@ -51,7 +49,6 @@ $a ** 1;
 $a . ''; 
 "$a"; 
 
-?>
 ```
 
 The following are considered legit : 
@@ -65,6 +62,5 @@ if ((float) $a) {}
 
 if ((string) $a) {} 
 
-?>
 ```
 

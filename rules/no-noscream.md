@@ -22,7 +22,7 @@ for($i = 0; $i < MAX; $i++) {
         $y[$i]++;
     }
 }
-?>
+
 ```
 
 Finally, it is not possible to activate or disable the operator without changing the code. Unlike `error_reporting()` which may be changed in the configuration file `php.ini`, `@` will stay in the code until removed. 
@@ -44,7 +44,6 @@ while($line = fgets($fp)) {
 // incrementing $s without initializing it.
 @$s++;
 
-?>
 ```
 
 

@@ -16,7 +16,6 @@ class foofoo extends foo {
 
 // generate error : PHP Fatal error:  Class foofoo may not inherit from final class (bar)
 
-?>
 ```
 
 It is recommended to avoid using extra final modifier.
@@ -32,7 +31,6 @@ final class foo {
     final function bar() {}
 }
 
-?>
 ```
 
 The following patterns are considered legit :
@@ -50,7 +48,6 @@ final class foo {
     // more methods
 }
 
-?>
 ```
 
 

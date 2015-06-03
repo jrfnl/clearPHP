@@ -22,7 +22,6 @@ echo "$a[foo]";
 // That will be 'foo' (the string), or, the foo constant (when someone defines it)
 echo $a[foo];
 
-?>
 ```
 It is recommended to always have index as strings or integers, so as to be consistent inside and outside quotes. Check well that any constant used there is actually defined. Other types are cast or emit an error anyway.
 
@@ -40,8 +39,8 @@ $a = array(1.0 => 'b',  // Float will be casted
 	  	   foo  => 'f'  // const may be cast to its value or to String
 			 );
  
-?>
 ```
+
 
 The following patterns are not considered warnings:
 
@@ -58,7 +57,6 @@ $a = array(1 =>  'c',
 		 		    G => 2  // G is defined
 			 );
  
-?>
 ```
 
 

@@ -23,7 +23,7 @@ switch (foo) {
     default:
         // do nothing
 }
-?>
+
 ```
 
 The following patterns are considered warnings:
@@ -39,7 +39,7 @@ switch (foo) {
         doSomething();
         break 1;
 }
-?>
+
 ```
 ## When Not To Use It
 

@@ -16,7 +16,6 @@ function x() {
 
 }
 
-?>
 ```
 Most of the time, code is expected and not finding it is confusing. Commenting such block is a good idea. Other alternative are to use it for default case, or set some basic behavior (logging an exception but not processing it further), leaving room for it to be updated later. 
 
@@ -52,7 +51,6 @@ class Foo extends Bar {}
 
 while (fgets($fp, 10)) { }
 
-?>
 ```
 The following patterns are not considered warnings:
 
@@ -63,7 +61,6 @@ class Foo extends Exceptions {
 
 }
 
-?>
 ```
 
 ## When Not To Use It

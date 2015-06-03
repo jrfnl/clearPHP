@@ -13,7 +13,6 @@ use AnotherNamespace\Subnamespace;
 
 $a = new Aclass();
 
-?>
 ```
 
 PHP will not check the validity of use at compile time, but at execution time. It will then raise a fatal error.  
@@ -31,7 +30,6 @@ namespace X;
 
 use AnotherNamespace\UndefinedClass;
 
-?>
 ```
 
 

@@ -25,7 +25,6 @@ function () { return $x = 3; }
 // post-incrementation in a return
 return $a++;
 
-?>
 ```
 
 
@@ -39,7 +38,6 @@ $object->property;
 
 // pre-incrementation in a return
 return ++$a;
-?>
-```
 
+```
 

@@ -11,7 +11,6 @@ $b = 1 + (int) $a;
 $c = 'c' . ((string) $a); // both unnecessary : $a is a string 
 					     // and concatenation will require one anyway
 
-?>
 ```
 
 Typecasting will be useful as security feature, to ensure a value is of a requested type. It will not help performances. 
@@ -37,7 +36,6 @@ $d = 'd' . ((string) $a);
 echo (int) ( (0.1+0.7) * 10 ); // echoes 7!
 // uses floor() or ceil() instead
 
-?>
 ```
 
 

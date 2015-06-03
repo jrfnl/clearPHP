@@ -16,8 +16,9 @@ $a = array(1 => 'a',
 			 3 => 'c',
 			 1 => 'a' // double definition
 			 );
-?>
+
 ```
+
 
 The following patterns are considered OK :
 
@@ -30,7 +31,6 @@ $a = array(1 => 'a',
 
 $a[1] = 'a'; // this doesn't belong to the literal definition anymore
 
-?>
 ```
 
 

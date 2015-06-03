@@ -19,7 +19,7 @@ function c() {
 	
 	$b = 3; $a = 4; // $a and $b are modified globally
 }
-?>
+
 ```
 
 Using `global` keyword or `$GLOBALS` variable makes spotting global variables in a local context quite difficult. 
@@ -42,7 +42,6 @@ The following codes are considered warnings:
 
 		/**/
 	}
-?>
 ```
 
 ## When Not To Use It

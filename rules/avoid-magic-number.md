@@ -13,7 +13,6 @@ if (strlen($password) < 10) { // 10 is a magic number, that may change at any ti
 	$password['checked'] += 1; // that is not a magic number : it only counts password's checks
 }
 
-?>
 ```
 
 Magic numbers will raise problems when they appear in two different locations, and are updated only once. 
@@ -39,7 +38,7 @@ if ($value == 1) {  // magic number
 if (3 > $value) { 
 	// DoSomething()
 }
-?>
+
 ```
 
 The following pattern is considered legit:
@@ -51,7 +50,6 @@ $percentage /= 100; // classic percentage
 
 $count += 1; // simple increment
 
-?>
 ```
 
 

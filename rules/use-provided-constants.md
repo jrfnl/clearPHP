@@ -18,7 +18,6 @@ get_html_translation_table (0);
 // identical to 
 get_html_translation_table (HTML_SPECIALCHARS);
 
-?>
 ```
 
 Using the constants makes the code more readable, and easier to maintain. 
@@ -34,7 +33,6 @@ error_reporting(E_ALL);
 // Report all (available in PHP 4)
 error_reporting(2047);
 
-?>
 ```
 It is recommended to always use the provided constants to configure such options. 
 
@@ -51,8 +49,8 @@ error_reporting(0);
 
 http_build_query ($query_data, $numeric_prefix , $arg_separator, 1);
 
-?>
 ```
+
 
 The following pattern are considered OK :
 
@@ -68,6 +66,5 @@ http_build_query ($query_data, $numeric_prefix , $arg_separator, PHP_QUERY_RFC39
 // no third parameter => default behavior (this behavior has no explicit constant)
 stream_filter_append($stream, $filtername); 
 
-?>
 ```
 

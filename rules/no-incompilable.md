@@ -14,7 +14,6 @@ mysql_connect($host, $user, $pass); // deprecated features in PHP 5.5
 
 $y = [1, 2, 3]; // Array short syntax is introduced in PHP 5.4
 
-?>
 ```
 In the example above, the code is only compatible PHP 5.4 : `short syntax` is introduced in PHP 5.4, and such code won't be backward compatible with PHP 5.3. 
 `mysql_connect` is part of ext/mysql, which is deprecated in PHP 5.5. This code will emit warnings and fatal errors in those versions, but will be fully compilable with PHP 5.4, the (possibly) recommended version. 
@@ -32,7 +31,7 @@ $y = [1, 2, 3]; // Array short syntax is introduced in PHP 5.4
 
 // broken code
 $y = ;
-?>
+
 ```
 
 ## When Not To Use It

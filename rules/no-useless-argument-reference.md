@@ -15,7 +15,6 @@ $content = 'Some value';
 		}
 	}
 
-?>
 ```
 
 In the previous example, `$content` is modified and the reference is actually needed. On the other hand, `$user` is only read to build the object, and will not be modified : this reference is useless.
@@ -47,7 +46,6 @@ $content = 'Some value';
 		/* do Something */
 	}
 
-?>
 ```
 
 

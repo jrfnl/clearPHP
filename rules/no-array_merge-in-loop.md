@@ -11,7 +11,6 @@ foreach ($source as $list) {
   $result = array_merge($result, $list);
 }
 
-?>
 ```
 
 At each iteration, PHP will copy the array into another temporary array, leading to as many temporary allocation as there are elements in the original `$source` array. Each time, the memory allocated will be more than the previous one, accelerating the memory usage. 
@@ -31,7 +30,6 @@ $result = array_merge(...$source);
 // PHP 5.5 and before
 $result = call_user_func_array('array_merge', $source);
 
-?>
 ```
 
 ## Rule Details
@@ -53,7 +51,6 @@ while(count($a) > 0) {
 	$c = array_merge($c, array_pop($a));
 }
 	
-?>
 ```
 
 

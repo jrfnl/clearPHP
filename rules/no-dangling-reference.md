@@ -13,12 +13,13 @@ foreach ($array2 as $a);
 
 print_r($array);
 print_r($array2);
-?>
+
 ```
+
 
 In this example, `$array[1]` finally get assigned with the value `'d'`, which is the last value in the second loop. Any assignation to `$a` would affect `$array` too.
 
-`
+```
 Array
 (
     [0] => a
@@ -29,7 +30,7 @@ Array
     [0] => c
     [1] => d
 )
-`
+```
 
 It is recommended to unset the loop variable right after the loop, to avoid reusing it later.
 
@@ -46,7 +47,7 @@ foreach (array(1, 2, 3, 4) as &$value) {
 }
 $other_value *= 2;
 unset($value); // don't wait too long to remove $value
-?>
+
 ```
 
 
@@ -58,7 +59,7 @@ foreach (array(1, 2, 3, 4) as &$value) {
     $value = $value * 2;
 }
 unset($value);
-?>
+
 ```
 
 

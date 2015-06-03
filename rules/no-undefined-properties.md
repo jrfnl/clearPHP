@@ -14,10 +14,11 @@ class foo {
 	}
 }
 
-?>
 ```
 
+
 It is recommended to always declare properties. It makes the code clearer to read, and provides an opportunity to add documentation. 
+
 
 ## Rule Details
 
@@ -34,8 +35,8 @@ class foo {
 	}
 }
 
-?>
 ```
+
 
 The following patterns are not considered warnings:
 
@@ -81,8 +82,6 @@ class foo2 {
 	}
 }
 
-
-?>
 ```
 
 

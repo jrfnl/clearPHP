@@ -16,8 +16,8 @@ class a { /**/ }
 
 class b extends a { /**/ }
 
-?>
 ```
+
 
 The following code is considered legit : 
 
@@ -25,8 +25,9 @@ The following code is considered legit :
 <?php
 
 class a { /**/ }
-?>
+
 ```
+
 
 Another file : 
 
@@ -35,7 +36,6 @@ Another file :
 
 class b extends a { /**/ }
 
-?>
 ```
 ## When Not To Use It
 

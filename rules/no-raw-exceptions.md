@@ -18,8 +18,9 @@ try {
 	// Catch all
 }
 
-?>
 ```
+
+
 Exceptions may be grouped for catch with an extra level of inheritance : 
 
 ```php
@@ -47,8 +48,8 @@ try {
 	// do not process month exceptions
 }
 
-?>
 ```
+
 
 Exceptions may also be nested : by throwing a new exception that include the previous one, both messages will be carried to the next `try...catch`. 
 
@@ -64,7 +65,6 @@ try {
 	throw new JanuaryException('Week day exception caught in January', null, $e); 
 }
 
-?>
 ```
 
 Last, there are already 13 exceptions predefined in SPL extension : 
@@ -108,8 +108,8 @@ try {
 	// Catch all
 }
 
-?>
 ```
+
 
 The following pattern is considered legit:
 
@@ -130,7 +130,6 @@ class MyException extends \DomainException {}
 
 class MySpecialException extends \Exception {}
 
-?>
 ```
 
 <!--

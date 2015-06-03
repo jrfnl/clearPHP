@@ -15,12 +15,12 @@ try {
 	process($e->getMessage());
 }
 
-?>
 ```
 
 The `catch` variable, here `$e`, will overwrite any already existing variable, if an Exception is emitted. 
 
 It is recommended to avoid overwriting variables with a catch block.
+
 
 ## Rule Details
 
@@ -42,7 +42,5 @@ try {
 	process($f->getMessage());
 }
 
-
-?>
 ```
 

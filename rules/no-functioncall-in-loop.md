@@ -11,7 +11,6 @@ for($i = 0; $i < count($x); $i++) {
 	// doSomething with $i
 }
 	
-?>
 ```
 In the above statement, `$i < count($x)` is the terminal clause. It will be called after each iteration to check if the loop shall continue. Each time, it will count the number of elements in `$x`, even if this variable hasn't been changed. Calling `count($x)` may be saved by processing it before the loop, then only checking `$i` against a static value. 
 
@@ -24,7 +23,6 @@ for($i = 0; $i < $count; $i++) {
 	// doSomething with $i
 }
 	
-?>
 ```
 This second code will do the same as the first, but speed will be dramatically increased. 
 
@@ -50,7 +48,6 @@ for($i = 0; $i < $count; $i++) {
 	$total += $i * $a;
 }
 	
-?>
 ```
 
 The following pattern is considered legit:
@@ -65,6 +62,5 @@ for($i = 0; $i < count($j); $i++) {
 	// doSomething with $i and $j
 }
 	
-?>
 ```
 

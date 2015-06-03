@@ -23,7 +23,6 @@ class foo {
 $bar = new foo();
 $bar->usedMethod();
 
-?>
 ```
 
 ## When Not To Use It

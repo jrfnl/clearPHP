@@ -7,7 +7,7 @@ PHP makes a effort at simplifying the programmer's life by automatically casting
 <?php
 $x = 0;
 if ($x == false) { /* doSomething */ }
-?>
+
 ```
 ## Frequent Error
 
@@ -17,7 +17,7 @@ Here, equaling `0` to `false` seems quite natural. Under the hood, PHP does turn
 <?php
 $x = strpos('abc', 'a');
 if ($x == false) { /* process error */ } else { /* process finding */}
-?>
+
 ```
 Things gets a little more confusing when some information is carried by the type of the value. Here, `strpos` will return `false` if it can't find the needle (`'a'`) in the haystack (`'abc'`). But it will also return `0` if it finds the needle in the first position, which is indexed with 0. 
 
@@ -29,7 +29,7 @@ The `==` and `!=` are also a weakness when dealing with passwords. Usually, pass
 <?php
 echo hash('ripemd128','315655854',false);
 // 0e251331818775808475952406672980
-?>
+
 ```
 
 When the hash value starts with a `0e`, and is compared using `==` and `!=`, then PHP will first convert the operands to integers before comparing them. This will turn both operands to 0, and even if the strings are not identical, the comparison will conclude so.
@@ -39,7 +39,7 @@ When the hash value starts with a `0e`, and is compared using `==` and `!=`, the
 if (hash('ripemd128','315655854',false) == "0e123") {
 	print "Matched\n";
 };
-?>
+
 ```
 
 ## Recommendations
@@ -93,7 +93,6 @@ if (strrpos('abc', 'a') == 2) {}
 // weak and implicit comparisons
 if ($res = preg_match('/abc/', $a)) {}
 
-?>
 ```
 
 The following pattern are considered legit:
@@ -108,7 +107,6 @@ if (strripos('abc', 'a') !== true) {}
 // explicit comparison and assignation
 if (($res = readdir('.')) === false) {}
 
-?>
 ```
 
 

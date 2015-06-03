@@ -26,7 +26,6 @@ if (php_sapi_name() == 'cli') {
 	/**/
 }
 
-?>
 ```
 
 The following patterns is considered valid :
@@ -38,7 +37,6 @@ if (PHP_SAPI == 'cli') {
 	/**/
 }
 
-?>
 ```
 
 

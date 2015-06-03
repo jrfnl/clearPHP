@@ -8,7 +8,6 @@ Concatenations double the amount of memory needed : it takes the original string
 
 echo 'a' . $b . 'c';
 
-?>
 ```
 
 In this example, two string literals and the variable `$b` are collected into one longer string, then echoed. 
@@ -20,7 +19,6 @@ In fact, `echo` do accept an unlimited number for arguments. It will display the
 
 echo 'a' , $b , 'c';
 
-?>
 ```
 At first, the difference is not obvious, as the concatenation operators dot `.` are simply turned into argument separators comma `,`. They also look alike very much. 
 
@@ -39,7 +37,6 @@ $text = file_get_contents('someFile.txt');
 
 file_put_contents('newFile.txt', $text . "\n");
 
-?>
 ```
 
 This last concatenation will suddenly double the consumption of memory. 
@@ -73,7 +70,6 @@ function my_file_put_contents($filename, ...$text) {
     fclose($fp);
 }
 
-?>
 ```
 It is recommended to avoid useless concatenations anytime the volume of the manipulated data is significant (over a few kb)
 
@@ -104,8 +100,6 @@ print "$c\n";     // use echo and ,
 file_put_contents($file, $data . $more);
 fwrite($filePointer, $data . $more);
 
-?>
-```
 ```
 
 

@@ -13,7 +13,6 @@ function x($a, $b, $c = 2) { return $a + $b; }
 x(); // missing arguments 0 and 1
 x('a'); // missing arguments 1 
 
-?>
 ```
 
 It is recommended to provide an acceptable number of arguments, depending on default values in the function signature.
@@ -40,7 +39,6 @@ x('a', 'b', 'c', 'd'); // arguments 4 will be ignore
 
 z(); // not enough arguments
 
-?>
 ```
 
 The following pattern are considered legit:
@@ -58,7 +56,6 @@ y('a', 'b', 'c', 'd');
 
 z(1, 2, 3, 4); 
 
-?>
 ```
 
 

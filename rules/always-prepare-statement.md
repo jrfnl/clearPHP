@@ -21,7 +21,6 @@ $stmt->execute();
 // Fetch some result
 $stmt->bind_result($result);
 
-?>
 ```
 In this process, the SQL server is protected at two levels : first, the query is compiled with only known data. This makes it easy to review, and impossible to tamper with. Secondly, incoming data gets a format. The server will handle them in a separate memory space than the query, reducing interferences to null.
 
@@ -49,7 +48,6 @@ $sqlQuery = 'SELECT column FROM table WHERE id = ' . $sqlite->escapeString($id);
 // concatenating with bad sanitization
 $sqlQuery = 'SELECT column FROM table WHERE id = ' . addslashes($id);
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -68,7 +66,6 @@ $sqlQuery = 'SELECT column FROM table WHERE id = 10';
 $ids = [1, 3, 5];
 $sqlQuery = 'SELECT column FROM table WHERE id in (' .  join(',', $ids).')';
 
-?>
 ```
 
 

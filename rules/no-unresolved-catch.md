@@ -18,7 +18,6 @@ try {
 
 } 
 
-?>
 ```
 In the examples above, the only safe code is the first `catch`. It uses an absolute namespaced class, that, indeed, exists. 
 
@@ -49,7 +48,6 @@ try {
 
 } 
 
-?>
 ```
 
 ## Further Readings

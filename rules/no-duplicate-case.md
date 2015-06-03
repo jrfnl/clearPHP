@@ -22,7 +22,7 @@ switch($a) {
 		break 1;
 	default:	
 }
-?>
+
 ```
 
 The following patterns are considered OK :
@@ -48,6 +48,5 @@ switch($a) {
 		break 1;
 	default:	
 }
-?>
-```
 
+```

@@ -16,7 +16,6 @@ $conn_id = ftp_connect($ftp_server);
 // authentication
 ftp_login($conn_id, $ftp_user, $ftp_pass); 
 
-?>
 ```
 
 In this example, `$ftp_server`, `$ftp_user` and `$ftp_pass` are all pieces of information that should be stored outside the application and not hardcoded in the script itself. 
@@ -57,8 +56,6 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
 }
 
-
-?>
 ```
 
 The following pattern is considered OK :
@@ -72,8 +69,6 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
-
-?>
 
 ```
 

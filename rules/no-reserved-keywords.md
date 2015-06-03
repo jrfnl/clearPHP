@@ -20,7 +20,7 @@ class Null {
 		$this->list(1,2,3);
 	}
 }
-?>
+
 ```
 
 In this example, `Null` is used as a class name, allowing `$var = new Null();`. `PHP` will compile and run such code. However, readability is decreased.
@@ -44,15 +44,16 @@ $xor = 1;
 class Null {}
 
 define('class', true);
-?>
+
 ```
+
 
 The following patterns are not considered warnings:
 
 ```php
 <?php
 $a = [ "class" => "or" ];
-?>
+
 ```
 
 ## When Not To Use It

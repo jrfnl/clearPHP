@@ -13,7 +13,6 @@ Useless flow control are valid flow control that have no impact on the code.
 		// process this special case
 	}
 
-?>
 ```
 Useless flow control are often the result of a typo, like the first case above : the extra semi-colon should be removed. Or, it may be forgotten situations that need more writing. 
 
@@ -37,7 +36,6 @@ The following code is considered a warning:
 	for($i = 1; $i < 10000; $i++) {
 		
 	}
-?>
 ```
 
 
@@ -58,6 +56,5 @@ switch($x) {
 		break; 
 }
 
-?>
 ```
 

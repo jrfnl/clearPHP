@@ -23,8 +23,6 @@ class x {
 	}
 }
 
-
-?>
 ```
 It is recommended to omit return in those methods, unless for short circuiting it.
 
@@ -53,7 +51,6 @@ class exampleClass {
 	}
 }
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -74,8 +71,6 @@ class x {
 		// implicit return (aka none)
 	}
 }
-?>
+
 ```
-
-
 

@@ -36,7 +36,6 @@ class UnknownSoldier extends Human {
 	}
 }
 
-?>
 ```
 
 It seems that the common class only holds the `$name` property, while child classes has various ways to set the name. Child classes have their own usage of the `$name` (see `__toString()`). As it is, `$name` act as a hard link between the classes. 
@@ -64,7 +63,6 @@ class Vehicle {
 	protected $unusedLocally = 0;
 }
 
-?>
 ```
 
 

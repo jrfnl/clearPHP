@@ -19,7 +19,7 @@ class Dog {
 		}
 	}
 }
-?>
+
 ```
 
 Default values are easier to find when they are set a declaration time, instead than in the middle of the code. This also means less code written in the constructor. 
@@ -47,8 +47,8 @@ class x {
 	}
 }
 
-?>
 ```
+
 
 The following are considered legit : 
 
@@ -73,7 +73,6 @@ class x {
 	}
 }
 
-?>
 ```
 
 

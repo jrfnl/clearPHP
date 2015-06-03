@@ -23,7 +23,7 @@ class foo {
 		$this->assignedOnly = 2;
 	}
 }
-?>
+
 ```
 
 The following patterns are not considered warnings:

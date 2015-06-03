@@ -17,7 +17,6 @@ function x(A $a) { /* some Code */ }
 
 x(new b());
 
-?>
 ```
 
 The following are OK : 
@@ -29,7 +28,6 @@ function x(A $a) { /* some Code */ }
 
 x(new a());
 
-?>
 ```
 
 

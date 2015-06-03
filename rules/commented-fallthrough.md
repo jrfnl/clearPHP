@@ -29,7 +29,7 @@ switch (foo) {
     default:
         doSomethingForDefault();
 }
-?>
+
 ```
 
 The following code is considered legit : 
@@ -52,6 +52,5 @@ switch (foo) {
     default:
         doSomethingForDefault();
 }
-?>
-```
 
+```

@@ -10,8 +10,9 @@ foreach ($source as $key => $element) {
   // doSomething with the element
 }
 
-?>
 ```
+
+
 Older ways of building such loops include the usage of the `for` loop, and the `while...each` loop. 
 
 ```php
@@ -27,7 +28,6 @@ for($i = 0 ; $i < $count; $i++) {
   // doSomething with the $source[$i]	
 }
 
-?>
 ```
 
 While the two alternatives still available, and may even be faster in edge cases, it is recommended to always use `foreach`. 
@@ -54,8 +54,8 @@ for($i = 0 ; $i < $count; $i++) {
   // doSomething with the $source[$i]	
 }
 	
-?>
 ```
+
 
 The following snippets are considered legit:
 
@@ -72,8 +72,6 @@ for ($i =0; $i < $nb; $i++) {
 while($row = $pdo->fetchRow()) {
   // doSomething with the element	
 }
-
-?>
 ```
 
 

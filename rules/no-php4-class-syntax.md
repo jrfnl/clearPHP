@@ -14,7 +14,7 @@ class x {
 		$this->init = true;
 	}
 }
-?>
+
 ```
 
 In PHP 5, constructors are now called `__construct` and if this function is not defined, if the class has no parent and if the method is not the last element of the current namespace, PHP will try to use the function that bear the class's name instead. This is meant to ensure backward compatibility. 
@@ -48,8 +48,6 @@ namespace y {
 	new x();
 }
 
-
-?>
 ```
 
 In PHP 4, properties were declared using the `var` keyword. This keyword is still available, and is a synonym of `public`. However, it should be replaced by `public` or another visibility. 
@@ -67,7 +65,6 @@ class bar {
 	public $foor = 1;
 }
 
-?>
 ```
 
 It is recommended to avoid PHP 4 class syntax, as it has been replaced by new and more powerful syntax. It may also be obsolete and dropped at some point in the future
@@ -102,7 +99,6 @@ namespace {
 }
 
 
-
 namespace Foo {
 	class Bar {
    		public function Bar() {
@@ -112,7 +108,6 @@ namespace Foo {
 	}
 }
 
-?>
 ```
 
 
@@ -127,8 +122,6 @@ class PHP5_style {
 	function __construct() { /**/ } 
 }
 
-
-?>
 ```
 
 

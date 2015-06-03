@@ -14,8 +14,10 @@ if (!$link) {
 echo 'Success... ' . mysqli_get_host_info($link) . "\n";
 
 mysqli_close($link);
-?>
+
 ```
+
+
 And the OOP Style : 
 
 ```php
@@ -30,7 +32,7 @@ try {
 echo 'Success... ' . $db->host_info . "\n";
 
 $db->close();
-?>
+
 ```
 
 One of the main difference between the two styles, is the handling of the resource. Procedural style requires the call of an initialization function (here, `mysqli_connect`), which returns a resource. Resources are a old object of the PHP world, which are needed but can't really do much on their own. They are always requested as the first argument of the related family of functions, until they are closed with function like `mysqli_close`. 
@@ -48,9 +50,6 @@ The following are considered a warning :
 ```php
 <?php
 
-
-
-?>
 ```
 
 The following are OK : 
@@ -61,8 +60,6 @@ The following are OK :
 define('l', 3, true);
 define('m', $x, true);
 define('n', array(1,2,3), true); // before PHP 5.6
-
-?>
 ```
 
 ## When Not To Use It

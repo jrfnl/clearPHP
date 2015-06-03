@@ -30,7 +30,7 @@ The following patterns are considered warnings:
      * @return string
      */
     function foo($x) { return magic($x); }
-?>
+
 ```
 ## When Not To Use It
 

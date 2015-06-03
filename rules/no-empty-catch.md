@@ -22,7 +22,6 @@ try {
 	
 }
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -44,7 +43,6 @@ try {
 	$this->db->rollback(); 
 }
 
-?>
 ```
 
 

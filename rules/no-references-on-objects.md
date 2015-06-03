@@ -22,7 +22,6 @@ print $o->property; // 2
 call_user_func_array('f', array($o));
 call_user_func_array('f', array(&$o));
 
-?>
 ```
 
 This would be totally different for scalar values, which depends on `&` to be passed by value or by reference. 
@@ -47,6 +46,5 @@ foreach($arrayOfObject as &$object) {
 	$object->alter();
 }
 
-?>
 ```
 

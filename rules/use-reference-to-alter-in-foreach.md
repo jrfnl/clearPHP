@@ -22,9 +22,8 @@ foreach($numbers as $id => $number) {
 	$numbers[$id] *= 2;
 }
 
-// 
-?>
 ```
+
 
 ## Rule Details
 
@@ -38,8 +37,8 @@ foreach($source as $id => $element) {
 	$source[$id] = processElement($element);
 }
 
-?>
 ```
+
 
 The following pattern is considered OK :
 
@@ -56,6 +55,5 @@ foreach($source as $id => &$element) {
 	$element = processElement($element, $source[$i]);
 }
 
-?>
 ```
 

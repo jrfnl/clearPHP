@@ -10,7 +10,6 @@ function x() { // function block
 	return ($a);
 }
 
-?>
 ```
 
 Instructions may be grouped together with the  curly braces `{ ...  }`, without any usage of flow control instructions. 
@@ -25,7 +24,6 @@ Instructions may be grouped together with the  curly braces `{ ...  }`, without 
 	$a *= 2;
 }
 
-?>
 ```
 Instructions grouping is done with new lines, and without the overhead of curly braces. When a lone block is found in the code, it is the left over of some instruction that was removed, just like in the example above.
 
@@ -40,8 +38,8 @@ This is considered a warning :
 	($a++);
 }
 
-?>
 ```
+
 
 Blocks are considered legit code when used with flow control instructions or structure declarations : 
 
@@ -54,6 +52,5 @@ function x() {
 	}
 }
 
-?>
 ```
 

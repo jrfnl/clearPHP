@@ -10,7 +10,6 @@ $php = 'echo "Hello world";';
 eval($php);
 // Displays Hello world
 
-?>
 ```
 
 `eval` has two main drawbacks : 
@@ -37,7 +36,6 @@ The following are considered warning :
 	
 	$newfunc = create_function('$a,$b', 'return "ln($a) + ln($b) = " . log($a * $b);');
 
-?>
 ```
 
 The following are considered legit : 
@@ -49,7 +47,6 @@ The following are considered legit :
 		return "ln($a) + ln($b) = " . log($a * $b)
 	};
 
-?>
 ```
 
 ## When Not To Use It

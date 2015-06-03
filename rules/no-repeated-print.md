@@ -12,7 +12,6 @@ Repeated calls to `print` or `echo`, should be merged into one call with concate
 	print "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> \n";
 	print "  <title>Title</title>\n";
 	/* ... */
-?>
 ```
 
 This should be written as : 
@@ -26,7 +25,6 @@ This should be written as :
 	      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> \n".
 	      "  <title>Title</title>\n";
 	/* ... */
-?>
 ```
 
 Generally speaking, it is recommended to accumulate all information in a variable, then output it with `echo` or `print` in one call rather than calling repeatedly those functions. 
@@ -46,7 +44,6 @@ The following pattern is considered warnings:
 	print "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> \n";
 	print "  <title>$title</title>\n";
 	/* ... */
-?>
 ```
 
 The following pattern are considered legit:
@@ -60,7 +57,6 @@ The following pattern are considered legit:
 	      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> \n".
 	      "  <title>Title</title>\n";
 	/* ... */
-?>
 ```
 
 ```php
@@ -74,7 +70,6 @@ The following pattern are considered legit:
   <title>$title</title>
 HTML;
 	/* ... */
-?>
-```
 
+```
 

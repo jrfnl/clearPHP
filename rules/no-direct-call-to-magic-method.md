@@ -21,7 +21,7 @@ class x {
 
 class y extends x {
 	function __toString() { return parent::__toString().'y'; }
-?>
+
 ```
 
 ## Rule Details
@@ -54,11 +54,9 @@ echo $object->__sleep();
 // use clone operator directly
 $y = $object->__clone();
 
-?>
 ```
 
 The following patterns are considered legit:
-
 
 ```php
 <?php
@@ -70,9 +68,6 @@ class x {
 
 class y extends x {
 	function __toString() { return parent::__toString().'y'; }
-?>
-
-```
 
 ```
 

@@ -13,7 +13,6 @@ echo "Hello $a";
 echo "Hello world";
 echo 'Hello world';
 
-?>
 ```
 
 `"` and HEREDOC should only be used when there are dynamic values within the literal, or the extra escape sequences that `"` support, such as `\n` for new lines or the single quote. This will save PHP the task of checking the string for any variables. 
@@ -32,7 +31,6 @@ This Heredoc has no variable part.
 
 HEREDOC;
 
-?>
 ```
 
 
@@ -49,7 +47,6 @@ This Heredoc has $variable part.
 
 HEREDOC;
 
-?>
 ```
 
 

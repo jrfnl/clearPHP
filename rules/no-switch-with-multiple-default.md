@@ -28,7 +28,7 @@ switch (foo) {
         doDefault();
         break 1;
 }
-?>
+
 ```
 
 The following patterns are considered warnings:
@@ -48,7 +48,6 @@ switch (foo) {
         doDefault();
         break 1;
 }
-?>
-```
 
+```
 

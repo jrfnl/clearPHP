@@ -35,7 +35,6 @@ $varByReference = 1;
 $varByValue = 2;
 foo($varByReference, $varByValue);
 
-?>
 ```
 
 With a positive view, `unset` may be used to unset local variables in a function, global variables in the global scope, object properties and array index. 
@@ -68,7 +67,6 @@ $varByReference = 1;
 $varByValue = 2;
 foo($varByReference, $varByValue);
 
-?>
 ```
 
 The following pattern is considered legit:
@@ -92,7 +90,6 @@ function foo() {
 	}
 }
 
-?>
 ```
 
 

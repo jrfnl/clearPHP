@@ -10,7 +10,6 @@ function init($uri, $login, $pass) {
 	$this->log = new Mysqli($uri, $user, $pass);
 }
 
-?>
 ```
 
 There is a situation where arguments are both unused and necessary : when overloading a method in a class hierarchy. The abstract class may have defined a list of arguments, that are actually unnecessary to the child class, but compulsory because of the abstract parent class. In that situation, argument will not be used. 
@@ -34,7 +33,6 @@ class logMysql extends log {
 		$this->log = new Mysqli($uri, $user, $pass);	}
 }
 
-?>
 ```
 
 Argument should always be used in a function, even if conditionally.
@@ -60,8 +58,8 @@ function x2($a, $b = 1, $c = 2) {
 	}
 }
 
-?>
 ```
+
 
 ## Rule Details
 
@@ -80,7 +78,6 @@ By default, unused arguments cause warnings:
 function x ($foo) {
     return 5;
 }
-?>
 ```
 
 The following patterns are not considered warnings:

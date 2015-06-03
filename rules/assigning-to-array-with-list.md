@@ -12,7 +12,7 @@ list($a[0], $a[1], $a[2]) = $info;
 
 var_dump($a);
 
-?>
+
 ```
 The values will be assigned to the right index in the array, but the former will be built from right to left, and not, as it is expected most of the time, from left to right. 
 

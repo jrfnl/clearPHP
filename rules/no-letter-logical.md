@@ -19,7 +19,7 @@ $e = false || true;
 $f = false or true;
 
 var_dump($e, $f);
-?>
+
 ```
 
 In the result `$e` is `true`, `$f` is `false`. Most of the time, expected precedence is the one associated with the logical operators `&&`, `||`, `^`. It is recommended to use them. 
@@ -33,7 +33,6 @@ This rule require that logical operators uses `&&`, `||`, `^`, instead of `and`,
 
 $a = 1 and 2 or 3 xor 4;
 
-?>
 ```
 
 The following patterns are considered OK :
@@ -42,8 +41,6 @@ The following patterns are considered OK :
 <?php
 
 $a = 1 && 2 || 3 ^ 4;
-
-?>
 
 ```
 ## When Not To Use It

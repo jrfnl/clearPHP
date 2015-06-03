@@ -12,7 +12,6 @@ function y() {
 	return $x++; // ++ is unreachable
 }
 
-?>
 ```
 
 Unused code happens when structures are defined but never used. For example, a function may be defined, but is never called. Such function will use coding space, require compilation and may also be included in extra tasks like Unit tests or code review. But if it isn't used, all that is wasted. 
@@ -56,8 +55,6 @@ function w() {
 	$a++ // $a++ can't be reached
 }
 
-
-?>
 ```
 
 

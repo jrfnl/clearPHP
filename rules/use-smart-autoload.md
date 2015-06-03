@@ -12,7 +12,6 @@ function __autoload($classname) {
     include($filename);
 }
 
-?>
 ```
 This way, various libraries may cohabit peacefully. However, the function `__autoload` also introduces competition for libraries, that needed to provide their own support for the autoloading. 
 
@@ -36,7 +35,6 @@ function __autoload($classname) {
 	}
 }
 
-?>
 ```
 
 The following are considered legit : 
@@ -65,7 +63,6 @@ spl_autoload_register(function ($class) {
 	}
 });
 
-?>
 ```
 
 ## When Not To Use It

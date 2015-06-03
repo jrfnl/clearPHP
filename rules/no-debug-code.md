@@ -13,7 +13,7 @@ if (!is_object($dbconnexion)) {
 	debug($dbconnexion);
 	die();
 }
-?>
+
 ```
 
 It is recommended to remove all mention to those tools in production code, so as to avoid situations where they are really used (and are in production). 
@@ -30,7 +30,6 @@ print 'debug';
 require '/kint/Kint.class.php';
 Kint::dump( $_SERVER );
 
-?>
 ```
 
 

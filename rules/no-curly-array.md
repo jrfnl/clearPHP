@@ -13,7 +13,6 @@ $x{1}[1]; // 3
 $x[1]{2}; // 4
 $x{1}{3}; // 5
 
-?>
 ```
 Curly brackets `{  }` are possible, but are almost never used. It is a good practice that is recommended.
 
@@ -28,8 +27,8 @@ $x{1}[1];
 $x[1]{2}; 
 $x{1}{3}; 
 
-?>
 ```
+
 
 The following is OK : 
 
@@ -38,7 +37,6 @@ The following is OK :
 
 $x[1][0];
 
-?>
 ```
 
 

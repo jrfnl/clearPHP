@@ -32,7 +32,6 @@ if ($z === 4) {
 print "y is 3!\n";
 return;
 
-?>
 ```
 
 

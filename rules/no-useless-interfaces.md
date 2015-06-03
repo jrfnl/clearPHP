@@ -17,7 +17,7 @@ class Square implements Area {
 		return $this->side ** 2;
 	}
 }
-?>
+
 ```
 
 Interfaces may also be used in `instanceof` structures and `Typehint`, to enforce that variables or arguments are correct objects, providing public access to a certain set of methods. 
@@ -36,7 +36,6 @@ function getRadiusOfEquivalentCirle(Area $shape) {
 	return sqrt($shape->getArea()/M_PI);
 }
 
-?>
 ```
 
 When interfaces are only used to define classes (or other interfaces), they may actually be removed once the class is coded : they are used as guideline to build the final class. As such, they are useless interfaces.
@@ -79,8 +78,8 @@ class Square implements Area {
 
 // Do not confuse useless interface with unused interface (defined but never used by a class or an interface
 
-?>
 ```
+
 
 The following are considered legit : 
 
@@ -107,7 +106,6 @@ function getAreaOrSuperArea(Area $shape) {
 	}
 }
 
-?>
 ```
 
 

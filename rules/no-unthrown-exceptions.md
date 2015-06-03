@@ -19,7 +19,6 @@ if ($b === 0) {
 
 print $a / $b."\n";
 
-?>
 ```
 It is recommended to remove any exception that is not thrown at least once in the rest of the application.
 

@@ -23,8 +23,8 @@ class x {
 	}
 }
 
-?>
 ```
+
 
 The following code is considered legit : 
 
@@ -38,8 +38,6 @@ class x {
 	}
 }
 
-
-?>
 ```
 ## When Not To Use It
 

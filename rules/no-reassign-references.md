@@ -12,8 +12,8 @@ $b .= 'b';
 
 print $a; // displays ab
 
-?>
 ```
+
 
 On the other hand, this example, adapted from the PHP manual, will not work as expected. 
 
@@ -29,7 +29,7 @@ $a = 'a';
 foo($a); 
 
 print $a; // display a, not b
-?>
+
 ```
 
 Here, a reference is indeed created at functioncall time. `$b` is a reference to the same content than the original variable `$a`. However, assigning a new reference to `$b` will only change the reference in `$b` : it will not change the content of `$b`. This way, the new reference is lost, and `$a` stays unchanged.
@@ -48,7 +48,7 @@ $a = 'a';
 foo($a); 
 
 print $a; // display b
-?>
+
 ```
 
 It is recommended to avoid reassigning references in a function's argument, and only change their content. 
@@ -66,8 +66,8 @@ function foo(&$b)
    $b = &$c;
 }
 
-?>
 ```
+
 
 The following patterns are not considered warnings:
 
@@ -86,7 +86,6 @@ function bar(&$b)
    return &$c;
 }
 
-?>
 ```
 
 

@@ -12,7 +12,6 @@ function x($a, $b, $c = 2) { return $a + $b; }
 
 x(1, 2, 3, 4, 5); // two arguments too many
 
-?>
 ```
 
 It is recommended to provide only the needed arguments when calling a method or a function.
@@ -34,7 +33,6 @@ function z($a, ...$b) { 	return array_sum($b) + $a; }
 
 x(1, 2, 3, 4); // extra argument 4
 
-?>
 ```
 
 The following pattern are considered legit:
@@ -52,7 +50,6 @@ y();
 
 z(1, 2, 3, 4); 
 
-?>
 ```
 
 

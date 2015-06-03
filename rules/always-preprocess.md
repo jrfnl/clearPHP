@@ -12,7 +12,6 @@ $seconds = 24 * 60 * 60;
 
 $seconds = 86400;
 
-?>
 ```
 
 The first initialization is based on literals multiplications, and will waste a few cycles to actually start the script. 
@@ -38,7 +37,6 @@ $x[] = 'a';
 $x[] = 'b';
 // $x = ['a', 'b'];
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -53,7 +51,6 @@ $s = 'Today is year '.date('Y');
 // this is constant scalar expression
 const someConstant = class::constante + 1;
 
-?>
 ```
 
 ## When Not To Use It

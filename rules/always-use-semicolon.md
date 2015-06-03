@@ -9,7 +9,6 @@ PHP uses semicolon `;` to make distinction between two sequential instructions.
 $a = 'a';
 echo $a;
 
-?>
 ```
 
 There are a few situations where semicolon are not required, as another token will be used as instruction ending. For example : 
@@ -33,7 +32,6 @@ echo
 print 'b';
 // This will display b1
 
-?>
 ```
 `continue` and `break` used to accept no value (that will default to 1) or the result of the next expression (up to PHP 5.4) : 
 
@@ -48,7 +46,6 @@ for ( $i = 0; $i < 5; ++$i )
     // surprising result
 }
 
-?>
 ```
 There are quite some instructions that may overflow to the next line, like all operators, and : 
 * all operators (math, comparison, logical...)
@@ -67,7 +64,6 @@ for ( $i = 0; $i < 5; ++$i ) { }; // useless semicolon
 
 class x { }; // useless semicolon
 
-?>
 ```
 
 It is recommended to make sure that all required semicolon are always set, even if they are not compulsory.
@@ -87,7 +83,7 @@ The following code is not considered warnings:
 <?php
 include 
 	'/some/file.php';
-?>
+
 ```
 
 

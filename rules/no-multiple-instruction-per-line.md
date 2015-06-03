@@ -12,8 +12,9 @@ class x {
 	const c = 3;
 }
 
-?>
 ```
+
+
 PHP also allows merging several operations in one, when they share some common meaning or operator.
 
 ```php
@@ -23,7 +24,6 @@ class x {
 	const a = 1, b = 2, c = 3;
 }
 
-?>
 ```
 
 However, lining several instructions on the same line will break the readability of the code, and make it harder to spot special situations. 
@@ -41,7 +41,6 @@ switch ($x) {
 	default : 
 }
 
-?>
 ```
 
 It is recommended to make sure one instruction on one line, or use the merged version of the instruction. 
@@ -57,7 +56,6 @@ $a = 'a'; $a .= 'bc'; $a .= 'c';
 
 if ($a == 0) {if ($b) {$c ^= $d; $e ^= $f;} else {$g = $h; $i = $j; $k = $l; $m = $n;}}
 
-?>
 ```
 
 This code is considered valid : 
@@ -75,8 +73,8 @@ class x {
 	const a = 1, b = 2, c = 3;
 }
 
-?>
 ```
+
 
 ```php
 <?php
@@ -89,8 +87,8 @@ $a .= 'c';
 
 $a = 'a' . $bc . 'c';
 
-?>
 ```
+
 
 ```php
 <?php
@@ -107,7 +105,6 @@ $a = 'a' . $bc . 'c';
 		}
 	}
 
-?>
 ```
 
 

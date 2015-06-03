@@ -10,8 +10,9 @@ IF (OK_FOR_CONSTANTS) {
 } ELSE {
 	ECHO "Result : ";
 }
-?>
+
 ```
+
 
 ## Rule Details
 
@@ -24,8 +25,9 @@ This is incorrect :
 DO {
 	print "Result : ";
 } While ($x AnD $y === FALSE);
-?>
+
 ```
+
 
 This is correct code : 
 
@@ -34,9 +36,7 @@ This is correct code :
 do {
 	print "Result : ";
 } while ($x and $y === FALSE);
-?>
+
 ```
-
-
 
 

@@ -22,7 +22,7 @@ if (is_long($value)) {
 if (is_integer($value)) { 
 	// DoSomething()
 }
-?>
+
 ```
 
 
@@ -35,7 +35,6 @@ if (is_int($value)) {
 	// DoSomething()
 }
 
-?>
 ```
 
 

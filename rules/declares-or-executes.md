@@ -21,7 +21,6 @@ if (x::staticProperty === null) {
 	$main_variable = new x();
 }
 
-?>
 ```
 
 The following code is considered legit : 
@@ -39,7 +38,6 @@ if (defined('APP_CONFIGURATION')) {
 	class x { /**/ }
 }
 
-?>
 ```
 
 

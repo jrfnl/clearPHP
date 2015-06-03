@@ -11,10 +11,11 @@ In PHP, `* 1` and `+ 0` have the side effect of type casting the value to intege
 $a = "10";
 $a += 0; // $a now is 10 (the integer), not 10 (the string)
 
-?>
 ```
 
+
 It is recommended to remove identity math operations, or to change them explicitly to a typecast.
+
 
 ## Rule Details
 
@@ -50,7 +51,6 @@ $a **= 1;
 $a = 1 ** $b;
 $a = 0 ** $b;
 
-?>
 ```
 
 

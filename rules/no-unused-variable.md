@@ -16,7 +16,7 @@ The following patterns are considered warnings:
 ```php
 <?php
 $x = 10; 
-?>
+
 ```
 
 The following patterns are not considered warnings:
@@ -25,7 +25,7 @@ The following patterns are not considered warnings:
 <?php
 $x = 10;
 $x++;
-?>
+
 ```
 
 ## When Not To Use It

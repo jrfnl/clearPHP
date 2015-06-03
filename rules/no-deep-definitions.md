@@ -19,7 +19,6 @@ usualDefinition();
 // only possible after calling the previous
 deepDefinedFunction();
 
-?>
 ```
 
 Deep definition will create a structure in the upper level of the current namespace (may it be global or specific namespace), and still has to provide a unique name to it. However, being buried within the code, they are more difficult to find. 
@@ -56,7 +55,6 @@ print_r($tmp);
 
 print_r(debug_backtrace());
 
-?>
 ```
 
 ## Options

@@ -25,7 +25,6 @@ $anArray[] = 'b';
 
 functionCall($undefinedVariable);
 
-?>
 ```
 
 
@@ -46,6 +45,5 @@ $anArray[] = 'b';
 $undefinedVariable = null;
 functionCall($undefinedVariable);
 
-?>
 ```
 

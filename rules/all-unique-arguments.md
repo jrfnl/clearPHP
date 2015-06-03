@@ -12,7 +12,7 @@ function f($a, $a, $a) {
 
 f('b', 'c', 'd'); // prints 'd'
 
-?>
+
 ```
 The incoming values are assigned to the arguments in the same order as in the method definition: the last one overwrites the first. 
 
@@ -25,7 +25,6 @@ function f($a, $b, $a) {
 
 f('e', 'f', 'g'); // prints 'fg'
 
-?>
 ```
 
 It is recommended to always use distinct names for argument variables.
@@ -49,7 +48,6 @@ function f(Stdclass $a, $a = 2) { /**/ }
 
 function f(Stdclass $a, &$a) { /**/ }
 
-?>
 ```
 
 The following patterns are not considered warnings:
@@ -59,8 +57,11 @@ The following patterns are not considered warnings:
 
 function f($a, $b, $c) { /**/ }
 
-?>
 ```
+
+
 ## When Not To Use It
+
 Always use this.
+
 

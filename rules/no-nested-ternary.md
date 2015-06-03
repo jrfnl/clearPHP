@@ -6,24 +6,22 @@ The ternary operator is a compact version of a `if then else` structure. It is v
 ```php
 <?php
 print 'Result : '.( $success ? 'transaction succeded' : 'transaction failed');
-?>
+
 ```
 Ternary operators may be nested. This degrades very quickly the readability of the code.
 
 ```php
 <?php
 print 'Result : '.( $success ? $christmas ? 'transaction success and you get a gift' : 'transaction success' : 'transaction failed');
-?>
+
 ```
 
 It must also be mentioned that ternary may not produce the expected result when nesting them. For example : 
 
 ```php
 <?php
-
 echo $foo ? 'a' : $bar ? 'b' : 'c';
 
-?>
 ```
 
 Here is the result for all values of `$foo` and `$bar` : 
@@ -52,7 +50,6 @@ $foo ?: $bar ? 'b' : 'c';
 
 $foo ?: $bar ?: 'c';
 
-?>
 ```
 
 The following code will is legit : 
@@ -71,6 +68,5 @@ if ($foo) {
 	$d = 'c';
 }
 
-?>
 ```
 

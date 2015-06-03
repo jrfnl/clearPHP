@@ -21,7 +21,6 @@ if (!user_login($user, $pass)) {
 	sleep(2);
 }
 
-?>
 ```
 
 ## When Not To Use It

@@ -13,8 +13,8 @@ if ($a == 1)
 	
 // now only $b was changed
 
-?>
 ```
+
 However, code tends to grow, and this convenience will be removed as soon as a second instruction needs to be added to the statement. Then, curly braces `{ }` are necessary in order to have all next instructions to be processed within the statement. 
 
 There are situations where the brackets will remove ambiguity : 
@@ -24,7 +24,6 @@ There are situations where the brackets will remove ambiguity :
 
 if ($a > 0 ) if ($a > 10) $b = 1; else $b = 2;
 
-?>
 ```
 
 In the code above, does the `else` apply to the first `if` or to the second `if` ? (Answer : The second). 
@@ -61,7 +60,6 @@ for ($i = 0; $i < 10; $i++)
 foreach($k as $l) 
 	$m = 4;
 	
-?>
 ```
 
 
@@ -94,6 +92,5 @@ foreach($k as $l) {
 	$m = 4;
 }
 
-?>
 ```
 

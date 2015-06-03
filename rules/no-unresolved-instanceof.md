@@ -14,7 +14,7 @@ $b = new B();
 var_dump($b instanceof A); // true
 var_dump($b instanceof B); // true
 var_dump($b instanceof C); // false
-?>
+
 ```
 In the example here, `C` doesn't exist. The operator doesn't tell the difference between `"C doesn't exist"` and `"$b is not of class C"`. No error is reported. 
 
@@ -36,7 +36,6 @@ $a instanceof ClassWithASpelllingMistake;
 
 $a instanceof ClassActuallyInAnotherNamespace;
 
-?>
 ```
 
 

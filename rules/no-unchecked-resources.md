@@ -12,7 +12,6 @@ fwrite($fp, date('r');
 
 fclose($fp);
 
-?>
 ```
 Receiving a resource after calling the creation function is never sure : resources may represent connections to remote servers, or have to meet certain conditions like when creating files.
 
@@ -30,7 +29,7 @@ if (!is_resource($fp)) {
 }
 
 // rest of the code ...
-?>
+
 ```
 
 Error situations usually returns a boolean, that makes it easy to check it with the function `is_resource`, or simply as a boolean check with `===`. 
@@ -71,8 +70,8 @@ $tmp = tmpfile();
 // usage
 fwrite($tmp, 'something');
 
-?>
 ```
+
 
 The following patterns are not considered warnings:
 
@@ -88,8 +87,8 @@ if (!is_resource($tmp)) { /* error */}
 // usage
 fwrite($tmp, 'something');
 
-?>
 ```
+
 
 ```php
 <?php
@@ -104,7 +103,6 @@ if (pspell_check($pspell_link, "testt")) {
     echo "Sorry, wrong spelling";
 }
 
-?>
 ```
 
 

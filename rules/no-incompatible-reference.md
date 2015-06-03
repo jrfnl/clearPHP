@@ -10,7 +10,6 @@ When calling a method or a function, the arguments passed by reference, and sign
 <?php
 
 parse_str($incomingString, 'string');
-?>
 ```
 
 PHP only check that functioncall are using valid type at execution time, if the definition of the method is not available at compile time (aka, the method is not native or not defined in the same file than call). 
@@ -21,7 +20,6 @@ PHP only check that functioncall are using valid type at execution time, if the 
 // definition file, to be included in the next code
 function foo(&$string) { /**/ }
 
-?>
 ```
 
 
@@ -30,7 +28,6 @@ function foo(&$string) { /**/ }
 
 foo('PHP'); // This will yield a Fatal error at execution
 
-?>
 ```
 
 It is recommended to ensure that passed-by-reference argument are of the requested type. 
@@ -52,8 +49,9 @@ foo(null);  // NULL
 foo(PHP_VERSION);  // Constant
 foo(SomeCLass::Constant);  // Static constant
 
-?>
 ```
+
+
 The following patterns are not considered warnings:
 
 ```php
@@ -74,8 +72,6 @@ function &ReferenceReturningFunction() {
     return $x;
 }
 
-
-?>
 ```
 
 

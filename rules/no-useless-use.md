@@ -17,7 +17,6 @@ namespace name {
 	}
 }
 
-?>
 ```
 
 It is recommended to keep the number of `use` statement to the minimum. 
@@ -38,7 +37,5 @@ namespace name {
 	}
 }
 
-
-?>
 ```
 
