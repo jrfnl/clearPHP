@@ -33,15 +33,16 @@ The following codes are considered warnings:
 
 ```php
 <?php
-	global $a, $b;
-	
-	function b() {
-		global $a;
-		
-		echo $GLOBALS['b'];
+global $a, $b;
 
-		/**/
-	}
+function b() {
+	global $a;
+	
+	echo $GLOBALS['b'];
+
+	/**/
+}
+
 ```
 
 

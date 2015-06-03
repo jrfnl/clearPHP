@@ -9,16 +9,16 @@ The following patterns are considered warnings:
 
 ```php
 <?php
-	//if ($foo) 
-	{
-		$a++;
-		# $c++;
-	} /* else 
-	{
-		$b--;
-	}
-	*/
-?>
+//if ($foo) 
+{
+	$a++;
+	# $c++;
+} /* else 
+{
+	$b--;
+}
+*/
+
 ```
 
 

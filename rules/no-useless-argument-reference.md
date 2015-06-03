@@ -9,11 +9,11 @@ Arguments may be passed by reference, allowing the called method to modify the c
 $user = 'username';
 $content = 'Some value';
 
-	function doSomething(&$user, &$content) {
-		if (new User($user)->isAllowed()) {
-			$content .= ' Modified by doSomething';
-		}
+function doSomething(&$user, &$content) {
+	if (new User($user)->isAllowed()) {
+		$content .= ' Modified by doSomething';
 	}
+}
 
 ```
 
