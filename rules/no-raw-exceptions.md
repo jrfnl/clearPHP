@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Raw Exception
 
-PHP handles exceptions. `Exception` is the eponymous class, that is the mother of most of the exceptions : PHP's SPL exceptions, extensions Exceptions (mysqli, pdo, phar, soap, etc..) and, eventually, the one in the final application. 
+PHP handles exceptions. `Exception` is the eponymous class, that is the mother of most exceptions : PHP's SPL exceptions, extensions Exceptions (mysqli, pdo, phar, soap, etc..) and, eventually, the one in the final application. 
 
 PHP 7 introduces a new Exception, called BaseException. This will take over the position of 'mother of all exceptions'. This means that code relying on `Exception` may now let the new `EngineException` and `ParseException` pass and generate a fatal error. 
 
@@ -67,7 +67,9 @@ try {
 
 ```
 
-Last, there are already 13 exceptions predefined in SPL extension : 
+
+Lastly, there are already 13 exceptions predefined in SPL extension : 
+
 * `BadFunctionCallException`
 * `BadMethodCallException`
 * `DomainException`
@@ -85,9 +87,10 @@ Last, there are already 13 exceptions predefined in SPL extension :
 
 They provide some general semantics for Exceptions and may be used to help libraries understand each other's exception. 
 
-As Exception should be specialized, catching a precise type of exception should be preferred over catching `Exception` : this last one is actually reserved for a catch-all feature. 
+Exceptions should be specialized, catching a precise type of exception should be preferred over catching `Exception`: this last one is actually reserved for a catch-all feature. 
 
-It is recommended to extends the Exception and never directly use this class. 
+It is recommended to extend the generic Exception and to never directly use this class. 
+
 
 ## Rule Details
 

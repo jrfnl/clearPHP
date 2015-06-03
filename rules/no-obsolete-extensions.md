@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Obsolete Extensions
 
-There are a few PHP native functions that should be avoided. 
+There are a few PHP native extensions that should be avoided. 
 
 Extension   | Dropped in version | Alternative
 ----------- | ------------------ | -----------
@@ -19,10 +19,9 @@ Extension   | Dropped in version | Alternative
 `sybase`    | 5.3 | `pecl/sybase_ct`
 
 
+
 ## Rule Details
 
-Using any of the extensions mentioned above will trigger a warning. Usage include constants, functions, classes, interfaces or directives, if any.
-
-
+Using any of the extensions mentioned above will trigger a warning. Usage includes constants, functions, classes, interfaces or directives, if any.
 
 

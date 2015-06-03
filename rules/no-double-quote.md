@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Double Quotes
 
-PHP allows `'` and `"` quotes to create string literals. It also allows for NOWDOC and HEREDOC syntax, which are the same as the former but for larger blob of text. Both first syntax will stay unchanged, while the second syntax will make PHP replaces any variables, properties or array it finds within the literal by their actual value. 
+PHP allows `'` and `"` quotes to create string literals. It also allows for NOWDOC and HEREDOC syntax, which are the same as the former but for larger blob of text. Dynamic elements in both first syntaxes will stay unchanged, while the second syntax will make PHP replace any variables, properties or arrays it finds within the literal by their actual value. 
 
 ```php
 <?php
@@ -15,7 +15,8 @@ echo 'Hello world';
 
 ```
 
-`"` and HEREDOC should only be used when there are dynamic values within the literal, or the extra escape sequences that `"` support, such as `\n` for new lines or the single quote. This will save PHP the task of checking the string for any variables. 
+`"` and HEREDOC should only be used when there are dynamic values within the literal, or the extra escape sequences that `"` support, such as `\n` for new lines or the literal single quote. This will save PHP the task of checking the string for any variables. 
+
 
 ## Rule Details
 
@@ -39,21 +40,22 @@ The following pattern is considered legit:
 ```php
 <?php
 
-"This string hasn't any variable but escape sequences.\n";
+"This string hasn't any variable but does have escape sequences.\n";
 
 <<<HEREDOC
 
-This Heredoc has $variable part.
+This Heredoc has a $variable.
 
 HEREDOC;
 
 ```
 
 
-If the application makes heavy use of one of the quote style in another related technology (HTML uses " a lot), it is good to use the other quote style to create such literals in PHP. 
 ## When Not To Use This Rule
 
-If the application has too many report of this, it is probably wise to avoid using it and fixing too many minor problems.
+If the application makes heavy use of one of the quote style in another related technology (HTML uses `"` a lot), it is good to use the other quote style to create such literals in PHP. 
+
+If the application generates too many reports of this, it is probably wise to avoid using it and fixing too many minor problems.
 
 Speed-wise, only very high volume application will benefit from this. 
 

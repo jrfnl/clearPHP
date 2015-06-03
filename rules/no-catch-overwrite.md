@@ -24,7 +24,7 @@ It is recommended to avoid overwriting variables with a catch block.
 
 ## Rule Details
 
-The following illustrate both right and wrong situations : 
+The following illustrates both right and wrong situations : 
 
 ```php
 <?php

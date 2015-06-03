@@ -5,9 +5,9 @@ In the old age, `register_globals` used to pour all incoming HTTP variables, ext
 
 On the other hand, there are still some PHP native functions that are able to create dynamically variables. Applied to externals sources of data, like the query string, they may create interferences in the script. 
 
-## `parse_str`
+## `parse_str()`
 
-For example, `parse_str` and the related `mb_parse_str`, are able to parse a query string, and will return the found variables in a variable passed as second parameter. If the second parameter is omitted, the function will pour those variables into the global registry. 
+For example, `parse_str()` and the related `mb_parse_str()`, are able to parse a query string, and will return the found variables in a variable passed as second parameter. If the second parameter is omitted, the function will pour those variables into the global registry. 
 
 ```php
 <?php
@@ -24,19 +24,20 @@ var_dump($a);
 
 ```
 
-It is recommended to always use `parse_str` and `mb_parse_str` with a second argument.
 
-## `extract`
+It is recommended to always use `parse_str()` and `mb_parse_str()` with a second argument.
 
-`extract` takes an array with string keys, and turn each of the key into a variable with the same name. 
+## `extract()`
+
+`extract` takes an array with string keys, and turns each of the keys into a variable with the same name. 
 
 It is very dangerous to use this function on incoming values, like `$_GET`, `$_POST`, `$_REQUEST`, `$_FILES`, `$_COOKIES`, `$_SERVER`, `$_ENV`. 
 
-The default behavior is set by the second parameter : `EXTR_OVERWRITE` means that `extract` will overwrite existing variables. Not only you will lose the current value, but it will be replaced by another value for which you have no control.
+The default behavior is set by the second parameter: `EXTR_OVERWRITE` means that `extract` will overwrite existing variables. Not only will you lose the current value, but it will be replaced by another value over which you have no control.
 
-If the variable doesn't exist, extract may pollute the current scope with a lot of variables, some of them may interfere with the current one. 
+If the variable doesn't exist, extract may pollute the current scope with a lot of variables, some of which may interfere with the current one. 
 
-It is recommended to use `extract` as rarely as possible. Arrays which index are fully under control is the right situation for its usage. Using it with the option `EXTR_OVERWRITE` is highly discouraged.
+It is recommended to use `extract()` as rarely as possible. Arrays whose indexes are fully under control is the right situation for its usage. Using it with the option `EXTR_OVERWRITE` is highly discouraged.
 
 ## Alternatives 
 Finally, it is possible to create lots of variables dynamically with the `$$` notation and loops. 
@@ -52,7 +53,8 @@ foreach($variableArray as $name => $value) {
 
 ```
 
-This is an alternative to the usage of `extract` and should receive the same recommendations. It should be used rarely, and with arrays whose keys are under control.
+
+This is an alternative to the usage of `extract` and should receive the same recommendations. It should be used rarely, and only with arrays whose keys are under control.
 
 
 ## Rule Details

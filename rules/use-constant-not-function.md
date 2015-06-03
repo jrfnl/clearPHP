@@ -13,7 +13,8 @@ Function  | Constant | Description
 `fopen('php://stderr', 'w')` | `STDERR`      | Stream is already opened. (CLI version)
 
 
-It is recommended to make sure the constant version.
+It is recommended to make use of the constant version.
+
 
 ## Rule Details
 

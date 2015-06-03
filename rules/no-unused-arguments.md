@@ -12,7 +12,8 @@ function init($uri, $login, $pass) {
 
 ```
 
-There is a situation where arguments are both unused and necessary : when overloading a method in a class hierarchy. The abstract class may have defined a list of arguments, that are actually unnecessary to the child class, but compulsory because of the abstract parent class. In that situation, argument will not be used. 
+
+There is a situation where arguments are both unused and necessary: when overloading a method in a class hierarchy. The parent class may have defined a list of arguments, that are actually unnecessary to the child class, but compulsory because of the (abstract) parent class. In that situation, an argument will rightfully not be used. 
 
 ```php
 <?php
@@ -35,7 +36,8 @@ class logMysql extends log {
 
 ```
 
-Argument should always be used in a function, even if conditionally.
+
+Arguments should always be used in a function, even if conditionally.
 
 ```php
 <?php

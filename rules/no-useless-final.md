@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Useless Final
 
-`final` modifier may be applied to `class` and to `function` in a class. When `final` is applied to a class, there is no need to apply it again to this class' methods, as they all will be final : the class itself cannot be extended.
+The `final` modifier may be applied to `class` and to `function` (method) in a class. When `final` is applied to a class, there is no need to apply it again to any of this class' methods, as they all will be final: the class itself cannot be extended.
 
 ```php
 <?php
@@ -14,11 +14,13 @@ class foofoo extends foo {
 	/* other definitions */
 }
 
-// generate error : PHP Fatal error:  Class foofoo may not inherit from final class (bar)
+// generates error: PHP Fatal error:  Class foofoo may not inherit from final class (bar)
 
 ```
 
-It is recommended to avoid using extra final modifier.
+
+It is recommended to avoid using superfluous final modifiers.
+
 
 ## Rule Details
 
@@ -32,6 +34,7 @@ final class foo {
 }
 
 ```
+
 
 The following patterns are considered legit :
 

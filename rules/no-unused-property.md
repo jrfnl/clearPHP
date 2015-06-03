@@ -7,9 +7,10 @@ As a simple check, any property only used once in a context should be checked.
 
 It is recommended to check that properties are used more than once in their class of definition.
 
+
 ## Rule Details
 
-This rule is aimed at eliminating unused variables or arguments.
+This rule is aimed at eliminating unused properties.
 
 The following patterns are considered warnings:
 
@@ -26,6 +27,7 @@ class foo {
 
 ```
 
+
 The following patterns are not considered warnings:
 
 ```php
@@ -39,10 +41,12 @@ class foo {
 
 $foo = new foo();
 $foo->used = 4;
+
 ```
 
 
 ### When Not To Use This Rule
 
 If you don't want to be notified about unused properties, you can turn this rule off.
+
 

@@ -1,7 +1,7 @@
 <!-- PHP Manual -->
 # Use Smart Autoload
 
-When it was introduced, class autoloading was build around the function `__autoload`. When this function is defined, PHP will use it to search for classes definitions if such a definition is missing. 
+When it was introduced, class autoloading was build around the function `__autoload()`. When this function is defined, PHP will use it to search for class definitions if such a definition is missing.
 
 ```php
 <?php
@@ -13,17 +13,21 @@ function __autoload($classname) {
 }
 
 ```
-This way, various libraries may cohabit peacefully. However, the function `__autoload` also introduces competition for libraries, that needed to provide their own support for the autoloading. 
 
-Thus, `spl_autoload_register` was introduced : it allows the registration of autoloader methods, may it be functions, methods or static methods. They will be played one after each other, giving a chance to every library to have its own fitted autoloading. 
 
-It is highly recommended to rely on `spl_autoload_register` and to avoid defining any `__autoload` function. 
+This way, various libraries may cohabit peacefully. However, the function `__autoload()` also introduces competition for libraries, that needed to provide their own support for the autoloading.
+
+Thus, `spl_autoload_register()` was introduced: it allows the registration of autoloader methods, may it be functions, methods or static methods. They will be run one after each other, giving a chance to every library to have its own fitted autoloading.
+
+It is highly recommended to rely on `spl_autoload_register()` and to avoid defining any `__autoload()` function.
+
 
 ## Rule Details
 
-Any usage of `__autoload`  is forbidden. 
+Any usage of `__autoload()` is forbidden.
 
-The following are considered warning : 
+The following is considered a warning:
+
 ```php
 <?php
 

@@ -13,7 +13,7 @@ $c = 'c' . ((string) $a); // both unnecessary : $a is a string
 
 ```
 
-Typecasting will be useful as security feature, to ensure a value is of a requested type. It will not help performances. 
+Typecasting can be useful as security feature, to ensure a value is of a requested type. It will not help performance.
 
 
 ## Rule Details

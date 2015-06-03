@@ -15,9 +15,11 @@ $a = new Aclass();
 
 ```
 
-PHP will not check the validity of use at compile time, but at execution time. It will then raise a fatal error.  
+
+PHP will not check the validity of `use` at compile time, but at execution time. It will then raise a fatal error.
 
 It is recommended to make sure that `use` statement are always pointing to an existing definition.
+
 
 ## Rule Details
 

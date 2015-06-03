@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Useless Flow Control
 
-Useless flow control are valid flow control that have no impact on the code. 
+Useless flow control are valid flow control structures that have no impact on the code. 
 
 
 ```php
@@ -14,13 +14,15 @@ if ($b == true) {
 }
 
 ```
-Useless flow control are often the result of a typo, like the first case above : the extra semi-colon should be removed. Or, it may be forgotten situations that need more writing. 
+
+Useless flow controls are often the result of a typo, like the first case above: the extra semi-colon should be removed. Or, they may be the result of forgotten situations that need more (re)writing.
 
 They should be removed or completed so as to have an actual impact in the code.
 
+
 ## Rule Details
 
-This rule targets flow control instruction that doesn't do anything useful. 
+This rule targets flow control instructions that don't do anything useful. 
 
 The following code is considered a warning:
 

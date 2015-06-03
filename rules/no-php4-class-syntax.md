@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No PHP4 Class Syntax
 
-In PHP 4, constructors used to be methods that bears the class's name. 
+In PHP 4, constructors used to be methods that bore the class's name. 
 
 ```php
 <?php
@@ -17,9 +17,10 @@ class x {
 
 ```
 
+
 In PHP 5, constructors are now called `__construct` and if this function is not defined, if the class has no parent and if the method is not the last element of the current namespace, PHP will try to use the function that bear the class's name instead. This is meant to ensure backward compatibility. 
 
-For backward compatibility, when PHP 5 can't find the __construct() function in a given class or its parents, it will look for the PHP 4 constructor. Since PHP 5.4, namespaced classes do not recognize PHP 4 constructors in any case.
+For backward compatibility, when PHP 5 can't find the `__construct()` function in a given class or its parents, it will look for the PHP 4 constructor. Since PHP 5.4, namespaced classes do not recognize PHP 4 constructors in any case.
 
 ```php
 <?php
@@ -50,7 +51,8 @@ namespace y {
 
 ```
 
-In PHP 4, properties were declared using the `var` keyword. This keyword is still available, and is a synonym of `public`. However, it should be replaced by `public` or another visibility. 
+
+In PHP 4, properties were declared using the `var` keyword. This keyword is still available, and is a synonym of `public`. However, it should be replaced by `public` or another visibility indicator. 
 
 ```php
 <?php
@@ -67,7 +69,9 @@ class bar {
 
 ```
 
-It is recommended to avoid PHP 4 class syntax, as it has been replaced by new and more powerful syntax. It may also be obsolete and dropped at some point in the future
+
+It is recommended to avoid PHP 4 class syntax altogether, as it has been replaced by new and more powerful syntaxes. It is considered obsolete and backward compatible support may be dropped at some point in the future.
+
 
 ## Rule Details
 

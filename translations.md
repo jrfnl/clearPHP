@@ -1,6 +1,6 @@
 # Translations
 
-ClearPHP is translated in the following languages : 
+ClearPHP is (being) translated to the following languages: 
 
 * Français 
 * 中文

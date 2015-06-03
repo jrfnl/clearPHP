@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Unchecked Resources
 
-PHP resources are a special type of data in PHP. They represent an external structure, and are usually needed as first argument to their extension-related functions. For example, file pointers, obtained with `fopen` are resource.
+PHP resources are a special type of data in PHP. They represent an external structure and are usually needed as the first argument to their extension-related functions. For example, file pointers, obtained with `fopen()` are resources.
 
 ```php
 <?php
@@ -13,9 +13,11 @@ fwrite($fp, date('r');
 fclose($fp);
 
 ```
+
+
 Receiving a resource after calling the creation function is never sure : resources may represent connections to remote servers, or have to meet certain conditions like when creating files.
 
-It is important to check that the returned value is actually a resource before using it. The resources are usually reused many times, each hit generating new error that may be displayed (in the worst case) or simply fill the logs. 
+It is important to check that the returned value is actually a resource before using it. Resources are usually reused many times, each hit generating a new error that may be displayed (in the worst case) or simply fill up the error logs.
 
 
 ```php
@@ -32,13 +34,15 @@ if (!is_resource($fp)) {
 
 ```
 
-Error situations usually returns a boolean, that makes it easy to check it with the function `is_resource`, or simply as a boolean check with `===`. 
 
-It is recommended to always check values that are return by those resource-creating functions.
+Error situations usually return a boolean, that makes it easy to check for this with the function `is_resource`, or simply as a boolean check with `===`. 
+
+It is recommended to always check values that are return by resource-creating functions.
+
 
 ## Rule Details
 
-Resource creating functions are listed in ["Resources types"](http://php.net/manual/en/resource.php). There are over 130 of them, excluding exotic PHP-extensions. The most usual are below : 
+Resource creating functions are listed in [Resource types]. There are over 130 of them, excluding some from exotic PHP-extensions. The most common ones are listed below: 
 
 * `dir()`
 * `fopen()`

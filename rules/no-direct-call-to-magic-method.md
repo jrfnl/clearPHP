@@ -1,14 +1,14 @@
 <!-- PHP Manual -->
 # No Direct Call To Magic Method 
 
-Magic methods are used by PHP to run custom code at key point of the execution. `__clone` method will be called at cloning time, `__wakeup` when the object is extracted from session storage, or `__set_state ` when the object is processed by `var_export`. 
+Magic methods are used by PHP to run custom code at key points of the execution. The `__clone()` method will be called at cloning time, `__wakeup()` when the object is extracted from session storage, or `__set_state()` when the object is processed by `var_export()`.
 
 Outside their intended usage and a relay within the class hierarchy, there is no need to call those methods. 
 
 ```php
 <?php
 
-// Don't do that! 
+// Don't do this!
 echo $object->__toString() ."\n";
 
 echo $object. "\n";
@@ -26,7 +26,8 @@ class y extends x {
 
 ## Rule Details
 
-This rule is aimed at avoiding direct call to magic methods. The list is the following : 
+This rule is aimed at avoiding direct calls to magic methods. The list is the following : 
+
 * `__construct()`
 * `__destruct()`
 * `__call()`

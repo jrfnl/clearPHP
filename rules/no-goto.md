@@ -1,7 +1,8 @@
 <!-- Good Practices -->
 # No Goto
 
-`Goto` are considered a thing of the past : the code will be much harder to read and understand. It leads to keeping all code in one big heap, code spaghetti and maintenance headaches. 
+`goto` is considered a thing of the past: the code will be much harder to read and understand. It leads to keeping all code in one big heap, code spaghetti and maintenance headaches. 
+
 
 ## Rule Details
 

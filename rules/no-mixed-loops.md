@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Mixed Loops
 
-`for` loops makes usage of local counters and requires a incrementation expression. Mixing the counters from one loop into the other is confusing at best. 
+`for` loops make use of local counters and requires a incrementation expression. Mixing the counters from one loop into the other is confusing at best. 
 
 ```php
 <?php
@@ -14,7 +14,7 @@ for ($i = 0; $i < 10; $i++) {
 
 ```
 
-It is recommended to always keep loops's counter separated. In case they have an impact on each other, make the change obvious in the body of the loops.
+It is recommended to always keep loop counters separated. In case they *need to* have an impact on each other, make the change obvious in the body of the loops.
 
 
 ## Rule Details

@@ -26,11 +26,11 @@ if ($a > 0 ) if ($a > 10) $b = 1; else $b = 2;
 
 ```
 
-In the code above, does the `else` apply to the first `if` or to the second `if` ? (Answer : The second). 
+In the code above, does the `else` apply to the first `if` or to the second `if` ? (_Answer : The second_). 
 
-Note also that PHP is not consistent is its allowing the bracketless blocks, as `try`/`catch` or `switch` statement won't support it.
+Note also that PHP is not consistent in its allowing the bracketless blocks, as `try`/`catch` or `switch` statement do not support it.
 
-As a precaution for future update in the code, it is recommended to always add brackets to statements.
+As a precaution for future updates to the code, it is recommended to always add brackets to statements.
 
 
 ## Rule Details

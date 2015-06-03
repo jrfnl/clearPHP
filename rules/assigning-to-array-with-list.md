@@ -1,7 +1,7 @@
 <!-- PHP Manual -->
-# Assigning To Array With List 
+# Assigning To Array With List
 
-PHP language constructs `list` accepts any data container as argument. Most of the time, those are variables, but it may be convenient to use arrays. 
+The PHP language construct `list()` accepts any data container as argument. Most of the time, those are variables, but it may be convenient to use arrays. 
 
 ```php
 <?php
@@ -26,9 +26,9 @@ array(3) {
   string(6) "arabica"
 }
 ```
-If order is important in the resulting array, it is recommended to apply `array_reverse` on the result array, or to build the array another way. 
 
 
+If order is important in the resulting array, it is recommended to apply `array_reverse()` on the resulting array, or to build the array in another way. 
 
 
 

@@ -5,9 +5,10 @@ PHP scripts will be read and executed by an external process : it may be the web
 
 File may be modifiable, though it must be restricted to the user only, or, at best, also removed. Reading rights must be allowed. 
 
-In fact, without such permissions, it won't be possible to change divert the PHP script from its initial usage to another in case of attack. 
+In fact, without such permissions, it won't be possible to divert the PHP script from its initial usage to another in case of attack. 
 
 It is recommended to avoid executable PHP scripts.
+
 
 ## Rule Details
 

@@ -9,9 +9,11 @@ $x = 0;
 if ($x == false) { /* doSomething */ }
 
 ```
+
+
 ## Frequent Error
 
-Here, equaling `0` to `false` seems quite natural. Under the hood, PHP does turn the integer `0` to the equivalent as a boolean, which is `false`. The comparison then succeeds. 
+Here, equating `0` to `false` seems quite natural. Under the hood, PHP does turn the integer `0` to its boolean equivalent, which is `false`. The comparison then succeeds. 
 
 ```php
 <?php
@@ -19,11 +21,12 @@ $x = strpos('abc', 'a');
 if ($x == false) { /* process error */ } else { /* process finding */}
 
 ```
+
 Things gets a little more confusing when some information is carried by the type of the value. Here, `strpos` will return `false` if it can't find the needle (`'a'`) in the haystack (`'abc'`). But it will also return `0` if it finds the needle in the first position, which is indexed with 0. 
 
 ## Security Error
 
-The `==` and `!=` are also a weakness when dealing with passwords. Usually, passwords are not compared directly, but after hashing, using methods like haval, tiger or ripemd128 (Older code may rely on MD5, SHA1 or CRC32). All those hash are strings, containing numbers and letters.
+The loose equations `==` and `!=` are also a weakness when dealing with passwords. Usually, passwords are not compared directly, but after hashing, using methods like haval, tiger or ripemd128 (Older code may rely on MD5, SHA1 or CRC32). All those hash are strings, containing numbers and letters.
 
 ```php
 <?php
@@ -32,7 +35,8 @@ echo hash('ripemd128','315655854',false);
 
 ```
 
-When the hash value starts with a `0e`, and is compared using `==` and `!=`, then PHP will first convert the operands to integers before comparing them. This will turn both operands to 0, and even if the strings are not identical, the comparison will conclude so.
+
+When the hash value starts with a `0e`, and is compared using `==` and `!=`, then PHP will first convert the operands to integers before comparing them. This will turn both operands to 0, and even if the strings are not identical, the comparison will conclude so, leaving the application wide open to untrusted users.
 
 ```php
 <?php
@@ -42,15 +46,17 @@ if (hash('ripemd128','315655854',false) == "0e123") {
 
 ```
 
+
 ## Recommendations
 
-The recommendation is to use `===` or `!==` by default, anywhere there are no good reason to use `==` or `!=`. Always compare the returned value to `false` or `true` explicitly.
+The recommendation is to use the strict comparison operators `===` or `!==` by default, anywhere there is no good reason to use `==` or `!=`. Always compare the returned value to `false` or `true` explicitly.
 
-As for password related operations, it is also recommended to use `password_hash` and `password_verify` functions.
+As for password related operations, it is also recommended to use the `password_hash()` and `password_verify()` functions.
+
 
 ## Rule Details
 
-This rule targets methods that doesn't compare the result with `===` or `!==` to  `false` or `true`.
+This rule targets conditionals that don't compare results with `===` or `!==` to `false` or `true`.
 
 Here is a list of PHP native functions that require strict comparison : 
 
@@ -95,7 +101,8 @@ if ($res = preg_match('/abc/', $a)) {}
 
 ```
 
-The following pattern are considered legit:
+
+The following patterns are considered legit:
 
 ```php
 <?php

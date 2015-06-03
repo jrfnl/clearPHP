@@ -1,9 +1,9 @@
 <!-- Performances -->
 # Use Reference To Alter In Foreach
 
-`foreach` loops starts by making a copy of the source. This way, the source may be modified without disturbing the loop. 
+`foreach` loops start by making a copy of the source. This way, the source may be modified without disturbing the loop. 
 
-When the `foreach` has to modify values in the source, it is recommended to use a reference, instead of using index to change the value. 
+When `foreach` has to modify values in the source, it is recommended to use a reference, instead of using index to change the value. 
 
 ```php
 <?php

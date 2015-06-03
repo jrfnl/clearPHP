@@ -1,7 +1,8 @@
 <!-- PHP Manual -->
 # No Incompatible References
 
-When calling a method or a function, the arguments passed by reference, and signaled in the signature by `&`, must be one of the following : 
+When calling a method or a function, the arguments passed by reference and signaled in the signature by `&`, must be one of the following:
+
 * Variables or arrays : `$v` or `$x[1]`
 * New objects : `new stdClass()`
 * References
@@ -10,9 +11,11 @@ When calling a method or a function, the arguments passed by reference, and sign
 <?php
 
 parse_str($incomingString, 'string');
+
 ```
 
-PHP only check that functioncall are using valid type at execution time, if the definition of the method is not available at compile time (aka, the method is not native or not defined in the same file than call). 
+
+PHP only checks that function calls are using valid parameter types at execution time, if the definition of the method is not available at compile time (aka, the method is not native or not defined in the same file as the call). 
 
 ```php
 <?php
@@ -30,7 +33,9 @@ foo('PHP'); // This will yield a Fatal error at execution
 
 ```
 
-It is recommended to ensure that passed-by-reference argument are of the requested type. 
+
+It is recommended to ensure that passed-by-reference arguments are of the requested type. 
+
 
 ## Rule Details
 

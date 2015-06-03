@@ -9,9 +9,12 @@ PHP doesn't check for `$this` usage inside static methods at compile time. At ex
 
 It is recommended to check that static methods have no usage of `$this`. 
 
+
 ## Rule Details
 
-This rule require that every `static` method makes no use of the `$this` variable. The following patterns are considered warnings:
+This rule requires that no `static` method uses the `$this` variable.
+
+The following patterns are considered warnings:
 
 ```php
 <?php

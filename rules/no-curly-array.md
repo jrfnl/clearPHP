@@ -14,7 +14,10 @@ $x[1]{2}; // 4
 $x{1}{3}; // 5
 
 ```
-Curly brackets `{  }` are possible, but are almost never used. It is a good practice that is recommended.
+
+
+Curly brackets `{  }` are possible, but are almost never used. It is good practice to avoid them.
+
 
 ## Rule Details
 

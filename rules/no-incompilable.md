@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Incompilable
 
-Within an application, any PHP code should be compilable with the recommended version for the application : the recommended version is chosen by the application author. Compatible versions usually range a few middle version of PHP : a few versions backward, and a few versions forward. 
+Within an application, any PHP code should be compilable with the recommended version for the application : the recommended version is chosen by the application author. Compatible PHP versions usually range a few middle version of PHP : a few versions backward, and a few versions forward. 
 
 Newer version of PHP may introduce backward incompatibilities. Preparing the code for them means the code will have to be adapted or dropped. 
 
@@ -15,8 +15,11 @@ mysql_connect($host, $user, $pass); // deprecated features in PHP 5.5
 $y = [1, 2, 3]; // Array short syntax is introduced in PHP 5.4
 
 ```
-In the example above, the code is only compatible PHP 5.4 : `short syntax` is introduced in PHP 5.4, and such code won't be backward compatible with PHP 5.3. 
-`mysql_connect` is part of ext/mysql, which is deprecated in PHP 5.5. This code will emit warnings and fatal errors in those versions, but will be fully compilable with PHP 5.4, the (possibly) recommended version. 
+
+
+In the example above, the code is only compatible PHP 5.4: _short array syntax_ is introduced in PHP 5.4, and such code won't be backward compatible with PHP 5.3. 
+`mysql_connect()` is part of `ext/mysql`, which has been deprecated in PHP 5.5. This code will emit warnings and fatal errors in those versions, but will be fully compilable in PHP 5.4, the (possibly) recommended version. 
+
 
 ## Rule Details
 
@@ -34,9 +37,10 @@ $y = ;
 
 ```
 
-It should be always on for broken code. It may be used less aggressively if backward compatibility is not important. 
 
 ## When Not To Use This Rule
+
+This rule should always be on for broken code. It may be used less aggressively if backward compatibility is not important. 
 
 
 ## Further Reading

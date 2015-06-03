@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Avoid Globals
 
-Global variables, in `PHP` as in other languages, allow to send a variable from one context to another. Global variables may be explicitly configured with `global` keyword, in functions, or, in the global scope, variables are automatically globals.
+Global variables, in PHP as in other languages, allow to send a variable from one context to another. Global variables may be explicitly configured with the `global` keyword, in functions, or - in the global scope - variables are automatically globals.
 
 Global variables add coupling between apparently decoupled pieces of code : two classes may be in different namespaces and business logic, but when they share a global, they have a common point where they have to collaborate.
 
@@ -22,14 +22,15 @@ function c() {
 
 ```
 
+
 Using `global` keyword or `$GLOBALS` variable makes spotting global variables in a local context quite difficult. 
 
 
 ## Rule Details
 
-This rule is aimed at preventing the use of global variables in the code.
+This rule is aimed at preventing the use of global variables in code.
 
-The following codes are considered warnings:
+The following patterns are considered warnings:
 
 ```php
 <?php

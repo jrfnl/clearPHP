@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Always Use Semicolon
 
-PHP uses semicolon `;` to make distinction between two sequential instructions. 
+PHP uses semicolon `;` to make a distinction between two sequential instructions. 
 
 ```php
 <?php
@@ -33,7 +33,7 @@ print 'b';
 // This will display b1
 
 ```
-`continue` and `break` used to accept no value (that will default to 1) or the result of the next expression (up to PHP 5.4) : 
+`continue` and `break` used to accept no value (which will default to 1) or the result of the next expression (up to PHP 5.4): 
 
 ```php
 <?php
@@ -47,7 +47,8 @@ for ( $i = 0; $i < 5; ++$i )
 }
 
 ```
-There are quite some instructions that may overflow to the next line, like all operators, and : 
+There are quite some instructions that may overflow to the next line, like all operators and a number of language constructs:
+
 * all operators (math, comparison, logical...)
 * `echo`
 * `print`
@@ -55,7 +56,7 @@ There are quite some instructions that may overflow to the next line, like all o
 * `require` and `require_once`
 * `exit`
 
-This rules doesn't require the adding of extra semicolon when they are not needed.
+This rule doesn't require the adding of an extra semicolon when it isn't needed.
 
 ```php
 <?php
@@ -77,7 +78,7 @@ The following patterns are considered warnings:
 <?= 3 ?>
 ```
 
-The following code is not considered warnings:
+The following code is not considered a warning:
 
 ```php
 <?php

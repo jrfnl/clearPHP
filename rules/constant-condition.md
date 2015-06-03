@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Constant Condition
 
-Constant conditions signals a debug situation (forcing some rare behavior), a bug or a typo. 
+Constant conditions signal a debug situation (forcing some rare behavior), a bug or a typo. 
 
 ```php
 <?php
@@ -36,7 +36,7 @@ while(true) {
 
 ```
 
-Using constants in conditions is not regarded as constant conditions : such constants may be conditional constants (they value is dynamically defined at startup, from an external file), or even have dynamical value (such as the magic constants). Constant conditions will be build with literals.
+Using constants in conditions is not regarded as constant conditions : such constants may be conditional constants (their value is dynamically defined at startup, from an external file), or even have dynamical value (such as the magic constants). Constant conditions will be build with literals.
 
 It is recommended to use non-constant conditions in the flow instructions. 
 

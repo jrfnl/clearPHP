@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Useless Interfaces
 
-Interfaces are a way to specify methods that a class must implements, leaving the actual implementation to the class. 
+Interfaces are a way to specify methods that a class must implement, leaving the actual implementation to the class.
 
 ```php
 <?php
@@ -20,7 +20,8 @@ class Square implements Area {
 
 ```
 
-Interfaces may also be used in `instanceof` structures and `Typehint`, to enforce that variables or arguments are correct objects, providing public access to a certain set of methods. 
+
+Interfaces may also be used in `instanceof` structures and _Typehint_, to enforce that variables or arguments are correct objects, providing public access to a certain set of methods.
 
 ```php
 <?php
@@ -38,12 +39,13 @@ function getRadiusOfEquivalentCirle(Area $shape) {
 
 ```
 
+
 When interfaces are only used to define classes (or other interfaces), they may actually be removed once the class is coded : they are used as guideline to build the final class. As such, they are useless interfaces.
 
-On the other hand, interfaces mentioned in `instanceof` or `Typehint` are providing control over objects and their nature, helping to detect unfitting values. They play an active role during code execution. 
+On the other hand, interfaces mentioned in `instanceof` or _Typehint_ are providing control over objects and their nature, helping to detect unfitting values. They play an active role during code execution.
 
+It is recommended to check that interfaces are used in `instanceof` or _Typehint_ structures, and if not, consider removing them.
 
-It is recommended to check that interfaces are used in  `instanceof` or `Typehint` structure, or consider removing them. 
 
 ## Rule Details
 

@@ -3,7 +3,7 @@
 
 Logical operators comes in two flavors : lettered, also known as boolean, `and`, `or` and `xor`. And with symbols, also known as logical operators, `&&`, `||`, `^`, respectively. However, there is a catch : they are not exchangeable. 
 
-In the documentation, the example shows the difference of precedence : 
+In the documentation, the below example shows the difference in precedence: 
 
 ```php
 <?php
@@ -22,11 +22,15 @@ var_dump($e, $f);
 
 ```
 
-In the result `$e` is `true`, `$f` is `false`. Most of the time, expected precedence is the one associated with the logical operators `&&`, `||`, `^`. It is recommended to use them. 
+
+In the result `$e` is `true`, `$f` is `false`. Most of the time, expected precedence is the one associated with the logical operators `&&`, `||`, `^`. It is recommended to only use these last logical operators. 
+
 
 ## Rule Details
 
-This rule require that logical operators uses `&&`, `||`, `^`, instead of `and`, `or` and `xor`. The followings is wrong. 
+This rule require that logical operators use `&&`, `||`, `^`, instead of `and`, `or` and `xor`.
+
+The following is wrong:
 
 ```php
 <?php

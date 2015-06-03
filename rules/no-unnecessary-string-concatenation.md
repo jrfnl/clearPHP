@@ -1,7 +1,7 @@
 <!-- PHP Manual -->
-# No Unnecessary Concatenations
+# No Unnecessary Concatenation
 
-Concatenations double the amount of memory needed : it takes the original strings, and merge them into one, then, assign it to a variable or the output buffer. 
+Concatenation doubles the amount of memory needed: it takes the original strings, merges them into one, and then assigns the result to a variable or the output buffer. 
 
 ```php
 <?php
@@ -10,9 +10,10 @@ echo 'a' . $b . 'c';
 
 ```
 
+
 In this example, two string literals and the variable `$b` are collected into one longer string, then echoed. 
 
-In fact, `echo` do accept an unlimited number for arguments. It will display the values one after each other. So, the above code may be rewritten as : 
+In fact, `echo` accepts an unlimited number for arguments. It will display the values one after each other. So, the above code may be rewritten as: 
 
 ```php
 <?php
@@ -20,15 +21,17 @@ In fact, `echo` do accept an unlimited number for arguments. It will display the
 echo 'a' , $b , 'c';
 
 ```
-At first, the difference is not obvious, as the concatenation operators dot `.` are simply turned into argument separators comma `,`. They also look alike very much. 
 
-Behind the scene, since there is no concatenation, this expression will not cost more memory than what is currently used. 
+
+At first, the difference is not obvious, as the concatenation operators dot `.` are simply turned into argument separators comma's `,`. They also look quite similar. 
+
+Behind the scenes, however, since there is no concatenation, this expression will not cost more memory than what is currently already being used.
 
 On the other hand, the first version will start by building the concatenated string at the cost of `strlen($b) + 2` then display it. 
 
-The gain will be significant if `$b` is big enough to have an impact. Short values, like integers, word-sized  or even sentence-sized strings will be painless. BLOB or TEXT from a database or TEXTAREA may be more impacting. 
+The gain will be significant if `$b` is big enough to have an impact. Short values, like integers, word-sized or even sentence-sized strings will be painless. BLOB or TEXT from a database or TEXTAREA have a bigger impact. 
 
-`echo` will accept several arguments instead of concatenation. `print` will not accept more than one argument. Other functions that consumes big pieces of text, such as `file_put_contents` or `fwrite` will have to be checked.
+`echo` will accept several arguments instead of concatenation. `print` will not accept more than one argument. Other functions that consume big pieces of text, such as `file_put_contents()` or `fwrite()` will have to be checked.
 
 ```php
 <?php
@@ -39,9 +42,10 @@ file_put_contents('newFile.txt', $text . "\n");
 
 ```
 
+
 This last concatenation will suddenly double the consumption of memory. 
 
-Several alternatives of the above code will save that much memory : 
+There are several alternatives to the above code which will save much memory: 
 
 ```php
 <?php
@@ -71,11 +75,14 @@ function my_file_put_contents($filename, ...$text) {
 }
 
 ```
+
+
 It is recommended to avoid useless concatenations anytime the volume of the manipulated data is significant (over a few kb)
+
 
 ## Rule Details
 
-This rule is aimed at avoiding limiting the use of  concatenations when data gets large.
+This rule is aimed at minimizing the use of concatenation when data gets large.
 
 Check for methods that normally manipulate large amounts of data. 
 

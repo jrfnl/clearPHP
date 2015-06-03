@@ -1,7 +1,7 @@
 <!-- Good Practices -->
-# No Array_merge In Loops
+# No `array_merge()` In Loops
 
-`array_merge` is particularly slow and memory intensive when it is used in a loop. 
+`array_merge()` is particularly slow and memory intensive when it is used in a loop. 
 
 ```php
 <?php
@@ -17,7 +17,7 @@ At each iteration, PHP will copy the array into another temporary array, leading
 
 Beside the memory allocation, the copy of the data from one temporary value to the other will also consume time and processing power. 
 
-The solution to this problem is to call `array_merge` once with all its arguments. In this case, or if the number of arrays to be merged is unknown at development time, using variadic functions or `call_user_func_array` is also much more efficient.
+The solution to this problem is to call `array_merge()` once with all its arguments. In this case, or if the number of arrays to be merged is unknown at development time, using variadic functions or `call_user_func_array()` is also much more efficient.
 
 ```php
 <?php

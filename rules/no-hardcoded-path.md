@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Hardcoded Path
 
-Just like hardcoded credentials, hardcoded path will be a problem anytime the file hierarchy changes : modifications may occurs as server migration, security concerns, file reorganization, etc. 
+Just like hardcoded credentials, hardcoded path will be a problem anytime the file hierarchy changes: modifications may occur due to server migration, security concerns, file reorganization, etc. 
 
 The best way to handle the matter is to make the root of the application a configuration directive, and then, add the application's own file hierarchy. 
 
@@ -14,7 +14,9 @@ $fp = fopen('/tmp/tmp.txt', 'w');
 
 ```
 
-It is recommended to check that functions that access files are not using hardcoded path. 
+
+It is recommended to check that functions that access files do not use hardcoded paths.
+
 
 ## Rule Details
 

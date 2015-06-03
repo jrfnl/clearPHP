@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Useless Return
 
-Some of PHP magic methods makes no usage of the returned value. Such methods may simply finish without return, or use the empty `return` instruction.
+Some of PHP magic methods make no use of the returned value. Such methods may simply finish without return, or use an empty `return` instruction.
 
 ```php
 <?php
@@ -24,11 +24,14 @@ class x {
 }
 
 ```
+
+
 It is recommended to omit return in those methods, unless for short circuiting it.
+
 
 ## Rule Details
 
-This rule is aimed at avoiding use of `return` in methods that doesn't need it. Here is the list : 
+This rule is aimed at avoiding the use of `return` in methods that don't need it. Here is the list : 
 
 * `__construct()`
 * `__destruct()`
@@ -36,7 +39,8 @@ This rule is aimed at avoiding use of `return` in methods that doesn't need it. 
 * `__clone()`
 * `__unset()`
 
-Also `__autoload`, methods used for autoloading and methods registered for shutdown, have no need to return anything. 
+Also `__autoload()` methods used for autoloading and methods registered for shutdown, don't need to return anything.
+
 
 The following patterns are considered warnings:
 
@@ -52,6 +56,7 @@ class exampleClass {
 }
 
 ```
+
 
 The following patterns are not considered warnings:
 

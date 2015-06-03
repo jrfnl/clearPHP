@@ -1,7 +1,7 @@
 <!-- Potential Errors -->
 # No Dangling References
 
-In a foreach loop, a variable is used for looping through the array. If this variable is made into a reference for on the spot modification purpose, the reference to the last element will survive after the end of the loop. When this last reference is reused later, it will apply to the last element of the array. 
+In a `foreach` loop, a variable is used for looping through the array. If this variable is made into a reference for on the spot modification purpose, the reference to the last element will survive after the end of the loop. When this last reference is reused later, it will apply to the last element of the array. 
 
 ```php
 <?php

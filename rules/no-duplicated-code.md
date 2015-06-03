@@ -1,15 +1,16 @@
 <!-- Good Practices -->
 # No Duplicated Code
 
-Duplicate code is one difficulty when code, not just in PHP. When a portion of the application looks like fulfilling some common goal with another part of the application, with some minor exceptions, it is tempting to use the same code and tweak it a bit. 
+Duplicate code is one difficulty when code, not just in PHP. When a portion of the application looks like it is fulfilling some common goal with another part of the application, with some minor exceptions, it is tempting to use the same code and tweak it a bit.
 
 Later, when the original code has to be changed, chances are that the copied code will not be changed. Thus, fixing a bug in a location will leave the same bug somewhere else. 
 
-Avoiding duplicate code is also known as the DRY concept, in software engineering : Don't Repeat Yourself. 
+Avoiding duplicate code is also known as the DRY concept, in software engineering: _Don't Repeat Yourself_.
+
 
 ## Rule Details
 
-Repeating code may appear in different shapes and forms. 
+Repeated code may appear in different shapes and forms. 
 
 ```php
 <?php

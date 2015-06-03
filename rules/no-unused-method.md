@@ -1,9 +1,10 @@
 <!-- Good Practices -->
 # No Unused Methods
 
-Methods that are created and not used anywhere in the code are most likely useless. Such methods consumes memory, use code space and may create confusion.
+Methods that are created and not used anywhere in the code are most likely useless. Such methods consume memory, use code space and may create confusion.
 
-Methods may be use in the class, its children or in the rest of the code if the method is public. If the method is never found, it may be removed from the code, or marked as dead code.
+Methods may be uses in the class, its children or in the rest of the code if the method is public. If the method is never found, it may be removed from the code, or marked as dead code.
+
 
 ## Rule Details
 
@@ -26,6 +27,6 @@ $bar->usedMethod();
 ```
 
 
-If methods may be called dynamically in your code, you're likely to turn off this rule.
 ## When Not To Use This Rule
 
+If methods may be called dynamically in your code, for instance using `call_user_func()` or similar, you should turn this rule off.

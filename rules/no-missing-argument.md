@@ -1,9 +1,9 @@
 <!-- Good Practices -->
 # No Missing Argument
 
-PHP does not check at compile time that a function or method calls has enough arguments. One may call any function with any number of argument, and this will be checked at execution time. Extra arguments will be dropped, but missing arguments will generate an error. 
+PHP does not check at compile time if a function or method call has enough arguments. One may call any function with any number of argument, and this will be checked at execution time. Extra arguments will be dropped, but missing arguments will generate an error. 
 
-This is true for PHP native functions too.
+This is true for PHP native functions as well.
 
 ```php
 <?php
@@ -15,14 +15,16 @@ x('a'); // missing arguments 1
 
 ```
 
-It is recommended to provide an acceptable number of arguments, depending on default values in the function signature.
+
+It is recommended to provide an acceptable number of arguments. The acceptable number may depend on default values in the function signature.
 
 
 ## Rule Details
 
 This rule spots functions and methods calls with less arguments than needed. 
 
-When the called method makes use of variable number of argument, using `func_get_args`, `func_get_arg` or `func_num_args`, or even the `...` operator, the number of acceptable arguments is.
+When the called method makes use of a variable number of arguments, using `func_get_args()`, `func_get_arg()` or `func_num_args()`, or even the `...` operator, the number of acceptable arguments is dynamic.
+
 
 The following codes are considered a warning:
 
@@ -41,7 +43,7 @@ z(); // not enough arguments
 
 ```
 
-The following pattern are considered legit:
+The following patterns are considered legit:
 
 ```php
 <?php

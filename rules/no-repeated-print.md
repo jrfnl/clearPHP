@@ -33,11 +33,12 @@ print "<!DOCTYPE html>\n".
 
 Generally speaking, it is recommended to accumulate all information in a variable, then output it with `echo` or `print` in one call rather than calling repeatedly those functions. 
 
-It is also possible to put long blob of raw text in the HEREDOC or NOWDOC structures, or even in an external file. 
+It is also possible to put long blobs of raw text in HEREDOC or NOWDOC structures, or even in an external file. 
+
 
 ## Rule Details
 
-The following pattern is considered warnings:
+The following pattern is considered a warning:
 
 ```php
 <?php
@@ -51,7 +52,8 @@ print "  <title>$title</title>\n";
 
 ```
 
-The following pattern are considered legit:
+
+The following patterns are considered legit:
 
 ```php
 <?php

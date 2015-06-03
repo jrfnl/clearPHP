@@ -1,9 +1,9 @@
 <!-- Good Practices -->
 # Not a method
 
-Methods are a kind of function that is associated to a class. They have access to the class in which they are defined, either with the pseudo-variable `$this` to access properties or other methods, or via the local static properties and methods. 
+Methods are functions which are associated with a specific class. They have access to the class in which they are defined, either with the pseudo-variable `$this` to access properties or other methods, or via the local static properties and methods. 
 
-A static method may only use static properties, and won't access properties or methods accessible with `$this`. A normal method will access both. 
+A static method may only use static properties, and won't have access to properties or methods accessible with `$this`. A normal method will have access to both.
 
 However, a method that doesn't make any use of `$this` or the static resources doesn't belong to the class. It should actually be a function. 
 
@@ -24,15 +24,19 @@ class user {
 
 ```
 
-In the above example, the `getNameSize` method is used to get information about the object (public method), and makes use of `$this`.
 
-On the other hand, `nameLen` apply some calculations on its arguments, and return a result without affecting or making use of the local object. It has nothing to do with the local object. 
+In the above example, the `getNameSize()` method is used to get information about the object (public method), and makes use of `$this`.
 
-It is recommended to check that methods have usage of local resources (properties or methods) using `$this` or `self::` (and equivalent). 
+On the other hand, `nameLen()` applies some calculations on its arguments, and returns a result without affecting or making use of the local object. It has nothing to do with the local object. 
+
+It is recommended to check that methods use local resources (properties or methods) by using `$this` or `self::` (or equivalent). 
+
 
 ## Rule Details
 
-This rule requires that every method makes use of the current class properties or methods. The following patterns are considered warnings:
+This rule requires that every method makes use of the current class properties or methods.
+
+The following patterns are considered warnings:
 
 ```php
 <?php
@@ -53,7 +57,8 @@ class x {
 
 ```
 
-The following code are considered legit : 
+
+The following patterns are considered legit: 
 
 ```php
 <?php

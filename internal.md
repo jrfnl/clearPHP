@@ -3,8 +3,8 @@ Suggest a new rule
 
 To propose a new rule or a fix :
 
-- fork this repository, create a branch, checkout that branch, add the rule in `proposition` branch, push the branch to Github, and send a pull request
-- Join us on the [mailing-list](https://groups.google.com/forum/#!forum/clearphp)
+- Fork this repository, create a branch, checkout that branch, add the rule in a `proposition` branch, push the branch to Github, and send a pull request.
+- Join us on the [mailing-list](https://groups.google.com/forum/#!forum/clearphp).
 
 Translate
 ------------------------------------

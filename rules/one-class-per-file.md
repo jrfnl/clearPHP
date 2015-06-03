@@ -1,13 +1,16 @@
 <!-- Good Practices -->
 # One Class Per File
 
-One class per file makes it easy to find class definitions in the file system. It is confusing to search for class A in B.php file, as they are both in the same file. Version control log messages are also either to read.
+One class per file makes it easy to find class definitions in the file system. It is confusing to search for `class A` in `B.php` file, as they are both in the same file. Version control log messages are also easier to read.
 
-It also help to follow PSR-0 to PSR-4 recommendations and automate class loading with namespaces and autoload. 
+It helps to follow the recommendations in PSR-0 to PSR-4 and to automate class loading with namespaces and autoload. 
+
 
 ## Rule Details
 
-This rule require that every `class` is defined in a file, and that every file that defines a class only hold one. The following patterns are considered warnings:
+This rule requires that every `class` is defined in a file, and that every file that defines a class only holds one class.
+
+The following pattern is considered a warning:
 
 ```php
 <?php
@@ -38,9 +41,11 @@ class b extends a { /**/ }
 
 ```
 
-If you have some mechanism that compile all classes into one file for faster loading, this rule may be ignore for that kind of file. 
 
 ## When Not To Use This Rule
+
+If you have some mechanism that compiles all classes into one file for faster loading, this rule may be ignored for that kind of file. 
+
 
 ### Further Reading
 

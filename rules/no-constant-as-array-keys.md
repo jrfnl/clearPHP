@@ -16,14 +16,17 @@ echo $a['foo'];
 // foo is a string, because it is inside double quotes
 echo "$a[foo]";
 
-// That won't compile
+// This won't compile
 //echo "$a['foo']";
 
-// That will be 'foo' (the string), or, the foo constant (when someone defines it)
+// This will be 'foo' (the string), or, the foo constant (when someone defines it)
 echo $a[foo];
 
 ```
-It is recommended to always have index as strings or integers, so as to be consistent inside and outside quotes. Check well that any constant used there is actually defined. Other types are cast or emit an error anyway.
+
+
+It is recommended to always have strings or integers as array indexes, so as to be consistent inside and outside quotes. Check carefully that any constant used there is actually defined. Other types are cast or emit an error anyway.
+
 
 ## Rule Details
 

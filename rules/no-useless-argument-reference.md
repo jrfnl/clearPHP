@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Useless Reference Arguments
 
-Arguments may be passed by reference, allowing the called method to modify the content. If the method doesn't modify the content, then passing a reference is useless, as PHP will optimizes the call itself. 
+Arguments may be passed by reference, allowing the called method to modify the content. If the method doesn't modify the content, then passing a reference is useless, as PHP will optimize the call itself. 
 
 ```php
 <?php
@@ -17,9 +17,11 @@ function doSomething(&$user, &$content) {
 
 ```
 
+
 In the previous example, `$content` is modified and the reference is actually needed. On the other hand, `$user` is only read to build the object, and will not be modified : this reference is useless.
 
 It is recommended to only use references when they are needed.
+
 
 ## Rule Details
 

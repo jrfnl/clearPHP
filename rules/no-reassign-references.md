@@ -1,7 +1,9 @@
 <!-- PHP Manual -->
 # No Reassign References
 
-"References in PHP are a means to access the same variable content by different names." There is a separation between the variables names and their related content : this way, several distinct variables may refer to the same content. Changing one content will change the content for the others.
+> References in PHP are a means to access the same variable content by different names.
+
+There is a separation between the variables names and their related content: this way, several distinct variables may refer to the same content. Changing the content of one will change the content for the others too.
 
 ```php
 <?php
@@ -32,7 +34,8 @@ print $a; // display a, not b
 
 ```
 
-Here, a reference is indeed created at functioncall time. `$b` is a reference to the same content than the original variable `$a`. However, assigning a new reference to `$b` will only change the reference in `$b` : it will not change the content of `$b`. This way, the new reference is lost, and `$a` stays unchanged.
+
+Here, a reference is indeed created at function call-time. `$b` is a reference to the same content than the original variable `$a`. However, assigning a new reference to `$b` will only change the reference in `$b`: it will not change the content of `$b`. This way, the new reference is lost, and `$a` stays unchanged.
 
 The following would work as expected : 
 
@@ -51,7 +54,9 @@ print $a; // display b
 
 ```
 
-It is recommended to avoid reassigning references in a function's argument, and only change their content. 
+
+It is recommended to avoid reassigning references in a function's argument, and only changing their content. 
+
 
 ## Rule Details
 

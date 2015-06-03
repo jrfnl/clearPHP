@@ -22,13 +22,16 @@ class Dog {
 
 ```
 
-Default values are easier to find when they are set a declaration time, instead than in the middle of the code. This also means less code written in the constructor. 
 
-It is recommended to set default values to properties. 
+Default values are easier to find when they are set at declaration time, instead of in the middle of the code. This also means less code written in the constructor. 
+
+It is recommended to set default values for properties. 
+
 
 ## Rule Details
 
-The following are considered warning : 
+The following are considered a warning:
+
 ```php
 <?php
 

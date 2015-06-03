@@ -1,9 +1,9 @@
 <!-- Good Practices -->
 # No Extra Argument
 
-PHP does not check at compile time that a function or method calls has too many arguments. One may call any function with any number of arguments, and the extra arguments will be dropped at execution time.  
+PHP does not check at compile time whether a function or method call has too many arguments. One may call any function with any number of arguments, and the extra arguments will be dropped at execution time.  
 
-This is true for PHP native functions too.
+This is true for native PHP functions as well.
 
 ```php
 <?php
@@ -14,13 +14,16 @@ x(1, 2, 3, 4, 5); // two arguments too many
 
 ```
 
+
 It is recommended to provide only the needed arguments when calling a method or a function.
+
 
 ## Rule Details
 
-This rule spots functions and methods calls with arguments than needed. 
+This rule spots function and method calls with more arguments than needed. 
 
-When the called method makes use of variable number of argument, using `func_get_args`, `func_get_arg` or `func_num_args`, or even the `...` operator, the number of acceptable argument is. 
+When the called method makes use of a variable number of arguments, using `func_get_args()`, `func_get_arg()` or `func_num_args()`, or even the `...` operator, the number of acceptable arguments is dynamic.
+
 
 The following codes are considered a warning:
 
@@ -34,6 +37,7 @@ function z($a, ...$b) { 	return array_sum($b) + $a; }
 x(1, 2, 3, 4); // extra argument 4
 
 ```
+
 
 The following pattern are considered legit:
 

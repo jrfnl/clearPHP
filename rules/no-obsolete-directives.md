@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Obsolete Directives
 
-There are a few PHP directives that were removed before or at version 5.6. They should be avoided. 
+There are a few PHP ini directives that were removed before or at version 5.6. They should be avoided. 
 
 directive | Dropped in version  | Alternative
 --------- | ------------------- | -----------

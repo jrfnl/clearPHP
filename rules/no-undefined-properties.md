@@ -3,7 +3,7 @@
 
 Within a class, properties must be defined explicitly, using `private`, `protected` or `public`, in the class itself or in one of its parent. 
 
-Undefined properties are accepted if the magic property methods are set for the class or its parent. 
+Undefined properties are accepted if the magic property methods `__get()`, `__set()` and optionally `__isset()` and `__unset()` are defined for the class or its parent. 
 
 ```php
 <?php

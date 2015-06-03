@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Use Foreach
 
-`foreach` instruction has been introduced in PHP 4 : it s a loop that will review all element in the source provided. `foreach` has evolved over the years, and is now able to loop over any object that implements the `Iterator` interface. 
+`foreach` instruction has been introduced in PHP 4: it's a loop that will review all element in the source provided. `foreach` has evolved over the years, and is now able to loop over any object that implements the `Iterator` interface.
 
 ```php
 <?php
@@ -30,13 +30,15 @@ for($i = 0 ; $i < $count; $i++) {
 
 ```
 
-While the two alternatives still available, and may even be faster in edge cases, it is recommended to always use `foreach`. 
 
-`foreach` takes charge of looping over the array, whatever its size. It prevents the usage of `count()` in the for() loop, and assign the values into handy variables.
+While the two alternatives are still available, and may even be faster in edge cases, it is recommended to always use `foreach`.
 
-Besides, foreach may be used with more complex structures, including iterators or generators. 
+`foreach` takes charge of looping over the array, whatever its size. It eliminates the need for the use of `count()` in the `for` loop, and assigns the values into handy variables.
 
-It is recommended to always use foreach over arrays or finished sources. 
+Besides, `foreach` may be used with more complex structures, including iterators or generators. 
+
+It is recommended to always use `foreach` to loop over arrays or finished sources.
+
 
 ## Rule Details
 

@@ -18,19 +18,19 @@ function f($object) {
 
 print $o->property; // 2
 
-// calls are identical for objects
+// These calls are identical for objects
 call_user_func_array('f', array($o));
 call_user_func_array('f', array(&$o));
 
 ```
 
-This would be totally different for scalar values, which depends on `&` to be passed by value or by reference. 
 
-It is recommended never to use reference on objects.
+Note: This is totally different for scalar values, which do depend on `&` to be passed by value or by reference. 
+
+It is recommended never to use references on objects.
 
 
 ## Rule Details
-
 
 The following code is considered a warning:
 

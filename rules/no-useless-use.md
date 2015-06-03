@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # No Useless Use
 
-`use` statement are present at the beginning of the namespace to help PHP find classes definitions in the rest of the code. PHP will collect them and use them all to look for classes that are requested during the execution of the current file.
+`use` statements are present at the beginning of the namespace to help PHP find class definitions in the rest of the code. PHP will collect them and use them all to look for classes that are requested during the execution of the current file.
 
 Any extra `use` statement will require extra searching to understand from which namespace the class will come, including resolving unnecessary name collisions. 
 
@@ -19,7 +19,9 @@ namespace name {
 
 ```
 
-It is recommended to keep the number of `use` statement to the minimum. 
+
+It is recommended to keep the number of `use` statements to a minimum. 
+
 
 ## Rule Details
 

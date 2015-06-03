@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Use Provided Constants
 
-A large number of PHP functions accept options as argument. Often, though not always, the options are available as constants. For example, with `error_reporting` : 
+A large number of PHP functions accept options as argument. Often, though not always, the options are available as constants. For example, with `error_reporting()`: 
 
 ```php
 <?php
@@ -20,9 +20,10 @@ get_html_translation_table (HTML_SPECIALCHARS);
 
 ```
 
+
 Using the constants makes the code more readable, and easier to maintain. 
 
-It also prevent the code to decay as PHP evolve. For example, the following code as always been available and readable, even though the value of `E_ALL` has changed with PHP versions. 
+It also prevents the code from decaying as PHP evolves. For example, the following code has always been available and readable, even though the value of `E_ALL` has changed over the course of PHP versions. 
 
 ```php
 <?php
@@ -34,11 +35,14 @@ error_reporting(E_ALL);
 error_reporting(2047);
 
 ```
-It is recommended to always use the provided constants to configure such options. 
+
+
+It is recommended to always use provided constants to configure such options. 
+
 
 ## Rule Details
 
-Lots of native functions uses such arguments. Check the PHP manual for more information.
+Lots of native functions provide constants. Check the PHP manual for more information.
 
 The following are considered a warning : 
 

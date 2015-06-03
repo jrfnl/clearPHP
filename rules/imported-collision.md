@@ -1,7 +1,8 @@
 <!-- Good Practices -->
 # No Closure Argument Collisions
 
-When defining a closure, two kinds of variables may be including in the following code : 
+When defining a closure, two kinds of variables may be included in the following code: 
+
 * The one used as arguments
 * The one stated in the `use` statement
 
@@ -16,7 +17,8 @@ $f = function ($b) use ($a) {
 
 ```
 
-PHP will not check for any collision between arguments and imported variables : instead, it will overwrite the importer variable will have precedence over the argument. For example : 
+
+PHP will not check for any collision between arguments and imported variables: instead, it will _overwrite_: the imported variable will have precedence over the argument. For example: 
 
 ```php
 <?php

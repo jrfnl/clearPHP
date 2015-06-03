@@ -1,7 +1,7 @@
 <!-- Good Practices -->
 # Unresolved Instanceof
 
-The `instanceof` operator checks that an object is of a class, or has this class in its ancestors.
+The `instanceof` operator checks that an object is of a specified class, or has this class in its ancestors.
 
 ```php
 <?php
@@ -16,11 +16,14 @@ var_dump($b instanceof B); // true
 var_dump($b instanceof C); // false
 
 ```
-In the example here, `C` doesn't exist. The operator doesn't tell the difference between `"C doesn't exist"` and `"$b is not of class C"`. No error is reported. 
 
-As `instanceof` is often used in condition, this will lead to dead code (or to constantly used code). This is not desirable. 
+
+In the example here, `C` doesn't exist. The operator can't tell the difference between "_C doesn't exist_" and "_$b is not of class C_". No error is reported. 
+
+As `instanceof` is often used in conditions, this will lead to dead code (or to constantly used code). This is not desirable. 
 
 It is recommended to make sure that the class used in the left part of the `instanceof` operator is always valid.
+
 
 ## Rule Details
 
@@ -29,8 +32,8 @@ The following patterns are considered warnings:
 ```php
 <?php
 
-// various sources for unexisting class
-$a instanceof UnexistingClass;
+// various sources for non-existing class
+$a instanceof NonExistingClass;
 
 $a instanceof ClassWithASpelllingMistake;
 
