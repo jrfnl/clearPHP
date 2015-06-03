@@ -34,3 +34,5 @@ Using any of the functions mentioned above will trigger a warning.
 ## Further Reading
 
 * [PHP Pitfalls](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)
+* [Comparison of sorting functions]
+[Comparison of sorting functions]: http://php.net/array.sorting

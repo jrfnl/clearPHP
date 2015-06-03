@@ -116,3 +116,5 @@ if (($res = readdir('.')) === false) {}
 * [Magic hashes](https://blog.whitehatsec.com/magic-hashes/)
 * [password_verify](http://php.net/function.password-verify)
 * [Userland password_hash](https://github.com/ircmaxell/password_compat)
+* [Variable comparison cheatsheets](http://phpcheatsheets.com/compare/)
+

@@ -33,4 +33,8 @@ x(new a());
 
 ## Further Reading
 
+* [Type hinting]
 
+
+
+[Type hinting]: http://php.net/language.oop5.typehinting

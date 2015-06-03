@@ -42,3 +42,7 @@ If you have some mechanism that compile all classes into one file for faster loa
 
 ## When Not To Use This Rule
 
+### Further Reading
+
+* [PSR-1: Side effects](http://www.php-fig.org/psr/psr-0)
+* [PSR-1: Side effects](http://www.php-fig.org/psr/psr-4)

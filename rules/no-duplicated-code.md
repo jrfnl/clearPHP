@@ -42,6 +42,8 @@ class x {
 ```
 
 
+
 ## Further Reading
+
 * [Don't Repeat Yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself)
 * [PHP Copy Paste Detector](https://github.com/sebastianbergmann/phpcpd)

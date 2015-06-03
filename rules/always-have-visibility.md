@@ -1,5 +1,5 @@
 <!-- Good Practices -->
-# Always Has Visibility
+# Always Have Visibility
 
 For compatibility reasons, PHP allows methods and properties to be defined without visibility : `public`, `protected` or `private`. By default, methods and properties are defined as `public`, making them available to all other objects without restriction.
 
@@ -50,5 +50,12 @@ abstract class x {
 ```
 
 
+## Further Reading
+
+* [Visibility in OOP]
 
 
+
+
+
+[Visibility in OOP]: http://php.net/language.oop5.visibility

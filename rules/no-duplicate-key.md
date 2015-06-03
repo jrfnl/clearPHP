@@ -34,3 +34,6 @@ $a[1] = 'a'; // this doesn't belong to the literal definition anymore
 ```
 
 
+### Further Reading
+
+* [Arrays](http://php.net/language.types.array)

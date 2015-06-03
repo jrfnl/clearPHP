@@ -43,5 +43,11 @@ There are a few PHP directives that were removed before or at version 5.6. They 
 Reading, modifying or checking any of the directives mentioned above will trigger a warning. 
 
 
+### Further Reading
 
+* [PHP 5.6 backward incompatible changes](http://php.net/migration56.incompatible)
+* [PHP 5.5 backward incompatible changes](http://php.net/migration55.incompatible)
+* [PHP 5.4 backward incompatible changes](http://php.net/migration54.incompatible)
+* [PHP 5.3 backward incompatible changes](http://php.net/migration53.incompatible)
+* [PHP 5.2 backward incompatible changes](http://php.net/migration52.incompatible)
 

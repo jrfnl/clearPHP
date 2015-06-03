@@ -105,5 +105,6 @@ function juggle() {
 
 
 ## Further Reading
+
 * [parse_str](http://php.net/parse_str)
 * [extract](http://php.net/extract)
