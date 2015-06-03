@@ -49,17 +49,17 @@ The following are considered a warning :
 
 ```php
 <?php
+// Needs example
 
 ```
+
 
 The following are OK : 
 
 ```php
 <?php
+// Needs example
 
-define('l', 3, true);
-define('m', $x, true);
-define('n', array(1,2,3), true); // before PHP 5.6
 ```
 
 ## When Not To Use It

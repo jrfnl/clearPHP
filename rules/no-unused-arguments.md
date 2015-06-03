@@ -67,26 +67,10 @@ The following patterns are considered warnings:
 
 ```php
 <?php
-$x = 10; 
-?>
-```
-
-By default, unused arguments cause warnings:
-
-```php
-<?php
 function x ($foo) {
     return 5;
 }
-```
 
-The following patterns are not considered warnings:
-
-```php
-<?php
-$x = 10;
-$x++;
-?>
 ```
 
 

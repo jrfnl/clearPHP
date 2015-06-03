@@ -9,6 +9,8 @@ It may happens that `default` case is empty : in that situation, the `default` i
 
 This rule require that every `switch` statement has at least a `default` case. 
 
+The following pattern is considered a warning:
+
 ```php
 <?php
 switch (foo) {

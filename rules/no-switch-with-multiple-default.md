@@ -9,6 +9,8 @@ All extra `default` cases are considered dead code, as they won't be executed.
 
 This rule require that every `switch` statement has at least a `default` case. 
 
+The following patterns are considered warnings:
+
 ```php
 <?php
 switch (foo) {

@@ -15,7 +15,6 @@ $c = 'c' . ((string) $a); // both unnecessary : $a is a string
 
 Typecasting will be useful as security feature, to ensure a value is of a requested type. It will not help performances. 
 
-It is recommended to avoid recalculation in any function scope. In the global scope, this is also recommended, although it may be harder to spot. 
 
 ## Rule Details
 

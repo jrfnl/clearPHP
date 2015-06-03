@@ -77,6 +77,8 @@ Here is a list of such functions :
 * `simplexml_load_file()`
 
 
+The following pattern is considered a warning:
+
 ```php
 <?php
 

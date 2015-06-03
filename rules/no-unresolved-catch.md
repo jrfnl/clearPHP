@@ -50,6 +50,4 @@ try {
 
 ```
 
-## Further Readings
-* [No Raw Exceptions](no-raw-exceptions.md)
 

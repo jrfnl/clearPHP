@@ -45,17 +45,8 @@ This rule applies to :
 This rule doesn't apply to 
 * closures
 
-The following code is considered a warning:
 
-```php
-<?php
 
-var_dump($variable);
-print_r($tmp);
-
-print_r(debug_backtrace());
-
-```
 
 ## Options
 * Constants : they may be included in this rule, when constants are used to represent literal values. When they are used for state, like use once-only function, this option must be used.

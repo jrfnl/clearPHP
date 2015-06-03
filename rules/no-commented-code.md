@@ -22,6 +22,8 @@ The following patterns are considered warnings:
 ```
 
 
+The following pattern is considered legit:
+
 ```php
 <?php
 	/**

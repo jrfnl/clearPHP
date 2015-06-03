@@ -9,6 +9,9 @@ Additionally the short open tag `<?` tries to interpret the XML doctype `<?xml` 
 
 This rule requires that every PHP opening tag is not a short tag. The following patterns are considered warnings:
 
+
+The following pattern is considered a warning:
+
 ```
 <? /* code */ ?>
 ```

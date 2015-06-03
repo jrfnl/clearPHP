@@ -42,4 +42,7 @@ $foo->used = 4;
 ```
 
 
+### When Not To Use This Rule
+
+If you don't want to be notified about unused properties, you can turn this rule off.
 
