@@ -132,8 +132,9 @@ class MySpecialException extends \Exception {}
 
 ```
 
+
 <!--
-## When Not To Use It
+## When Not To Use This Rule
 Catching `Exception` is accepted when it is used for a catch-all feature. 
 -->
 

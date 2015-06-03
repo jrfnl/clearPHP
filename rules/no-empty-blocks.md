@@ -63,7 +63,7 @@ class Foo extends Exceptions {
 
 ```
 
-## When Not To Use It
 When using empty blocks conflict with other rules (like never using negative conditions), this may lead to create empty blocks.
+## When Not To Use This Rule
 
 

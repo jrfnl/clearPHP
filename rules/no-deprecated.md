@@ -9,7 +9,9 @@ For example, the extension `ext/mysql` has been removed in PHP 5.5, and it was o
 
 This rule targets code that is marked as obsolete in one of the PHP versions, or was removed. The list of such deprecated features is available in the manual, in the migration pages.
 
-## When Not To Use It
+
+## When Not To Use This Rule
+
 If you plan to keep your application linked to some PHP version, then you can safely ignore this rule.
 
 

@@ -56,7 +56,8 @@ $a = [ "class" => "or" ];
 
 ```
 
-## When Not To Use It
+
+## When Not To Use This Rule
 
 If you don't fear any interference between structures names and code, you can turn this rule off.
 

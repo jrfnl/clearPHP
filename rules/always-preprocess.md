@@ -53,7 +53,9 @@ const someConstant = class::constante + 1;
 
 ```
 
-## When Not To Use It
+
+## When Not To Use This Rule
+
 If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
 
 

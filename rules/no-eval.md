@@ -49,7 +49,9 @@ The following are considered legit :
 
 ```
 
-## When Not To Use It
+
+## When Not To Use This Rule
+
 Please, always use this rule.
 
 ## Further Reading

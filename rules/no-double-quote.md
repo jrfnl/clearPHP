@@ -50,8 +50,8 @@ HEREDOC;
 ```
 
 
-## When Not To Use It
 If the application makes heavy use of one of the quote style in another related technology (HTML uses " a lot), it is good to use the other quote style to create such literals in PHP. 
+## When Not To Use This Rule
 
 If the application has too many report of this, it is probably wise to avoid using it and fixing too many minor problems.
 

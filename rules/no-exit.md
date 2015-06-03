@@ -31,8 +31,8 @@ die(__METHOD__);
 
 Rule may also apply to libraries build on top of `var_dump` concept, such as [Kint](http://raveren.github.io/kint/) or [Krumo](http://krumo.sourceforge.net/). They provide configuration to disable them while leaving debug traces in the code, which is not the case for native PHP functions such as `print_r`. While this is indeed better, this still mean code that won't be used is pushed to production. As such, it must be avoided. 
 
+## When Not To Use This Rule
 
-## When Not To Use It
 When the code is run as a commandline script, `exit` and `die` are good to return status, just like `return`. 
 
 ## Further Reading

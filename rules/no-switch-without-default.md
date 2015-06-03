@@ -41,6 +41,8 @@ switch (foo) {
 }
 
 ```
-## When Not To Use It
+
+
+## When Not To Use This Rule
 
 If `default` is not always necessary, you may disable this rule.

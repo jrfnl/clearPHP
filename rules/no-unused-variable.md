@@ -28,6 +28,7 @@ $x++;
 
 ```
 
-## When Not To Use It
+
+## When Not To Use This Rule
 
 If you don't want to be notified about unused variables, you can turn this rule off.

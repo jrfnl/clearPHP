@@ -53,7 +53,8 @@ class myClass {
 ```
 
 
-## When Not To Use It
+## When Not To Use This Rule
+
 * If you hate unbalanced parenthesis : [(](https://xkcd.com/859/)
 * If you check all closing tags with your IDE or some code beautifier : just don't do this manually. 
 

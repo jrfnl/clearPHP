@@ -32,9 +32,9 @@ The following patterns are considered warnings:
     function foo($x) { return magic($x); }
 
 ```
-## When Not To Use It
+
+
+## When Not To Use This Rule
 
 If needed, just use revert from the control version system. 
-
-
 

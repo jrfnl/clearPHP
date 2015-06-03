@@ -65,7 +65,9 @@ spl_autoload_register(function ($class) {
 
 ```
 
-## When Not To Use It
+
+## When Not To Use This Rule
+
 * If you need to include functions or constants, you can't use autoloading. 
 
 ## Further Reading

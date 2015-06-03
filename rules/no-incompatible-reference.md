@@ -75,7 +75,8 @@ function &ReferenceReturningFunction() {
 ```
 
 
-## When Not To Use It
+## When Not To Use This Rule
+
 Always use this.
 
 ## Further Readings

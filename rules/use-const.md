@@ -35,8 +35,10 @@ define('n', array(1,2,3), true); // before PHP 5.6
 
 ```
 
-## When Not To Use It
 For backward compatibility, or to load configuration as constants, `define()` is still more convenient for definition. In terms of usage, both syntax are good.
+
+## When Not To Use This Rule
+
 
 ## Further Reading
 

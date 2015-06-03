@@ -79,7 +79,9 @@ function f($a, $b, $c, $d) {}
 ```
 
 
-## When Not To Use It
+
+## When Not To Use This Rule
+
 Always use it. 
 
 ## Further Readings

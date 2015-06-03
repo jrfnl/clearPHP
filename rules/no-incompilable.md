@@ -34,8 +34,10 @@ $y = ;
 
 ```
 
-## When Not To Use It
 It should be always on for broken code. It may be used less aggressively if backward compatibility is not important. 
+
+## When Not To Use This Rule
+
 
 ## Further Reading
 

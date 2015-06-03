@@ -23,8 +23,9 @@ if (!user_login($user, $pass)) {
 
 ```
 
-## When Not To Use It
 CLI applications may have valid use of `sleep` and `usleep`.
 
 ## Further Reading 
+## When Not To Use This Rule
+
 * [Brute-force/DoS prevention in PHP](http://stackoverflow.com/questions/1727329/brute-force-dos-prevention-in-php)

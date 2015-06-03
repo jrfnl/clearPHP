@@ -25,6 +25,7 @@ $bar->usedMethod();
 
 ```
 
-## When Not To Use It
 
 If methods may be called dynamically in your code, you're likely to turn off this rule.
+## When Not To Use This Rule
+

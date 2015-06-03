@@ -37,7 +37,8 @@ Another file :
 class b extends a { /**/ }
 
 ```
-## When Not To Use It
 
 If you have some mechanism that compile all classes into one file for faster loading, this rule may be ignore for that kind of file. 
+
+## When Not To Use This Rule
 

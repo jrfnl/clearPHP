@@ -44,7 +44,8 @@ The following codes are considered warnings:
 	}
 ```
 
-## When Not To Use It
+
+## When Not To Use This Rule
 
 If avoiding global variables requires a lot of complex code, then it may worth using a few of them. But this is rare.
 
