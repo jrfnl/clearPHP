@@ -26,12 +26,13 @@ echo $foo ? 'a' : $bar ? 'b' : 'c';
 
 Here is the result for all values of `$foo` and `$bar` : 
 
-| `$foo` | `$bar` | result |
-|--------|--------|--------|
-| true   | true   | b      | 
-| true   | false  | b      | 
-| false  | true   | b      | 
-| false  | false  | c      | 
+`$foo`  | `$bar`  | result
+------- | ------- | ------
+`true`  | `true`  | b
+`true`  | `false` | b
+`false` | `true`  | b
+`false` | `false` | c
+
 
 It is recommended to avoid nesting ternary operators. 
 
