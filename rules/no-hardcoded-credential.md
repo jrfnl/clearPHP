@@ -33,16 +33,15 @@ It is recommended to check that functions that require credentials are not using
 
 Here is a list of such functions : 
 
-* ftp_connect
-* ftp_login
-* mysql_connect
-* mysqli_connect
-* ftp_login
-* mssql_connect
-* oci_connect
-* imap_open
-* cyrus_authenticate
-* PDO::__construct
+* `ftp_connect()`
+* `ftp_login()`
+* `mysql_connect()`
+* `mysqli_connect()`
+* `mssql_connect()`
+* `oci_connect()`
+* `imap_open()`
+* `cyrus_authenticate()`
+* `PDO::__construct()`
 
 
 The following is wrong. 

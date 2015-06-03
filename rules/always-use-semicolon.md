@@ -49,11 +49,11 @@ for ( $i = 0; $i < 5; ++$i )
 ```
 There are quite some instructions that may overflow to the next line, like all operators, and : 
 * all operators (math, comparison, logical...)
-* echo
-* print
-* include and include_once
-* require and require_once
-* exit
+* `echo`
+* `print`
+* `include` and `include_once`
+* `require` and `require_once`
+* `exit`
 
 This rules doesn't require the adding of extra semicolon when they are not needed.
 

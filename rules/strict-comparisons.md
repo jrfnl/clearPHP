@@ -54,29 +54,29 @@ This rule targets methods that doesn't compare the result with `===` or `!==` to
 
 Here is a list of PHP native functions that require strict comparison : 
 
-* array\_search
-* collator\_compare
-* collator\_get\_sort\_key
-* current
-* fgetc
-* file\_get\_contents
-* file\_put\_contents
-* iconv\_strpos
-* iconv\_strrpos
-* imagecolorallocate
-* imagecolorallocatealpha
-* mb\_strlen
-* next
-* pcntl\_getpriority
-* preg\_match
-* preg\_match\_all
-* prev
-* readdir
-* stripos
-* strpos
-* strripos
-* strrpos
-* strtok
+* `array_search()`
+* `collator_compare()`
+* `collator_get_sort_key()`
+* `current()`
+* `fgetc()`
+* `file_get_contents()`
+* `file_put_contents()`
+* `iconv_strpos()`
+* `iconv_strrpos()`
+* `imagecolorallocate()`
+* `imagecolorallocatealpha()`
+* `mb_strlen()`
+* `next()`
+* `pcntl_getpriority()`
+* `preg_match()`
+* `preg_match_all()`
+* `prev()`
+* `readdir()`
+* `stripos()`
+* `strpos()`
+* `strripos()`
+* `strrpos()`
+* `strtok()`
 
 The following code is considered a warning:
 

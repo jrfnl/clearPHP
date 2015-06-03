@@ -27,22 +27,22 @@ class y extends x {
 ## Rule Details
 
 This rule is aimed at avoiding direct call to magic methods. The list is the following : 
+* `__construct()`
+* `__destruct()`
+* `__call()`
+* `__callStatic()`
+* `__get()`
+* `__set()`
+* `__isset()`
+* `__unset()`
+* `__sleep()`
+* `__wakeup()`
+* `__toString()`
+* `__invoke()`
+* `__set_state()`
+* `__clone()`
+* `__debugInfo()`
 
-* \_\_construct()
-* \_\_destruct()
-* \_\_call()
-* \_\_callStatic()
-* \_\_get()
-* \_\_set()
-* \_\_isset()
-* \_\_unset()
-* \_\_sleep()
-* \_\_wakeup()
-* \_\_toString()
-* \_\_invoke()
-* \_\_set_state()
-* \_\_clone()
-* \_\_debugInfo() 
 
 The following patterns are considered warnings:
 

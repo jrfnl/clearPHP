@@ -2,7 +2,7 @@
 # No Debug Code
 
 Debug code is be of several flavor : 
-* `var_dump` and `print_r`
+* `var_dump()` and `print_r()`
 * `print` or `echo` with information (i.e. `echo 'DEBUG';`. That includes HTML comments or `$debug` messages.
 * Helper functions or classes, such as Kint, php-ref, dump_r, Krumo, dBug.
 

@@ -68,20 +68,20 @@ try {
 ```
 
 Last, there are already 13 exceptions predefined in SPL extension : 
+* `BadFunctionCallException`
+* `BadMethodCallException`
+* `DomainException`
+* `InvalidArgumentException`
+* `LengthException`
+* `LogicException`
+* `OutOfBoundsException`
+* `OutOfRangeException`
+* `OverflowException`
+* `RangeException`
+* `RuntimeException`
+* `UnderflowException`
+* `UnexpectedValueException`
 
-* BadFunctionCallException
-* BadMethodCallException
-* DomainException
-* InvalidArgumentException
-* LengthException
-* LogicException
-* OutOfBoundsException
-* OutOfRangeException
-* OverflowException
-* RangeException
-* RuntimeException
-* UnderflowException
-* UnexpectedValueException
 
 They provide some general semantics for Exceptions and may be used to help libraries understand each other's exception. 
 

@@ -40,23 +40,23 @@ It is recommended to always check values that are return by those resource-creat
 
 Resource creating functions are listed in ["Resources types"](http://php.net/manual/en/resource.php). There are over 130 of them, excluding exotic PHP-extensions. The most usual are below : 
 
-* dir
-* fopen
-* fsockopen
-* ftp_connect
-* ftp_ssl_connect
-* imagecreate and co
-* imap_open
-* ldap_connect
-* opendir
-* openssl_get_privatekey
-* openssl_get_publickey
-* pdf_new
-* pfsockopen
-* popen
-* sem_get
-* shm_attach
-* tmpfile
+* `dir()`
+* `fopen()`
+* `fsockopen()`
+* `ftp_connect()`
+* `ftp_ssl_connect()`
+* `imagecreate()` and related functions
+* `imap_open()`
+* `ldap_connect()`
+* `opendir()`
+* `openssl_get_privatekey()`
+* `openssl_get_publickey()`
+* `pdf_new()`
+* `pfsockopen()`
+* `popen()`
+* `sem_get()`
+* `shm_attach()`
+* `tmpfile()`
 
 
 The following patterns are considered warnings:

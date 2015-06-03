@@ -81,13 +81,13 @@ Check for methods that normally manipulate large amounts of data.
 
 Commands which needs to be complete before transmission, such as SQL queries, are not considered by this rule.
 
-* file\_put\_contents
-* fwrite
-* stream_write
-* socket_write
-* print
-* echo
-* mail
+* `file_put_contents()`
+* `fwrite()`
+* `stream_write()`
+* `socket_write()`
+* `print`
+* `echo`
+* `mail()`
 
 The following patterns are considered warnings:
 
