@@ -33,7 +33,7 @@ $d = 'd' . ((string) $a);
 
 // do not cast unknown fraction to integers
 echo (int) ( (0.1+0.7) * 10 ); // echoes 7!
-// uses floor() or ceil() instead
+// use the bcmath extension or the floor() or ceil() functions instead
 
 ```
 
@@ -41,6 +41,7 @@ echo (int) ( (0.1+0.7) * 10 ); // echoes 7!
 ## Further Reading
 
 * [Casting integers](http://php.net/language.types.integer.php#language.types.integer.casting)
+* [BCMath](http://php.net/bcmath)
 * [floor] (http://php.net/floor)
 * [ceil] (http://php.net/ceil)
 

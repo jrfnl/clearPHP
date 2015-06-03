@@ -21,14 +21,12 @@ switch (foo) {
     case 'b':
         doSomething();
         break 1;
-
-    default:
-        // do nothing
 }
 
 ```
 
-The following patterns are considered warnings:
+
+The following pattern is considered legit:
 
 ```php
 <?php
@@ -40,6 +38,9 @@ switch (foo) {
     case 'b':
         doSomething();
         break 1;
+
+    default:
+        // do nothing
 }
 
 ```

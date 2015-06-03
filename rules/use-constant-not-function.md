@@ -22,18 +22,19 @@ The following patterns is considered a warning:
 ```php
 <?php
 
-if (php_sapi_name() == 'cli') {
+if (php_sapi_name() === 'cli') {
 	/**/
 }
 
 ```
+
 
 The following patterns is considered valid :
 
 ```php
 <?php
 
-if (PHP_SAPI == 'cli') {
+if (PHP_SAPI === 'cli') {
 	/**/
 }
 

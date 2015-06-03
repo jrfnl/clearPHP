@@ -1,7 +1,7 @@
 <!-- Security -->
-# Always Prepare Statement
+# Always Prepare Statements
 
-Prepared statement is the a way to build queries, that separates the query from the values. The general synopsis is the following : 
+Prepared statements is a way to build queries, that separates the query from the values. The general synopsis is the following : 
 
 ```php
 <?php
@@ -24,15 +24,15 @@ $stmt->bind_result($result);
 ```
 In this process, the SQL server is protected at two levels : first, the query is compiled with only known data. This makes it easy to review, and impossible to tamper with. Secondly, incoming data gets a format. The server will handle them in a separate memory space than the query, reducing interferences to null.
 
-The traditional way to build queries is to concatenate the user data in the query, after sanitization. If sanitization is forgotten, or a new way to circumvent it is discovered, the user data have a chance to interfere with the query. 
+The traditional way to build queries is to concatenate the user data in the query, after sanitization. If sanitization is forgotten, or a new way to circumvent it is discovered, the user data could interfere with the query. 
  
-It is recommended to always use prepared statements when using a remote server and user data. If query is static (i.e. doesn't include external data), it may be passed directly. 
+It is recommended to always use prepared statements when using a remote server and user data. If the query is static (i.e. doesn't include external data), it may be passed directly. 
 
-They are called 'prepared statements' in SQL world, and may carry other names with other technologies. This rule will apply to any paradigm that separate data and query. 
+These are called '_prepared statements_' in SQL world, and may carry other names with other technologies. This rule will apply to any paradigm that can separate data and query. 
 
 ## Rule Details
 
-This rule is aimed at avoiding omitting visibility for properties and methods.
+This rule is aimed at avoiding unsafe data queries being run against a database.
 
 The following patterns are considered warnings:
 
@@ -59,19 +59,20 @@ The following patterns are not considered warnings:
 $sqlQuery = 'SELECT column FROM table WHERE id = ?';
 
 
-// the Query is literal statement
+// the query is a literal statement
 $sqlQuery = 'SELECT column FROM table WHERE id = 10';
 
 // Can't use arrays with IN
 $ids = [1, 3, 5];
-$sqlQuery = 'SELECT column FROM table WHERE id in (' .  join(',', $ids).')';
+$sqlQuery = 'SELECT column FROM table WHERE id IN (' . join(',', $ids) . ')';
 
 ```
 
 
-* Prepared statement are not available for all queries : for example, changing the structure of a table can't be done with a prepared statement, or PHP arrays can't be used with IN SQL clauses. 
-* Prepared statement requires two calls to the database. This has overhead, though it usually is usually less than the query itself. 
 ## When Not To Use This Rule
+
+* Prepared statement are not available for all queries : for example, changing the structure of a table can't be done with a prepared statement and PHP arrays can't be used with IN SQL clauses. 
+* Prepared statements require two calls to the database. This has overhead, though it usually is usually less than the query itself. 
 
 ## Further Reading
 

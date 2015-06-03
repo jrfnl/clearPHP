@@ -8,8 +8,8 @@ When it was introduced, class autoloading was build around the function `__autol
 
 // example of __autoload
 function __autoload($classname) {
-    $filename = PROJECT_ROOT.'/'. $classname .'.php';
-    include($filename);
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	include $filename;
 }
 
 ```
@@ -29,13 +29,14 @@ The following are considered warning :
 
 // function definition
 function __autoload($classname) {
-    $filename = PROJECT_ROOT.'/'. $classname .'.php';
-    if (file_exists($filename)) {
-	    include($filename);
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	if (file_exists($filename)) {
+		include $filename;
 	}
 }
 
 ```
+
 
 The following are considered legit : 
 
@@ -46,9 +47,9 @@ The following are considered legit :
 
 // registering one's function
 function my_autoloader($class) {
-    $filename = PROJECT_ROOT.'/'. $classname .'.php';
-    if (file_exists($filename)) {
-	    include($filename);
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	if (file_exists($filename)) {
+		include $filename;
 	}
 }
 
@@ -57,9 +58,9 @@ spl_autoload_register('my_autoloader');
 
 // Or, using an anonymous function as of PHP 5.3.0
 spl_autoload_register(function ($class) {
-    $filename = PROJECT_ROOT.'/'. $classname .'.php';
-    if (file_exists($filename)) {
-	    include($filename);
+	$filename = PROJECT_ROOT.'/'. $classname .'.php';
+	if (file_exists($filename)) {
+		include $filename;
 	}
 });
 

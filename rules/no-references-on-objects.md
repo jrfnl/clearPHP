@@ -42,7 +42,7 @@ $o = new Object();
 // Typehint makes the reference useless
 function f(Object &$a) {}
 
-foreach($arrayOfObject as &$object) {
+foreach($arrayOfObjects as &$object) {
 	$object->alter();
 }
 

@@ -37,7 +37,7 @@ The following code is considered legit :
 
 ```php
 <?php
-// case 'b' has uncommented fallthrough
+// case 'b' has commented fallthrough
 switch (foo) {
     case 'a':
     case 'c':

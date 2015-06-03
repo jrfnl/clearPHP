@@ -7,9 +7,9 @@ PHP has a small number of native functions that require credentials to use. For 
 ```php
 <?php
 
-$ftp_server = "ftp.example.com";
-$ftp_user = "foo";
-$ftp_pass = "bar";
+$ftp_server = 'ftp.example.com';
+$ftp_user = 'foo';
+$ftp_pass = 'bar';
 
 // set up a connection
 $conn_id = ftp_connect($ftp_server);
