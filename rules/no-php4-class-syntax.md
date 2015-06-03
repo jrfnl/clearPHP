@@ -125,5 +125,5 @@ class PHP5_style {
 ```
 
 
-## Further Reading 
+## Further Reading
 * [Remove PHP 4 Constructors](https://wiki.php.net/rfc/remove_php4_constructors) 

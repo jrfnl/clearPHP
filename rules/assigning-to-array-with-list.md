@@ -32,7 +32,6 @@ If order is important in the resulting array, it is recommended to apply `array_
 
 
 
+## Further Reading
 
-
-## Further Readings
-* [list()](http://php.net/manual/en/function.list.php)
+* [`list()`](http://php.net/function.list)

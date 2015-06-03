@@ -35,8 +35,9 @@ Rule may also apply to libraries build on top of `var_dump` concept, such as [Ki
 
 When the code is run as a commandline script, `exit` and `die` are good to return status, just like `return`. 
 
+
 ## Further Reading
 
-* [Exceptions](http://php.net/manual/en/language.exceptions.php)
-* [Trigger_error](http://php.net/manual/en/function.trigger-error.php)
-* [Return](http://php.net/manual/en/function.return.php)
+* [Exceptions](http://php.net/language.exceptions)
+* [Trigger_error](http://php.net/function.trigger-error)
+* [Return](http://php.net/function.return)

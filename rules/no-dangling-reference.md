@@ -66,4 +66,4 @@ unset($value);
 
 ## Further Reading
 
-* [foreach in PHP](http://php.net/manual/en/control-structures.foreach.php)
+* [`foreach`](http://php.net/control-structures.foreach)

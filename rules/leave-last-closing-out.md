@@ -58,6 +58,8 @@ class myClass {
 * If you hate unbalanced parenthesis : [(](https://xkcd.com/859/)
 * If you check all closing tags with your IDE or some code beautifier : just don't do this manually. 
 
-## Further Readings
-* [PHP Closing Tag](http://php.net/manual/en/language.basic-syntax.phptags.php)
-* [PSR-2 coding style guide](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+
+## Further Reading
+
+* [PHP Closing Tag](http://php.net/language.basic-syntax.phptags)
+* [PSR-2 coding style guide](http://www.php-fig.org/psr/psr-2/)

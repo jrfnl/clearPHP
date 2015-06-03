@@ -31,6 +31,6 @@ Using any of the functions mentioned above will trigger a warning.
 
 
 
-## Further Readings
+## Further Reading
 
 * [PHP Pitfalls](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/)

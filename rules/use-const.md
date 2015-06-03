@@ -42,6 +42,6 @@ For backward compatibility, or to load configuration as constants, `define()` is
 
 ## Further Reading
 
-* [define() versus const (PHP Best practises)](https://phpbestpractices.org/#constants)
+* [`define()` versus const (PHP Best practises)](https://phpbestpractices.org/#constants)
 * [define vs const (Stackoverflow)](http://stackoverflow.com/questions/2447791/define-vs-const)
 

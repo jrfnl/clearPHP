@@ -73,7 +73,8 @@ $sqlQuery = 'SELECT column FROM table WHERE id in (' .  join(',', $ids).')';
 * Prepared statement requires two calls to the database. This has overhead, though it usually is usually less than the query itself. 
 ## When Not To Use This Rule
 
-## Further Readings
-* [Prepared statements](http://php.net/manual/en/mysqli.quickstart.prepared-statements.php)
+## Further Reading
+
+* [Prepared statements](http://php.net/mysqli.quickstart.prepared-statements)
 * [Using prepared statements](https://www.inanimatt.com/php-prepared-statements.html)
 * [PHP MySQL prepared SQL statement vs SQL statement](http://erlycoder.com/69/php-mysql-prepared-sql-statement-vs-sql-statement)

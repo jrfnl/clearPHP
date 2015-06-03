@@ -42,6 +42,6 @@ $x[1][0];
 
 ## Further Reading
 
-* [Strings](http://php.net/manual/en/language.types.string.php)
-* [Arrays](http://php.net/manual/en/language.types.array.php)
+* [Strings](http://php.net/language.types.string)
+* [Arrays](http://php.net/language.types.array)
 

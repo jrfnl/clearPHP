@@ -64,4 +64,4 @@ If you don't fear any interference between structures names and code, you can tu
 
 ## Further Reading
 
-* [PHP reserved keywords](http://php.net/manual/en/reserved.keywords.php)
+* [PHP reserved keywords](http://php.net/reserved.keywords)

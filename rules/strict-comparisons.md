@@ -111,7 +111,8 @@ if (($res = readdir('.')) === false) {}
 
 
 ## Further Reading
+
 * [Strict vs. Loose Comparisons in PHP](http://www.copterlabs.com/blog/strict-vs-loose-comparisons-in-php/)
 * [Magic hashes](https://blog.whitehatsec.com/magic-hashes/)
-* [password_verify](http://php.net/manual/en/function.password-verify.php)
+* [password_verify](http://php.net/function.password-verify)
 * [Userland password_hash](https://github.com/ircmaxell/password_compat)

@@ -39,9 +39,9 @@ echo (int) ( (0.1+0.7) * 10 ); // echoes 7!
 ```
 
 
+## Further Reading
 
-## Further Readings
-* [Casting integers] (http://php.net/manual/en/language.types.integer.php#language.types.integer.casting)
+* [Casting integers](http://php.net/language.types.integer.php#language.types.integer.casting)
 * [floor] (http://php.net/floor)
 * [ceil] (http://php.net/ceil)
 

@@ -60,5 +60,6 @@ $a = array(1 =>  'c',
 ```
 
 
-## Further Readings
-* [Arrays](http://php.net/manual/en/language.types.array.php)
+## Further Reading
+
+* [Arrays](http://php.net/language.types.array)

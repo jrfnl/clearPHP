@@ -75,7 +75,8 @@ while($row = $pdo->fetchRow()) {
 ```
 
 
-## Further Readings
-* [Iterator](http://php.net/manual/en/class.iterator.php)
-* [PHP generators](http://php.net/manual/en/language.generators.overview.php)
-* [Foreach](http://php.net/manual/en/control-structures.foreach.php)
+## Further Reading
+
+* [Iterator](http://php.net/class.iterator)
+* [PHP generators](http://php.net/language.generators.overview)
+* [Foreach](http://php.net/control-structures.foreach)

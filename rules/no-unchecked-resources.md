@@ -106,8 +106,10 @@ if (pspell_check($pspell_link, "testt")) {
 ```
 
 
+### Further Reading
+* [Resource types]
 
-## Further Readings
-* [Resources types](http://php.net/manual/en/resource.php)
 
 
+
+[Resource types]: http://php.net/resource

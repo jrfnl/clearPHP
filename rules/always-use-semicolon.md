@@ -87,7 +87,7 @@ include
 ```
 
 
+## Further Reading
 
-## Further Readings
-http://php.net/manual/en/language.basic-syntax.instruction-separation.php
+* [instruction-separation](http://php.net/language.basic-syntax.instruction-separation)
 

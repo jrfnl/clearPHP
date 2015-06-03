@@ -49,7 +49,8 @@ The following codes are considered warnings:
 
 If avoiding global variables requires a lot of complex code, then it may worth using a few of them. But this is rare.
 
+
 ## Further Reading
 
 * [Global Variables Are Bad](http://c2.com/cgi/wiki?GlobalVariablesAreBad)
-* [Variables scope](http://php.net/manual/en/language.variables.scope.php)
+* [Variables scope](http://php.net/language.variables.scope)

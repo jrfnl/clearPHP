@@ -109,8 +109,9 @@ function getAreaOrSuperArea(Area $shape) {
 ```
 
 
+
 ## Further Reading
 
-* [Interfaces](http://php.net/manual/en/language.oop5.interfaces.php)
-* [Type Hinting](http://php.net/manual/en/language.oop5.typehinting.php)
-* [Instance of](http://php.net/manual/en/language.operators.type.php)
+* [Interfaces](http://php.net/language.oop5.interfaces)
+* [Type Hinting](http://php.net/language.oop5.typehinting)
+* [Instance of](http://php.net/language.operators.type)

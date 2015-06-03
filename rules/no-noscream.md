@@ -47,7 +47,7 @@ while($line = fgets($fp)) {
 ```
 
 
-## Further Reading 
+## Further Reading
 
-* [Example that shows the effect of scream](http://php.net/manual/en/scream.examples-simple.php)
+* [Example that shows the effect of scream](http://php.net/scream.examples-simple)
 * [ext/scream extension](http://pecl.php.net/package/scream)

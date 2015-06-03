@@ -7,7 +7,7 @@ Declaration files will be included at some point in the code, so as to provide t
 
 ## Rule Details
 
-This rule require that files contains only definitions for functions, constants, classes, traits or interfaces. A few exceptions may apply to conditional definition, and direct access prevention.
+This rule require that files contains only definitions for functions, constants, classes, traits or interfaces. A few exceptions may apply to conditional definitions and direct access prevention.
   
 The following patterns are considered warnings:
 
@@ -42,4 +42,5 @@ if (defined('APP_CONFIGURATION')) {
 
 
 ## Further Reading
-* [PSR-1 : Side effects](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md#23-side-effects)
+
+* [PSR-1 : Side effects](http://www.php-fig.org/psr/psr-1/#2.3.-side-effects)

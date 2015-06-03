@@ -26,4 +26,4 @@ The following code is considered legit:
 
 ## Further Reading
 
-* [PHP tags](http://php.net/manual/en/language.basic-syntax.phptags.php)
+* [PHP tags](http://php.net/language.basic-syntax.phptags)

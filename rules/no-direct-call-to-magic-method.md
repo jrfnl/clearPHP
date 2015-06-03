@@ -72,6 +72,6 @@ class y extends x {
 ```
 
 
+## Further Reading
 
-## Further Readings
-* [Magic methods](http://php.net/manual/en/language.oop5.magic.php)
+* [Magic methods](http://php.net/language.oop5.magic)

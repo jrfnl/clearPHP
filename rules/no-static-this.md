@@ -45,4 +45,5 @@ This is not checked by PHP but will lead to bugs.
 
 
 ## Further Reading
-* [Static Keyword](http://php.net/manual/en/language.oop5.static.php)
+
+* [Static Keyword](http://php.net/language.oop5.static)
