@@ -74,10 +74,3 @@ if ($foo) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-Never
-
-
-## Further Reading 
--->

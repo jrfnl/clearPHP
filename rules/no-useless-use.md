@@ -42,9 +42,3 @@ namespace name {
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
-
--->

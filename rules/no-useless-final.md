@@ -53,12 +53,6 @@ final class foo {
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
-
--->
 
 ## Further Reading
 * [Final Keyword](http://php.net/manual/en/language.oop5.final.php)

@@ -32,15 +32,9 @@ The following patterns are considered warnings:
     function foo($x) { return magic($x); }
 ?>
 ```
-<!--
-### Options
--->
 ## When Not To Use It
 
 If needed, just use revert from the control version system. 
 
-<!--
-## Further Reading 
 
--->
 

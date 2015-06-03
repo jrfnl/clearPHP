@@ -85,12 +85,4 @@ class foo2 {
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
-
-## Further Readings
--->
 

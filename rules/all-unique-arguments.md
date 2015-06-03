@@ -61,12 +61,6 @@ function f($a, $b, $c) { /**/ }
 
 ?>
 ```
-<!--
-### Options
--->
 ## When Not To Use It
 Always use this.
 
-<!--
-## Further Readings
--->

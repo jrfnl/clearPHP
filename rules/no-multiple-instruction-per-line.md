@@ -111,11 +111,4 @@ $a = 'a' . $bc . 'c';
 ```
 
 
-<!--
-## When Not To Use It
-Please, always use this
 
-## Further Reading
-* 
-
--->

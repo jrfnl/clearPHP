@@ -66,13 +66,7 @@ class Foo extends Exceptions {
 ?>
 ```
 
-<!--
-### Options
--->
 ## When Not To Use It
 When using empty blocks conflict with other rules (like never using negative conditions), this may lead to create empty blocks.
 
-<!--
-## Further Readings
 
--->

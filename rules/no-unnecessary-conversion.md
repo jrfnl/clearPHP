@@ -39,22 +39,8 @@ echo (int) ( (0.1+0.7) * 10 ); // echoes 7!
 
 ?>
 ```
-<!--
-The following patterns are not considered warnings:
-
-```php
-<?php
 
 
-?>
-```
-
-
-### Options
-
-## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
--->
 
 ## Further Readings
 * [Casting integers] (http://php.net/manual/en/language.types.integer.php#language.types.integer.casting)

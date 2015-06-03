@@ -41,12 +41,7 @@ if (defined('APP_CONFIGURATION')) {
 
 ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
 
-If default is not always necessary, you may disable this rule.
--->
 ## Further Reading
 * [PSR-1 : Side effects](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md#23-side-effects)

@@ -96,14 +96,3 @@ file_get_contents($config['webroot'].'/config/config.yaml');
 ?>
 
 ```
-<!--
-### Options
-
-## When Not To Use It
-
-If default is not always necessary, you may disable this rule.
-
-
-## Further Reading
-* []()
--->

@@ -90,11 +90,7 @@ include
 ?>
 ```
 
-<!--
-### Options
 
-## When Not To Use It
--->
 
 ## Further Readings
 http://php.net/manual/en/language.basic-syntax.instruction-separation.php

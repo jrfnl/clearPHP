@@ -27,11 +27,6 @@ There are a few PHP native functions that should be avoided.
 
 Using any of the extensions mentioned above will trigger a warning. Usage include constants, functions, classes, interfaces or directives, if any.
 
-<!--
-### Options
 
-## When Not To Use It
 
-## Further Readings
--->
 

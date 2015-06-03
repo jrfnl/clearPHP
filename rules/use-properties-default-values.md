@@ -76,10 +76,4 @@ class x {
 ?>
 ```
 
-<!--
-## When Not To Use It
-Please, always use this rule.
 
-## Further Reading
-* []()
--->

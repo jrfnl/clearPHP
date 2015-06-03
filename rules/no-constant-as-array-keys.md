@@ -61,11 +61,6 @@ $a = array(1 =>  'c',
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
--->
 
 ## Further Readings
 * [Arrays](http://php.net/manual/en/language.types.array.php)

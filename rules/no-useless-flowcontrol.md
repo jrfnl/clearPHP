@@ -61,11 +61,3 @@ switch($x) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-
-
-## Further Reading
-
--->

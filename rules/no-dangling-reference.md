@@ -61,10 +61,7 @@ unset($value);
 ?>
 ```
 
-<!--
-## When Not To Use It
 
--->
 
 ## Further Reading
 

@@ -39,11 +39,4 @@ $a instanceof ClassActuallyInAnotherNamespace;
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
-
-## Further Readings
--->
 

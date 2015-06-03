@@ -13,11 +13,4 @@ It is recommended to avoid executable PHP scripts.
 
 Any file containing a php script should be set to no-executable on the target system. 
 
-<!--
-### Options
-
-## When Not To Use It
-
-## Further Readings
--->
 

@@ -34,11 +34,4 @@ use AnotherNamespace\UndefinedClass;
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
-
-## Further Readings
--->
 

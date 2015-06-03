@@ -62,10 +62,5 @@ print_r(debug_backtrace());
 ## Options
 * Constants : they may be included in this rule, when constants are used to represent literal values. When they are used for state, like use once-only function, this option must be used.
 
-<!--
-## When Not To Use It
-Please, always use this
 
-## Further Reading
 
--->

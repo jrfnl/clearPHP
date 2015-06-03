@@ -26,11 +26,6 @@ Their usage should be investigated.
 
 Using any of the functions mentioned above will trigger a warning. 
 
-<!--
-### Options
 
-## When Not To Use It
 
-## Further Readings
--->
 

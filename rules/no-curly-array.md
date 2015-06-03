@@ -41,10 +41,6 @@ $x[1][0];
 ?>
 ```
 
-<!--
-## When Not To Use It
-Please, always use it.
--->
 
 ## Further Reading
 

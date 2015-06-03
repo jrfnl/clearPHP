@@ -50,10 +50,4 @@ switch($a) {
 }
 ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
-
-If default is not always necessary, you may disable this rule.
--->

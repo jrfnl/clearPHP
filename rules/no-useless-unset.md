@@ -95,10 +95,6 @@ function foo() {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
--->
 
 ## Further Reading
 * [unset](http://php.net/manual/en/function.unset.php)

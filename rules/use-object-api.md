@@ -68,8 +68,5 @@ define('n', array(1,2,3), true); // before PHP 5.6
 ## When Not To Use It
 If the project doesn't use any OOP feature, it may ignore this rule.
 
-<!--
 
-## Further Reading
 
--->

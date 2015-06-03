@@ -110,10 +110,6 @@ function getAreaOrSuperArea(Area $shape) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-Please, always use it.
- -->
 
 ## Further Reading
 

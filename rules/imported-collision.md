@@ -69,11 +69,3 @@ function ($a, $b, $c) use ($d, $e, $f) {
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
-
-## Further Readings
--->
-

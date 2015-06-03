@@ -50,10 +50,3 @@ foreach($arrayOfObject as &$object) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-
-
-## Further Reading 
--->

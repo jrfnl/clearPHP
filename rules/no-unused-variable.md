@@ -28,9 +28,6 @@ $x++;
 ?>
 ```
 
-<!--
-### Options
--->
 ## When Not To Use It
 
 If you don't want to be notified about unused variables, you can turn this rule off.

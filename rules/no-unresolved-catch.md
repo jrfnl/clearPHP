@@ -52,11 +52,6 @@ try {
 ?>
 ```
 
-<!--
-### Options
-
-## When Not To Use It
--->
 ## Further Readings
 * [No Raw Exceptions](no-raw-exceptions.md)
 

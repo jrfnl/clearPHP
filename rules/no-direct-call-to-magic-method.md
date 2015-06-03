@@ -73,22 +73,10 @@ class y extends x {
 ?>
 
 ```
-<!--
-The following patterns are not considered warnings:
 
-```php
-<?php
-
-
-?>
 ```
 
 
-### Options
-
-## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
--->
 
 ## Further Readings
 * [Magic methods](http://php.net/manual/en/language.oop5.magic.php)

@@ -54,10 +54,7 @@ $count += 1; // simple increment
 ?>
 ```
 
-<!--
-## When Not To Use It
 
--->
 
 ## Further Reading 
 

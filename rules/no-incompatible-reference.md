@@ -78,10 +78,7 @@ function &ReferenceReturningFunction() {
 ?>
 ```
 
-<!--
 
-### Options
--->
 ## When Not To Use It
 Always use this.
 

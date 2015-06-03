@@ -41,9 +41,6 @@ class x {
 
 ?>
 ```
-<!--
-### Options
--->
 ## When Not To Use It
 
 This is not checked by PHP but will lead to bugs.

@@ -36,20 +36,12 @@ There are a few PHP directives that were removed before or at version 5.6. They 
 | zend.ze1\_compatibility\_mode          | 5.3 | Removed |
 
 
-<!--
-|   |   |   |
--->
 
 
 ## Rule Details
 
 Reading, modifying or checking any of the directives mentioned above will trigger a warning. 
 
-<!--
-### Options
 
-## When Not To Use It
 
-## Further Readings
--->
 

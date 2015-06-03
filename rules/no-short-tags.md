@@ -22,13 +22,7 @@ The following code is considered legit:
 ```
 <?= $text ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
-
-This is not checked by PHP but will lead to bugs.
--->
 
 ## Further Reading
 

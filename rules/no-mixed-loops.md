@@ -52,9 +52,3 @@ for ($i = 0; $i < 10; ) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-## Further Reading 
-
--->

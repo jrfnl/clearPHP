@@ -92,9 +92,6 @@ $x++;
 ?>
 ```
 
-<!--
-### Options
--->
 ## When Not To Use It
 
 If you don't want to be notified about unused variables or function arguments, you can safely turn this rule off.

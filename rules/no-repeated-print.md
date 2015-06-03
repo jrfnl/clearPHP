@@ -76,13 +76,5 @@ HTML;
 	/* ... */
 ?>
 ```
-<!--
-### Options
-## When Not To Use It
 
-If needed, just use revert from the control version system. 
-
-## Further Reading 
-
--->
 

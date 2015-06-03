@@ -111,10 +111,6 @@ if (($res = readdir('.')) === false) {}
 ?>
 ```
 
-<!--
-## When Not To Use It
-
--->
 
 ## Further Reading
 * [Strict vs. Loose Comparisons in PHP](http://www.copterlabs.com/blog/strict-vs-loose-comparisons-in-php/)

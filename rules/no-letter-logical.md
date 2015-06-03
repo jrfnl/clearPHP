@@ -46,9 +46,6 @@ $a = 1 && 2 || 3 ^ 4;
 ?>
 
 ```
-<!--
-### Options
--->
 ## When Not To Use It
 
 If default is not always necessary, you may disable this rule.

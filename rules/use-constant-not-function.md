@@ -40,11 +40,5 @@ if (PHP_SAPI == 'cli') {
 
 ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
-
-## Further Readings
--->
 

@@ -41,22 +41,5 @@ The following patterns are considered warnings:
 
 ?>
 ```
-<!--
-The following patterns are not considered warnings:
-
-```php
-<?php
-
-
-?>
 ```
-
-
-### Options
-
-## When Not To Use It
-If the equation is important to keep, then put it in a comment, and move this to documentation automatically. 
-
-## Further Readings
--->
 

@@ -52,9 +52,6 @@ class myClass {
 
 ```
 
-<!--
-### Options
--->
 
 ## When Not To Use It
 * If you hate unbalanced parenthesis : [(](https://xkcd.com/859/)

@@ -56,11 +56,6 @@ z(1, 2, 3, 4);
 ```
 
 
-<!--
-## When Not To Use It
-
-
--->
 
 ## Further Reading 
 * [func_get_arg](http://php.net/manual/en/function.func-get-arg.php)

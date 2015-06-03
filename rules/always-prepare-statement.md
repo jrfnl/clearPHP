@@ -71,9 +71,6 @@ $sqlQuery = 'SELECT column FROM table WHERE id in (' .  join(',', $ids).')';
 ?>
 ```
 
-<!--
-### Options
--->
 
 ## When Not To Use It
 * Prepared statement are not available for all queries : for example, changing the structure of a table can't be done with a prepared statement, or PHP arrays can't be used with IN SQL clauses. 

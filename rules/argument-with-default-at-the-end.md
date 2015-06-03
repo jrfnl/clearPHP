@@ -78,9 +78,6 @@ function f($a, $b, $c, $d) {}
 ?>
 ```
 
-<!--
-### Options
--->
 
 ## When Not To Use It
 Always use it. 

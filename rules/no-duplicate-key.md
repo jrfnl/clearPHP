@@ -32,10 +32,5 @@ $a[1] = 'a'; // this doesn't belong to the literal definition anymore
 
 ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
 
-If default is not always necessary, you may disable this rule.
--->

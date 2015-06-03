@@ -39,11 +39,3 @@ $a = x(1);
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-## Further Reading
-
-* []()
-
--->

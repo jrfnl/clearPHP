@@ -55,11 +55,7 @@ while(count($a) > 0) {
 	
 ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
--->
 
 ## Further Readings
 * [array_merge() in Incredibly Slow When Merging A List of Arrays](https://secure.phabricator.com/book/phabflavor/article/php_pitfalls/#array-merge-in-incredibl)

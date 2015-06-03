@@ -75,11 +75,7 @@ while($row = $pdo->fetchRow()) {
 
 ?>
 ```
-<!--
-### Options
 
-## When Not To Use It
--->
 
 ## Further Readings
 * [Iterator](http://php.net/manual/en/class.iterator.php)

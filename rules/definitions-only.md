@@ -80,12 +80,6 @@ trait DatabaseConnexion {
 ?>
 ```
 
-<!--
-### Options
--->
-<!--
-## When Not To Use It
--->
 
 ## Further Readings
 * [PSR-1 : Side effects](http://www.php-fig.org/psr/psr-1/)

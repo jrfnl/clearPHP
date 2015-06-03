@@ -42,10 +42,6 @@ class x {
 ?>
 ```
 
-<!--
-## When Not To Use It
-Please, always use this
--->
 
 ## Further Reading
 * [Don't Repeat Yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself)

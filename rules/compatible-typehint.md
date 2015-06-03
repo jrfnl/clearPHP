@@ -32,11 +32,7 @@ x(new a());
 ?>
 ```
 
-<!--
-## When Not To Use It
 
 ## Further Reading
 
-* []()
 
--->

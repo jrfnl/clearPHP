@@ -38,10 +38,7 @@ if (is_int($value)) {
 ?>
 ```
 
-<!--
-## When Not To Use It
 
--->
 
 ## Further Reading 
 

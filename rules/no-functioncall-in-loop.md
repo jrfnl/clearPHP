@@ -68,11 +68,3 @@ for($i = 0; $i < count($j); $i++) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-
-
-## Further Reading
-
--->

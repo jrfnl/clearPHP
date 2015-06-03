@@ -97,9 +97,3 @@ foreach($k as $l) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-
-## Further Reading 
--->

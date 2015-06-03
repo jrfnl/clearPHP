@@ -29,11 +29,7 @@ There are a few PHP native functions that should be avoided for speed reasons. T
 
 Using any of the functions mentioned above will trigger a warning. 
 
-<!--
-### Options
 
-## When Not To Use It
--->
 
 ## Further Readings
 

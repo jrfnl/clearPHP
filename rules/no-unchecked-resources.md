@@ -107,11 +107,7 @@ if (pspell_check($pspell_link, "testt")) {
 ?>
 ```
 
-<!--
-### Options
 
-## When Not To Use It
--->
 
 ## Further Readings
 * [Resources types](http://php.net/manual/en/resource.php)

@@ -68,11 +68,3 @@ if ((string) $a) {}
 ?>
 ```
 
-<!--
-## When Not To Use It
-Please, always use it.
-
-## Further Reading
-
-* [Return](http://php.net/manual/en/function.return.php)
- -->

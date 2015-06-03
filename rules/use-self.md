@@ -88,14 +88,7 @@ class theClass {
 
 ?>
 ```
-<!--
-### Options
-when static or self call will be different 
 
-## When Not To Use It
-
-If default is not always necessary, you may disable this rule.
--->
 
 ## Further Reading
 * [self:: vs className:: inside static className metods in PHP](http://stackoverflow.com/questions/3481085/self-vs-classname-inside-static-classname-metods-in-php)

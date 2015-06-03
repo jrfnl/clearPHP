@@ -113,12 +113,3 @@ switch (true) {
 ?>
 ```
 
-<!--
-## When Not To Use It
-
-
-
-## Further Reading 
-
-* [PHP functions aliases] (http://php.net/manual/en/aliases.php)
--->

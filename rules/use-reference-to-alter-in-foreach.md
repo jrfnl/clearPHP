@@ -58,14 +58,4 @@ foreach($source as $id => &$element) {
 
 ?>
 ```
-<!--
-### Options
-when static or self call will be different 
 
-## When Not To Use It
-
-If default is not always necessary, you may disable this rule.
-
-## Further Reading
-* []()
--->
