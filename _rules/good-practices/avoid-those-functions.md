@@ -38,6 +38,7 @@ Using any of the functions mentioned above will trigger a warning.
 
 * [Always Prepare Statements]
 * [No Eval]
+* [No Aliases]
 * [No Deprecated]
 * [No Incompilable]
 * [No Obsolete Extensions]
@@ -48,6 +49,7 @@ Using any of the functions mentioned above will trigger a warning.
 [a rule by itself]: {{ "/security/no-eval/" | prepend: site.clearphp.url }}
 [Always Prepare Statements]: {{ "/security/always-prepare-statement/" | prepend: site.clearphp.url }}
 [No Eval]: {{ "/security/no-eval/" | prepend: site.clearphp.url }}
+[No Aliases]: {{ "/php-manual/no-aliases/" | prepend: site.clearphp.url }}
 [No Deprecated]: {{ "/php-manual/no-deprecated/" | prepend: site.clearphp.url }}
 [No Incompilable]: {{ "/good-practices/no-incompilable/" | prepend: site.clearphp.url }}
 [No Obsolete Extensions]: {{ "/good-practices/no-obsolete-extensions/" | prepend: site.clearphp.url }}

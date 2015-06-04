@@ -13,10 +13,14 @@ They should be removed or completed so as to have impact in the code.
 
 This rule targets code that doesn't do anything useful. 
 
-The following code is considered a warning:
+The following patterns are considered warnings:
 
 {% highlight php %}
 <?php
+// Empty namespaces
+namespace x;
+namespace y;
+
 // literals in the code flow
 1; 
 My_CONSTANT;
@@ -26,10 +30,17 @@ function () { return $x = 3; }
 // post-incrementation in a return
 return $a++;
 
+// empty instructions
+$a++;;;
+function x($a) {} ; // ; is only necessary for closures
+
+// Unassigned closures
+function ($a) {} ;
+
 {% endhighlight %}{: .warning }
 
 
-The following pattern is considered legit:
+The following patterns are considered legit:
 
 {% highlight php %}
 <?php
@@ -38,6 +49,9 @@ $object->property;
 
 // pre-incrementation in a return
 return ++$a;
+
+// Assigned closures
+$object->myMethod(function ($a) {});
 
 {% endhighlight %}{: .good }
 

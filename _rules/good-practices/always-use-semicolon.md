@@ -15,7 +15,9 @@ echo $a;
 There are a few situations where semicolon are not required, as another token will be used as instruction ending. For example:
 
 {% highlight php %}
-<?php echo 'a' ?>
+<?php
+echo 'a'
+?>
 
 {% endhighlight %}{: .short }
 

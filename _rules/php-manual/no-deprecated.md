@@ -28,6 +28,7 @@ If you plan to keep your application linked to some PHP version, then you can sa
 #### Related rules
 
 * [Avoid Those Functions]
+* [No Aliases]
 * [No Incompilable]
 * [No Obsolete Extensions]
 * [No Obsolete Directives]
@@ -35,6 +36,7 @@ If you plan to keep your application linked to some PHP version, then you can sa
 
 
 [Avoid Those Functions]: {{ "/good-practices/avoid-those-functions/" | prepend: site.clearphp.url }}
+[No Aliases]: {{ "/php-manual/no-aliases/" | prepend: site.clearphp.url }}
 [No Incompilable]: {{ "/good-practices/no-incompilable/" | prepend: site.clearphp.url }}
 [No Obsolete Extensions]: {{ "/good-practices/no-obsolete-extensions/" | prepend: site.clearphp.url }}
 [No Obsolete Directives]: {{ "/good-practices/no-obsolete-directives/" | prepend: site.clearphp.url }}

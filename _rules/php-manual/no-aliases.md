@@ -40,3 +40,14 @@ if (is_int($value)) {
 ### Further Reading
 
 * [PHP functions aliases](http://php.net/aliases)
+
+
+#### Related rules
+
+* [Avoid Those Functions]
+* [No Deprecated]
+
+
+[Avoid Those Functions]: {{ "/good-practices/avoid-those-functions/" | prepend: site.clearphp.url }}
+[No Deprecated]: {{ "/php-manual/no-deprecated/" | prepend: site.clearphp.url }}
+

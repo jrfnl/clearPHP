@@ -24,11 +24,21 @@ Function             | Alternative
 `array_walk()`       | Use `foreach($source as &$variable) { }`
 `array_map()`        | Use `foreach($source as &$variable) { }`
 `range()`            | You can use [generators] to prevent building an array in memory
+`is_null()`          | Use `=== null` or similar
+`is_resource()`      | Use `=== false` or similar
+`is_bool()`          | Use `=== false` or similar
 
 
 ### Rule Details
 
-Using any of the functions mentioned above will trigger a warning. 
+Using any of the functions mentioned above will trigger a warning.
+
+
+### When Not To Use This Rule
+
+These are micro-optimizations which don't compare to architectural optimizations - which are beyond the scope of this document -. Don't start manually replacing all occurences with a faster version, but keep the above in mind when you code something new.
+
+When your project has coding conventions which push towards using some functions rather than others, keep the convention consistent.
 
 
 ### Further Reading
