@@ -1,5 +1,5 @@
-/*******************************************************************************
-ClearPHP Theme Based by Juliette Reinders Folmer
+﻿/*******************************************************************************
+ClearPHP Theme by Juliette Reinders Folmer
 Loosely based on Slate Theme for GitHub Pages by Jason Costello, @jsncostello
 *******************************************************************************/
 
@@ -277,9 +277,8 @@ Full-Width Styles
 	z-index: 100;
 }
 
-#header-wrap.inner {
+#header-wrap .inner {
 	position: relative;
-	max-width: 640px;
 	padding: 20px 160px 10px 260px;
 	margin: 0 auto;
 }

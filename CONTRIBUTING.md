@@ -51,6 +51,9 @@ Adhering to the following process is the best way to get your work included in t
    gems to preview locally.
    See [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages) for more information.
 
+   Make sure you (temporarily) change the `clearphp:` `url:` property in `_config.yml` to `http://localhost:4000`
+   to make the links work in your local test environment.
+
 5. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). Use Git's
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
