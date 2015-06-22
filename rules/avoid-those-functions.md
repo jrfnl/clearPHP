@@ -23,7 +23,6 @@ Function | Reason  |  Alternative
 Using any of the functions mentioned above will trigger a warning. 
 
 
-
 ### Further Reading
 
 * [PHP 5.6 backward incompatible changes](http://php.net/migration56.incompatible)
@@ -31,4 +30,9 @@ Using any of the functions mentioned above will trigger a warning.
 * [PHP 5.4 backward incompatible changes](http://php.net/migration54.incompatible)
 * [PHP 5.3 backward incompatible changes](http://php.net/migration53.incompatible)
 * [PHP 5.2 backward incompatible changes](http://php.net/migration52.incompatible)
+
+#### See Also
+
+* [No Aliases](no-aliases.md)
+* [No Deprecated](no-deprecated.md)
 
